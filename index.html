@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+
+
+
           <meta charset="utf-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
         <style>
+         html {
+         overflow: scroll;
+         overflow-x: hidden;
+             }
+         ::-webkit-scrollbar {
+         width: 0; /* remove scrollbar space */
+         background: transparent; /* to make scrollbar invisible */
+         }
+         ::-webkit-scrollbar-thumb {
+         background: transparent;
+         }
+
+         ::selection {
+         /* Change highlight background color */
+         background: 	#FF1493;
+         /* Change highlight text color */
+
+         }
+
+
+
+
+
 
             body{
-                background-color: #96CDCD;
+                background-image:url('https://static.tumblr.com/12fa0f315d290bb1df15954e7a68536d/67u0lkf/NHgmnojyf/tumblr_static_tumblr_mmm5k4yecc1qmf2zwo1_r1_500.png');
+                background-repeat:repeat
             }
 
             h1{
-                font-family:Fascinate, system-ui;;
+                font-family: "Audiowide", sans-serif;
                 font-weight: 400;
                 font-style: normal;
+                font-size:90px;
+                margin-top:0;
+                text-align:center;
+                color:white;
+              
+                
+
             }
 
 
             h3{
-                font-family:Fascinate, system-ui;;
-                font-weight: 400;
-                font-style: normal;
+                  font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            color:blue;
+            text-align:center;
 
             }
 
@@ -41,33 +78,273 @@
             font-optical-sizing: auto;
             font-weight: normal;
             color:blue;
-        }
-.text {
-    color:blueviolet;
-    font-size:40px;
-      }
-     </style>
+            text-align:center;
+           }
+          .text {
+         font-family: "Pixelify Sans", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: normal;
+         color:blue;
+         text-align:center;
+         }
 
-    </head>
-    <body>
-        <h1> Welcome to my OS</h1>
-        <h3>Das ist meine Website.</h3>
-        <h4>Sie ist noch sehr hässlslich</h4>
-        <p class="text">This is my text in this text I am goingt to say what I want to build becaus eI can say that because no one will look at this website because it is so ugly and unperfect but you need to trust the process.</p>
-        <img src=" https://i9.glitter-graphics.org/pub/2728/2728019krp8i2239s.jpg">
-        <img src="https://i.imgur.com/XUCGdOo.gif">
-        <img src="https://i.imgur.com/LBxpilF.gif">
-        <img src="https://i.imgur.com/shLS9uP.gif">
-        <img src="https://i.imgur.com/KwX2CTv.gif">
-        <img src="https://i.imgur.com/UKmNK8e.gif">
-        <img src="https://i.imgur.com/qeqAglv.gif">
-        <img src="https://i.imgur.com/OX8FUyR.gif">
-        <img src="https://i.imgur.com/ltHQ4OI.gif">
-        <p>Hi there this is another text just because I am supposed to write something about my things in my site 
+          .text2 {
+         font-family: "Pixelify Sans", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: normal;
+         color:blue;
+         text-align:center;
+         }
+         .base{
+          border:solid;
+         width: 500px;
+         height:fit-content;
+          border-radius:16px; 
+          padding:16px;
+          border-color:#fff;
+          background-color: rgba(0, 0, 0, 0.125);
+            position: absolute;
+             top: 80px; 
+             left: 80px; 
+             right:80px;
+             bottom:80px;
+            
+          margin-top: 20px;   
+          margin-left:auto;
+          margin-right:auto;
+         backdrop-filter: blur(5px);
+            }
+
+         .info {
+          position: absolute;
+         width: 100%; 
+         display: flex; 
+         backdrop-filter: blur(5px);
+          background: rgba(0, 0, 0, 0.125);
+          color: #fff;
+          justify-content: space-between;
+         gap: 32px;}
+
+
+         </style>
+       </head>
+ <body>
+
+         <div id="jsi-rain-container" class="container"></div>
+
+
+
+         <div  class="base">
+         <h1>My OS</h1>
+         <h3>Das ist meine Website.</h3>
+         <h4>Sie ist noch sehr hässlslich</h4>
+         <p class="text">This is my text in this text I am goingt to say what I want to build becaus eI can say that because no one will look at this website because it is so ugly and unperfect but you need to trust the process.</p>
+         <p class="text2">Hi there this is another text just because I am supposed to write something about my things in my site 
             but what should I write everytghing about me is just boring and I mean who do you think I am ?
             I am not a celeb but anyways I am giving my best here jet alone this whole file thing etc. I do not want to talk about it! So yeah I just 
             showed of my obsession with Pixel icons at the top like what should I write  so and what images like ,pleaseeeee I need a base to do everytghing
-            .No stoo I am not a quitter and I won´t complain!
+            .No stoo I am not a quitter and I will not  complain!
+         </p class="text2">
+         </div class="base">
+    
+          <div class="info">
+           <p
+          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style="color: white; text-decoration: none;">Mathilde 🔗 </a> 
+           </p>
+      
+           <p style="margin-left: 16px; ; padding: 4px 12px; position:center; ">
+           - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
+           </p>
+          <p id="timeElement"
+          style="margin-right: 16px; background-color:#F5F5F5; padding: 4px 12px; border-radius: 5px; color:black;">
+         Time
         </p>
-    </body>
+
+
+
+
+      </div class="info">
+ <script>
+    function updateTime() {
+        var currentTime = new Date().toLocaleString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    setInterval(updateTime, 1000);
+
+
+
+
+
+
+var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc"); // colours for top, right, bottom and left borders and background of bubbles
+var bubbles=66; // how many bubbles are moving at any given time
+var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
+
+/****************************
+*   JavaScript Bubble Bath  *
+*(c)2010-13 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX *
+****************************/
+
+var swide=800;
+var shigh=600;
+var bubb=new Array();
+var bubbx=new Array();
+var bubby=new Array();
+var bubbs=new Array();
+var boddie;
+var ie_version=(navigator.appVersion.indexOf("MSIE")!=-1)?parseFloat(navigator.appVersion.split("MSIE")[1]):false;
+
+function addLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addLoadEvent(bubba);
+
+function bubba() { if (document.getElementById) {
+  var i, rats, div;
+  boddie=document.createElement("div");
+  boddie.style.position="fixed";
+  boddie.style.top="0px";
+  boddie.style.left="0px";
+  boddie.style.overflow="visible";
+  boddie.style.width="1px";
+  boddie.style.height="1px";
+  boddie.style.backgroundColor="transparent";
+  boddie.style.zIndex="-1";
+  document.body.appendChild(boddie);
+  set_width();
+  for (i=0; i<bubbles; i++) {
+    rats=createDiv("3px", "3px");
+
+	div=createDiv("auto", "auto");
+    rats.appendChild(div);
+	div=div.style;
+    div.top="1px";
+    div.left="0px";
+	div.bottom="1px";
+	div.right="0px";
+	div.borderLeft="1px solid "+colours[3];
+	div.borderRight="1px solid "+colours[1];
+
+    div=createDiv("auto", "auto");
+	rats.appendChild(div);
+	div=div.style;
+    div.top="0px";
+    div.left="1px";
+	div.right="1px";
+	div.bottom="0px"
+	div.borderTop="1px solid "+colours[0];
+	div.borderBottom="1px solid "+colours[2];
+
+
+	div=createDiv("auto", "auto");
+	rats.appendChild(div);
+	div=div.style;
+	div.left="1px";
+	div.right="1px";
+    div.bottom="1px";
+	div.top="1px";
+	div.backgroundColor=colours[4];
+    if (ie_version && ie_version<10) div.filter="alpha(opacity=50)";
+    else div.opacity=0.5;
+
+    boddie.appendChild(rats);
+	bubb[i]=rats.style;
+	bubb[i].zIndex=(over_or_under=="over")?"1001":"0";
+  }
+  bubble();
+}}
+
+function bubble() {
+  var c;
+  for (c=0; c<bubbles; c++) if (!bubby[c] && Math.random()<0.333) {
+    bubb[c].left=(bubbx[c]=Math.floor(swide/6+Math.random()*swide/1.5)-10)+"px";
+    bubb[c].top=(bubby[c]=shigh)+"px";
+    bubb[c].width="3px";
+	bubb[c].height="3px"
+	bubb[c].visibility="visible";
+	bubbs[c]=3;
+    break;
+  }
+  for (c=0; c<bubbles; c++) if (bubby[c]) update_bubb(c);
+  setTimeout("bubble()", 40);
+}
+
+function update_bubb(i) {
+  if (bubby[i]) {
+    bubby[i]-=bubbs[i]/2+i%2;
+    bubbx[i]+=(i%5-2)/5;
+    if (bubby[i]>0 && bubbx[i]>0 && bubbx[i]<swide) {
+	  if (Math.random()<bubbs[i]/shigh*2 && bubbs[i]++<8) {
+		bubb[i].width=bubbs[i]+"px";
+		bubb[i].height=bubbs[i]+"px";
+	  }
+      bubb[i].top=bubby[i]+"px";
+      bubb[i].left=bubbx[i]+"px";
+    }
+    else {
+      bubb[i].visibility="hidden";
+      bubby[i]=0;
+      return;
+    }
+  }
+}
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+    }
+
+    function createDiv(height, width) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height;
+  div.style.width=width;
+  div.style.overflow="hidden";
+  div.style.backgroundColor="transparent";
+  return (div);
+    }
+    // ]]>
+
+                        
+                        
+
+
+ </script>
+
+ </body>
 </html>
+
+
+
+
+  
+
