@@ -1,5 +1,4 @@
- <script>
-    function updateTime() {
+  function updateTime() {
         var currentTime = new Date().toLocaleString();
         var timeText = document.querySelector("#timeElement");
         timeText.innerHTML = currentTime;
@@ -9,7 +8,7 @@
 
 
 // Make the DIV element draggable:
-dragElement(document.getElementById("window"));
+dragElement(document.getElementById("welcome"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -206,5 +205,3 @@ function createDiv(height, width) {
   div.style.backgroundColor="transparent";
   return (div);
 }
-
-</script>
