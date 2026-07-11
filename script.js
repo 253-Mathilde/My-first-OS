@@ -59,9 +59,36 @@ function dragElement(element) {
 
 
 
+
+var welcomeScreen = document.querySelector("#welcome")
+var welcomeScreenClose = document.querySelector("#welcomeclose")
+var welcomeScreenOpen = document.querySelector("#welcomeopen")
+function closeWindow(element) {
+  element.style.display = "none"
+}
+function openWindow(element) {
+  element.style.display = "flex"
+}
+
+welcomeScreenClose.addEventListener("click", function() {
+  closeWindow(welcomeScreen);
+});
+
+welcomeScreenOpen.addEventListener("click", function() {
+  openWindow(welcomeScreen);
+});
+
+
+
+
+
+
+
+
+
 var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc");
 var bubbles=66;
-var over_or_under="over";
+var over_or_under="under";
 
 var swide=800;
 var shigh=600;
@@ -93,7 +120,7 @@ function bubba() { if (document.getElementById) {
   boddie.style.width="1px";
   boddie.style.height="1px";
   boddie.style.backgroundColor="transparent";
-  boddie.style.zIndex="0";
+  boddie.style.zIndex="-1";
   document.body.appendChild(boddie);
   set_width();
   for (i=0; i<bubbles; i++) {
