@@ -106,7 +106,7 @@
              left: 80px; 
              right:80px;
              bottom:80px;
-          backdrop-filter: blur(5px);
+          backdrop-filter: blur(50px);
             }
 
          .info {
@@ -121,11 +121,29 @@
 
          #welcome{
           position:absolute;
-          backdrop-filter: blur(5px);
+           top: 100px;
+           left: 100px;
+           display: flex;
+           z-index: 10;
+         
          }
          </style>
        </head>
         <body>
+          <div class="info">
+           <p
+          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style="color: white; text-decoration: none;">Mathilde 🔗 </a> 
+           </p>
+
+           <p style="margin-left: 16px; ; padding: 4px 12px; position:center; ">
+           - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
+           </p>
+          <p id="timeElement"
+          style="margin-right: 16px; background-color:#F5F5F5; padding: 4px 12px; border-radius: 5px; color:black;">
+         Time
+        </p>
+          </div>
 
          <div id="jsi-rain-container" class="container"></div>
 
@@ -133,8 +151,10 @@
          <div id="welcome">
          <div  class="base">
           <p id="welcomeheader"> 
-		       Handle
+		       <img src="https://files.catbox.moe/tdbkgq.jpeg">
 	             </p>
+               <p style="cursor: pointer" id="welcomeclose">Close</p>
+               <p style="cursor: pointer" id="welcomeopen">ThomasOS</p>
          <h1>My OS</h1>
          <h3>Das ist meine Website.</h3>
          <h4>Sie ist noch sehr hässlslich</h4>
@@ -146,8 +166,7 @@
             .No stoo I am not a quitter and I will not  complain!
          </p>
       
-
-
+        
          
  <script src="script.js"></script>
  </body>
