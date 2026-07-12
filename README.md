@@ -1,4 +1,4 @@
- Welcome to my README.
+ Welcome to my README.A bigggg thank you to @nokira!!!!
   I used the official tutorial for this project ( I do not know if I really have to say that here
   but I just want to do it the save way).
   I am still not so good at JS and I used again the code from this site:https://scripted.neocities.org/cursor-bg
