@@ -9,7 +9,7 @@
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
-dragElement(document.getElementById("Journal"));
+dragElement(document.getElementById("journalWindow"));
 
 
 
@@ -58,7 +58,17 @@ function dragElement(element) {
 }
 
 
+var journalWindow = document.querySelector("#journalWindow")
+var journalClose = document.querySelector("#journalclose")
+var journalOpen = document.querySelector("#journalopen")
 
+journalClose.addEventListener("click", function() {
+  closeWindow(journalWindow);
+});
+
+journalOpen.addEventListener("click", function() {
+  openWindow(journalWindow);
+});
 
 
 
@@ -83,6 +93,8 @@ welcomeScreenOpen.addEventListener("click", function() {
 
 
 
+
+
 var selectedIcon = undefined
 function selectIcon(element) {
   element.classList.add("selected");
@@ -100,6 +112,24 @@ function handleIconTap(element) {
     selectIcon(element)
   }
 }
+
+var biggestIndex = 3;
+function handleWindowTap(element) {
+  biggestIndex += 1;
+  element.style.zIndex = biggestIndex;
+}
+function addWindowTapHandling(welcomeScreen) {
+  element.addEventListener("mousedown", () =>
+    handleWindowTap(welcomeScreen)
+  )
+}
+addWindowTapHandling(document.getElementById("welcome"));
+addWindowTapHandling(document.getElementById("journalWindow"));
+
+
+
+
+
 
 
 

@@ -129,6 +129,10 @@
          
          }
 
+         #journalWindow{
+          position:absolute;
+         }
+
 
          .symbole{
            display: flex;
@@ -145,10 +149,16 @@
           
          
          }
+
+         .icon.selected {
+         outline: 2px solid white;
+         border-radius: 8px;
+         width: fit-content;
+         }
          </style>
        </head>
         <body>
-          <div class="info">
+          <div class="info" id="top">
            <p
           style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
             <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style="color: white; text-decoration: none;">Mathilde 🔗 </a> 
@@ -167,26 +177,29 @@
            
 
         <div id="desktopApps">
+          <div class="icon">
+          <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
         <img src="https://freepixel.art/cdn/sorted/marketplace-books-scrolls/leather_journal__with_red_leather_cover.png" height="80px" width="80px">
-        
+         <p style="margin: 0px; color: #fff; ">Journal</p>
         </div>
-        <div id="Journal">
+        </div>
+
+        <div id="journalWindow">
          <div  class="base">
-          <div class="symbole">
-          <p id="welcomeheader">  <img src="https://i.imgur.com/Y4OL1On.gif"></p>
-            <p style="cursor: pointer" id="welcomeclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
-            <p style="cursor: pointer" id="welcomeopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
+          <div class="symbole" >
+          <p id="journalWindowheader">  <img src="https://i.imgur.com/Y4OL1On.gif"></p>
+            <p style="cursor: pointer" id="journalclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
+            <p style="cursor: pointer" id="journalopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
             </div>
-         <h1>My OS</h1>
-         <h3>Das ist meine Website.</h3>
-         <h4>Sie ist noch sehr hässlslich</h4>
-         <p class="text">This is my text in this text I am goingt to say what I want to build becaus eI can say that because no one will look at this website because it is so ugly and unperfect but you need to trust the process.</p>
-         <p class="text2">Hi there this is another text just because I am supposed to write something about my things in my site 
-            but what should I write everytghing about me is just boring and I mean who do you think I am ?
-            I am not a celeb but anyways I am giving my best here jet alone this whole file thing etc. I do not want to talk about it! So yeah I just 
-            showed of my obsession with Pixel icons at the top like what should I write  so and what images like ,pleaseeeee I need a base to do everytghing
-            .No stoo I am not a quitter and I will not  complain!
+            
+         <h1>Journal</h1>
+         <h3>Journal</h3>
+         <h4>......</h4>
+         <p class="text">Thst is my first App</p>
+         <p class="text2">This is going to be a Journal App
          </p>
+         </div>
+         </div>
       
 
         
@@ -217,6 +230,8 @@
             showed of my obsession with Pixel icons at the top like what should I write  so and what images like ,pleaseeeee I need a base to do everytghing
             .No stoo I am not a quitter and I will not  complain!
          </p>
+         </div>
+         </div>
       
         
          
