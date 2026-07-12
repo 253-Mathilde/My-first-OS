@@ -1,240 +1,224 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <!-- Tinkerbell Yellow Glitter Wings - https://www.cursors-4u.com/cursor/tinkerbell-yellow-glitter-wings -->
-     <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/tinkerbell-yellow-glitter-wings-1c14871a-32.css">
-      <!-- End www.Cursors-4U.com Code -->
+  <head>
+  <!-- Tinkerbell Yellow Glitter Wings - https://www.cursors-4u.com/cursor/tinkerbell-yellow-glitter-wings -->
+  <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/tinkerbell-yellow-glitter-wings-1c14871a-32.css">
+  <!-- End www.Cursors-4U.com Code -->
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+      width: 0; /* remove scrollbar space */
+      background: transparent; /* to make scrollbar invisible */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+
+    ::selection {
+      /* Change highlight background color */
+      background: 	#f2f20a;
+      /* Change highlight text color */
+    }
+
+    body{
+      background-image:url('https://static.tumblr.com/12fa0f315d290bb1df15954e7a68536d/67u0lkf/NHgmnojyf/tumblr_static_tumblr_mmm5k4yecc1qmf2zwo1_r1_500.png');
+      background-repeat:repeat
+    }
+
+    h1{
+      font-family: "Audiowide", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size:90px;
+      margin-top:0;
+      text-align:center;
+      color:white;
+    }
+
+
+    h3{
+      font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      color:blue;
+      text-align:center;
+    }
+
+    h4{
+      font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      color:blue;
+      text-align:center;
+    }
+
+    .text {
+      font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      color:blue;
+      text-align:center;
+    }
+
+    .text2 {
+      font-family: "Pixelify Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      color:blue;
+      text-align:center;
+    }
+    .base{
+      border:solid;
+      width: 500px;
+      height:fit-content;
+      border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+
+      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
+      /* top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px; */
+      backdrop-filter: blur(50px);
+      padding-top:2px;
+    }
+
+    .info {
+      position: absolute;
+      width: 100%; 
+      display: flex; 
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.125);
+      color: #fff;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    #welcome{
+      position:absolute;
+      top: 100px;
+      left: 100px;
+      display: flex;        
+      
+    }
+
+    #journalWindow{
+      position:absolute;
+      
+    }
+
+    .symbole{
+      display: flex;
+      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+    }
+
+    #desktopApps{
+      padding-top: 64px;
+      padding-left: 16px;
+    }
+
+    .icon.selected {
+      outline: 2px solid white;
+      border-radius: 8px;
+      width: fit-content;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="info" id="top">
+      <p style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+        <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style="color: white; text-decoration: none;">Mathilde 🔗 </a> 
+      </p>
+
+      <p style="margin-left: 16px; ; padding: 4px 12px; position:center; ">
+      - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
+      </p>
+      <p id="timeElement" style="margin-right: 16px; background-color:#F5F5F5; padding: 4px 12px; border-radius: 5px; color:black;">Time</p>
+    </div>
+
+
+    <div id="desktopApps">
+      <!--  @nokira I removed an uncessesary DIV element (if that's okay..), and after that I put the "onclick" function to this icon, it basically run a function when it's clicked. The function called is "handleIconTap" and you pass the Icon div (this) and the name of the window you want to open (journalWindow)! -->
+      <div class="icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content" onclick="handleIconTap(this, journalWindow)">
         
-
-
-
-          <meta charset="utf-8">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-
-        <style>
-         html {
-         overflow: scroll;
-         overflow-x: hidden;
-             }
-         ::-webkit-scrollbar {
-         width: 0; /* remove scrollbar space */
-         background: transparent; /* to make scrollbar invisible */
-         }
-         ::-webkit-scrollbar-thumb {
-         background: transparent;
-         }
-
-         ::selection {
-         /* Change highlight background color */
-         background: 	#f2f20a;
-         /* Change highlight text color */
-
-         }
-
-            body{
-                background-image:url('https://static.tumblr.com/12fa0f315d290bb1df15954e7a68536d/67u0lkf/NHgmnojyf/tumblr_static_tumblr_mmm5k4yecc1qmf2zwo1_r1_500.png');
-                background-repeat:repeat
-            }
-
-            h1{
-                font-family: "Audiowide", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size:90px;
-                margin-top:0;
-                text-align:center;
-                color:white;
-              
-                
-
-            }
-
-
-            h3{
-                  font-family: "Pixelify Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
-            color:blue;
-            text-align:center;
-
-            }
-
-          h4{
-            font-family: "Pixelify Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
-            color:blue;
-            text-align:center;
-           }
-          .text {
-         font-family: "Pixelify Sans", sans-serif;
-         font-optical-sizing: auto;
-         font-weight: normal;
-         color:blue;
-         text-align:center;
-         }
-
-          .text2 {
-         font-family: "Pixelify Sans", sans-serif;
-         font-optical-sizing: auto;
-         font-weight: normal;
-         color:blue;
-         text-align:center;
-         }
-         .base{
-          border:solid;
-         width: 500px;
-         height:fit-content;
-          border-radius:16px; 
-          padding:16px;
-          border-color:#fff;
-          background-color: rgba(0, 0, 0, 0.125);
-            position: relative;
-             top: 80px; 
-             left: 80px; 
-             right:80px;
-             bottom:80px;
-          backdrop-filter: blur(50px);
-          padding-top:2px;
-            }
-
-         .info {
-          position: absolute;
-         width: 100%; 
-         display: flex; 
-         backdrop-filter: blur(5px);
-          background: rgba(0, 0, 0, 0.125);
-          color: #fff;
-          justify-content: space-between;
-         gap: 32px;}
-
-         #welcome{
-          position:absolute;
-           top: 100px;
-           left: 100px;
-           display: flex;
-           z-index: 10;
-         
-         }
-
-         #journalWindow{
-          position:absolute;
-         }
-
-
-         .symbole{
-           display: flex;
-           justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
-           gap: 1px;
-           margin: 0;
-           padding: 0;
-
-         }
-
-         #desktopApps{
-          padding-top: 64px;
-          padding-left: 16px;
-          
-         
-         }
-
-         .icon.selected {
-         outline: 2px solid white;
-         border-radius: 8px;
-         width: fit-content;
-         }
-         </style>
-       </head>
-        <body>
-          <div class="info" id="top">
-           <p
-          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-            <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style="color: white; text-decoration: none;">Mathilde 🔗 </a> 
-           </p>
-
-           <p style="margin-left: 16px; ; padding: 4px 12px; position:center; ">
-           - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
-           </p>
-          <p id="timeElement"
-          style="margin-right: 16px; background-color:#F5F5F5; padding: 4px 12px; border-radius: 5px; color:black;">
-         Time
-        </p>
-          </div>
-          
-
-           
-
-        <div id="desktopApps">
-          <div class="icon">
-          <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
         <img src="https://freepixel.art/cdn/sorted/marketplace-books-scrolls/leather_journal__with_red_leather_cover.png" height="80px" width="80px">
-         <p style="margin: 0px; color: #fff; ">Journal</p>
-        </div>
-        </div>
 
-        <div id="journalWindow">
-         <div  class="base">
-          <div class="symbole" >
+        <p style="margin: 0px; color: #fff; ">Journal</p>
+      </div>
+    </div>
+
+    <div id="journalWindow">
+      <div  class="base">
+        <div class="symbole" >
           <p id="journalWindowheader">  <img src="https://i.imgur.com/Y4OL1On.gif"></p>
-            <p style="cursor: pointer" id="journalclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
-            <p style="cursor: pointer" id="journalopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
-            </div>
-            
-         <h1>Journal</h1>
-         <h3>Journal</h3>
-         <h4>......</h4>
-         <p class="text">Thst is my first App</p>
-         <p class="text2">This is going to be a Journal App
-         </p>
-         </div>
-         </div>
-      
+          <p style="cursor: pointer" id="journalclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
+          <p style="cursor: pointer" id="journalopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
+        </div>
 
+        <h1>Journal</h1>
+
+        <h3>Journal</h3>
         
+        <h4>......</h4>
+        
+        <p class="text">Thst is my first App</p>
+        <p class="text2">This is going to be a Journal App</p>
+      </div>
+    </div>
 
+    <div id="jsi-rain-container" class="container"></div>
 
-
-
-
-
-
-         <div id="jsi-rain-container" class="container"></div>
-
-
-         <div id="welcome">
-         <div  class="base">
-          <div class="symbole">
+    <div id="welcome">
+      <div  class="base">
+        <div class="symbole">
           <p id="welcomeheader">  <img src="https://i.imgur.com/Y4OL1On.gif"></p>
-            <p style="cursor: pointer" id="welcomeclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
-            <p style="cursor: pointer" id="welcomeopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
-            </div>
-         <h1>My OS</h1>
-         <h3>Das ist meine Website.</h3>
-         <h4>Sie ist noch sehr hässlslich</h4>
-         <p class="text">This is my text in this text I am goingt to say what I want to build becaus eI can say that because no one will look at this website because it is so ugly and unperfect but you need to trust the process.</p>
-         <p class="text2">Hi there this is another text just because I am supposed to write something about my things in my site 
-            but what should I write everytghing about me is just boring and I mean who do you think I am ?
-            I am not a celeb but anyways I am giving my best here jet alone this whole file thing etc. I do not want to talk about it! So yeah I just 
-            showed of my obsession with Pixel icons at the top like what should I write  so and what images like ,pleaseeeee I need a base to do everytghing
-            .No stoo I am not a quitter and I will not  complain!
-         </p>
-         </div>
-         </div>
-      
-        
-         
- <script src="script.js"></script>
- </body>
+          <p style="cursor: pointer" id="welcomeclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
+          <p style="cursor: pointer" id="welcomeopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
+        </div>
+
+        <h1>My OS</h1>
+
+        <h3>Das ist meine Website.</h3>
+
+        <h4>Sie ist noch sehr hässlslich</h4>
+
+        <p class="text">This is my text in this text I am goingt to say what I want to build becaus eI can say that because no one will look at this website because it is so ugly and unperfect but you need to trust the process.</p>
+
+        <p class="text2">Hi there this is another text just because I am supposed to write something about my things in my site 
+        but what should I write everytghing about me is just boring and I mean who do you think I am ?
+        I am not a celeb but anyways I am giving my best here jet alone this whole file thing etc. I do not want to talk about it! So yeah I just 
+        showed of my obsession with Pixel icons at the top like what should I write  so and what images like ,pleaseeeee I need a base to do everytghing
+        .No stoo I am not a quitter and I will not  complain! </p>
+      </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
 </html>

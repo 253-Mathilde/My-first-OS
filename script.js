@@ -1,9 +1,9 @@
-  function updateTime() {
-        var currentTime = new Date().toLocaleString();
-        var timeText = document.querySelector("#timeElement");
-        timeText.innerHTML = currentTime;
-    }
-    setInterval(updateTime, 1000);
+function updateTime() {
+  var currentTime = new Date().toLocaleString();
+  var timeText = document.querySelector("#timeElement");
+  timeText.innerHTML = currentTime;
+}
+setInterval(updateTime, 1000);
 
 
 
@@ -93,18 +93,26 @@ welcomeScreenOpen.addEventListener("click", function() {
 
 
 
-
-
 var selectedIcon = undefined
 function selectIcon(element) {
   element.classList.add("selected");
   selectedIcon = element
 } 
 function deselectIcon(element) {
+  
+  //  @nokira this is a little check, because when deselecting the icon when a window is clicked, if there is no selected icon, we just quit the function with an empty return
+  
+  if (!element) {
+    return;
+  }
+
+
   element.classList.remove("selected");
   selectedIcon = undefined
 }
-function handleIconTap(element) {
+
+//  @nokira I added a parameter "window", you pass this function the div ID that you want to open. Check line 180 of index.html 
+function handleIconTap(element, window) {
   if (element.classList.contains("selected")) {
     deselectIcon(element)
     openWindow(window)
@@ -113,16 +121,22 @@ function handleIconTap(element) {
   }
 }
 
-var biggestIndex = 3;
+var biggestIndex = 1;
 function handleWindowTap(element) {
   biggestIndex += 1;
   element.style.zIndex = biggestIndex;
+  console.log(element.id + " clicked. Z index: " + biggestIndex)
+  
+  // @nokira Just a small fix, it deselcts the icon when clicking on a window
+  deselectIcon(selectedIcon);
 }
-function addWindowTapHandling(welcomeScreen) {
+
+function addWindowTapHandling(element) {
   element.addEventListener("mousedown", () =>
-    handleWindowTap(welcomeScreen)
+    handleWindowTap(element)
   )
 }
+
 addWindowTapHandling(document.getElementById("welcome"));
 addWindowTapHandling(document.getElementById("journalWindow"));
 
