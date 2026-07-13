@@ -96,10 +96,7 @@
       background-color: rgba(0, 0, 0, 0.125);
 
       /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
-      /* top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px; */
+      /* */
       backdrop-filter: blur(50px);
       padding-top:2px;
     }
@@ -117,14 +114,20 @@
 
     #welcome{
       position:absolute;
-      top: 100px;
-      left: 100px;
       display: flex;        
-      
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
     }
 
     #journalWindow{
       position:absolute;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
+      display: none;
       
     }
 
@@ -146,6 +149,16 @@
       border-radius: 8px;
       width: fit-content;
     }
+    .add-note-btn{
+    background-image: url('https://files.catbox.moe/3xoizm.jpg');
+    background-size: cover; /* Passt das Bild an die Button-Größe an */
+    border-radius:5px;
+    height:40px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    }
+    
     </style>
   </head>
 
@@ -179,15 +192,47 @@
           <p style="cursor: pointer" id="journalclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
           <p style="cursor: pointer" id="journalopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
         </div>
+         <div>
+          <header>
+          <button class="w3-button w3-display-left" onclick="plusDivs(-1)" ><img src="https://files.catbox.moe/x982uc.jpg"style="width: 40px; height: 40px; object-fit: cover;"></button>
+          <button class="w3-button w3-display-right" onclick="plusDivs(+1)"><img src="https://files.catbox.moe/c39hwt.jpg"style="width: 40px; height: 40px; object-fit: cover;"></button>
+          <img class="mySlides" src="https://files.catbox.moe/jt0qod.jpg">
+          <img class="mySlides" src="https://files.catbox.moe/ebzhfv.jpg">
+          <img class="mySlides" src="https://files.catbox.moe/t2amjv.jpg">
+          <p></p>
+          <div>
+            <button class="add-note-btn" onclick="openNoteDialog()"></button>
+          </div>
+          </header>
+          <main id="notesContainer" class="notes-grid">
 
-        <h1>Journal</h1>
+          </main>
+         <dialog id="noteDialog">
+        <div class="dialog-content">
+          <div class="dialog-header">
+            <h2 class="dialog-title" id="dialogTitle">Add new island</h2>
+            <button class="close-btn" onclick="closeNoteDialog()">x</button>
+          </div>
+          <form id="noteForm">
+            <div class="form-group">
+          <label for="noteTitle" class="form-label">Title</label>
+          <input type="text" id="noteTitle" class="form-input" placeholder="Enter note title..." required>
+        </div>
+        
+        <div class="form-group">
+          <label for="noteContent" class="form-label">Content</label>
+          <textarea id="noteContent" class="form-textarea" placeholder="Write your note here..." required></textarea>
+        </div>
 
-        <h3>Journal</h3>
-        
-        <h4>......</h4>
-        
-        <p class="text">Thst is my first App</p>
-        <p class="text2">This is going to be a Journal App</p>
+        <div class="dialog-actions">
+          <button type="button" class="cancel-btn" onclick="closeNoteDialog()">Cancel</button>
+          <button type="submit" class="save-btn">Save Note</button>
+        </div>
+          </form>
+        </div>
+         </dialog>
+
+        </div>
       </div>
     </div>
 
