@@ -1,13 +1,31 @@
+
+ 
+ 
  Welcome to my README.A bigggg thank you to @nokira!!!!
   I used the official tutorial for this project ( I do not know if I really have to say that here
   but I just want to do it the save way).
+  
   I am still not so good at JS and I used again the code from this site:https://scripted.neocities.org/cursor-bg
   for the bubble effect.
+
+I did the graphics for the Journal app myself.
+
+In my graphics there are graphics from this great site:https://www.disneyclips.com/images/peterpan.html
+
+I used this site for the slideshow thing in the Journal app https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+I used Catbox to upload my pictures.
+
+I used pinterest as insperation and for finding Zitate.
+
+  I used this tutorial https://www.youtube.com/watch?v=gzoifHuIsrI (I did not do the dark featur and customized the code.I also did not   copy the code from the site ,I watched the tutorial while writing every word myself.)
+  
+  
   I really like this site and it also has like Music Players etc. so maybe I am getting back to that site 
   when I am more further with my project.
   For my cursor I used this site:https://www.cursors-4u.com/cursor/tinkerbell-yellow-glitter-wings
   For the little star at the top (The little Pixel Art) I used this site:https://jasminnie.weebly.com/favicons.html
-  The rest on this site is from me ! 
+ 
   Please notice that this README is not the final one but because my website is already online I do want to show 
   where I got my things from and appreaciate the work of these people.
   A better README is coming soon!
