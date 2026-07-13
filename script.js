@@ -136,17 +136,169 @@ function addWindowTapHandling(element) {
     handleWindowTap(element)
   )
 }
-
 addWindowTapHandling(document.getElementById("welcome"));
 addWindowTapHandling(document.getElementById("journalWindow"));
 
 
 
+var topBar = document.querySelector("#top")
+
+function openWindow(element) {
+  element.style.display = "flex";
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+}
+
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
+}
 
 
 
 
+function initializeWindow(journal) {
+  var screen = document.querySelector("#" + elementName)
+  addWindowTapHandling(screen)
+  makeClosable(elementName)
+  dragElement(screen)
+}
 
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+
+let notes =[]
+let editingNoteId=null
+
+function loadNotes(){
+  const savedNotes=localStorage.getItem('quickNotes')
+ return savedNotes ?JSON.parse(savedNotes):[]
+}
+
+function saveNote(event){
+  event.preventDefault()
+  const title=document.getElementById('noteTitle').ariaValueMax.trim();
+  const content=document.getElementById('noteContent').ariaValueMax.trim();
+
+  if(editingNoteId){
+    // Update existing Note
+
+    const noteIndex = notes.findIndex(note => note.id === editingNoteId)
+    notes[noteIndex] = {
+      ...notes[noteIndex],
+      title:title,
+      content:content
+    }
+  }else{
+   // Add new Note
+   notes.unshift({
+    id:generateId(),
+    title:title,
+    content:content
+  })
+  }
+
+  closeNoteDialog()
+  saveNotes()
+  renderNotes()
+}
+function generateId(){
+  return Date.now().toString()
+}
+
+function saveNotes(){
+  localStorage.setItem('quickNotes',JSON.stringify(notes))
+}
+
+function deleteNote(noteId){
+  notes=notes.filter(note => note.id != noteId)
+ saveNotes()
+ renderNotes()
+}
+
+function renderNotes(){
+  const notesContainer=document.getElementById('notesContainer');
+
+  if(notes.length===0){
+    notesContainer.innerHTML=`
+  <div class="empty-state">
+  <h2>No islands yet</h2>
+  <p>Create your first island and let the magic of words begin!</p>
+</div>`
+return
+}
+
+notesContainer.innerHTML =notes.map(note=>`
+  <div class="note-card">
+  <h3 class="note-titel2>$(note.title)</h3>
+  <p class"note-content">$(note.content)</p>
+  <div class="note-actions">
+  <button class="edit-btn" onclick="openNoteDialog(${note.id})" title="Edit Note">
+  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#191b23"><path d="M216-216h51l375-375-51-51-375 375v51Zm-72 72v-153l498-498q11-11 23.84-16 12.83-5 27-5 14.16 0 27.16 5t24 16l51 51q11 11 16 24t5 26.54q0 14.45-5.02 27.54T795-642L297-144H144Zm600-549-51-51 51 51Zm-127.95 76.95L591-642l51 51-25.95-25.05Z"/></svg>
+  </button>
+   <button class="delete-btn" onclick="deleteNoteDialog(${note.id})" title="Delete Note">
+  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#191b23"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg>
+  </button>
+  </div>
+  </div>
+  `).join('')
+}
+function openNoteDialog(noteId = null){
+  const dialog = document.getElementById('noteDialog');
+  const titleInput = document.getElementById('noteTitle');
+  const contentInput = document.getElementById('noteContent');
+  if(noteId){
+    //EditMode
+    const noteToEdit=notes.find(note=> note.id === note.Id)
+    editingNoteId = noteId
+    document.getElementById('dialogTitle').tectContent = 'Edit Note'
+    titleInput.value = noteToEdit.title
+    contentInput.value = noteToEdit.content
+  }
+    else{
+    //Add Mode
+    editingNoteId = null
+    document.getElementById('dialogTitle').textContent = 'Add New Island'
+    titleInput.value = ''
+    contentInput.value = ''
+  }
+  dialog.showModal()
+  titleInput.focus()
+}
+function closeNoteDialog(){
+  document.getElementById('noteDialog').close()
+}
+document.addEventListener('DOMContentLoaded',function(){
+ notes=loadNotes
+  renderNotes()
+  
+  
+  
+  document.getElementById('noteForm').addEventListener('submit',saveNote)
+  document.getElementById('noteDialog').addEventListener('click',function(event){
+    if(event.target===this){closeNoteDialog()}
+  })
+})
 
 
 
