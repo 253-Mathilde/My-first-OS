@@ -10,6 +10,10 @@
 
 I did the graphics for the Journal app myself.
 
+The frame for the selected icon is from here https://scripted.neocities.org/images
+
+I normally use catbox for my images but unfortunataly it had problems so I just used a random online converter but normally I prefer Catbox:https://phototourl.com/de   and https://postimages.org/  
+
 In my graphics there are graphics from this great site:https://www.disneyclips.com/images/peterpan.html
 
 I used this site for the slideshow thing in the Journal app https://www.w3schools.com/w3css/w3css_slideshow.asp
