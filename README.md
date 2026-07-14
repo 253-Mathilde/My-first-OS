@@ -20,7 +20,8 @@ I used this site for the slideshow thing in the Journal app https://www.w3school
 
 I used Catbox to upload my pictures.
 
-I used pinterest as insperation and for finding Zitate.
+I used pinterest as insperation and for finding quotes.
+I used a image from pinterest in my graphics(the "map" of Neverland) https://pin.it/68t2L17HO 
 
   I used this tutorial https://www.youtube.com/watch?v=gzoifHuIsrI (I did not do the dark featur and customized the code.I also did not   copy the code from the site ,I watched the tutorial while writing every word myself.)
   
