@@ -4,7 +4,7 @@
   <!-- Tinkerbell Yellow Glitter Wings - https://www.cursors-4u.com/cursor/tinkerbell-yellow-glitter-wings -->
   <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/tinkerbell-yellow-glitter-wings-1c14871a-32.css">
   <!-- End www.Cursors-4U.com Code -->
-
+ <link rel="icon" href="https://i.imgur.com/fLMUxOW.gif">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
@@ -56,7 +56,7 @@
 
 
     h3{
-      font-family: "Pixelify Sans", sans-serif;
+      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
       color:blue;
@@ -64,7 +64,7 @@
     }
 
     h4{
-      font-family: "Pixelify Sans", sans-serif;
+      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
       color:blue;
@@ -72,7 +72,7 @@
     }
 
     .text {
-      font-family: "Pixelify Sans", sans-serif;
+      font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
       color:blue;
@@ -80,7 +80,7 @@
     }
 
     .text2 {
-      font-family: "Pixelify Sans", sans-serif;
+      font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
       color:blue;
@@ -111,6 +111,7 @@
       background-image:url('https://cdn.phototourl.com/free/2026-07-14-2b1a5669-2c84-469f-aaef-5894c5d5ed8e.jpg');
       background-size:cover;
       padding-top:2px;
+      
     }
 
     .info {
@@ -122,7 +123,10 @@
       color: #fff;
       justify-content: space-between;
       gap: 32px;
+
     }
+
+    
 
     #welcome{
       position:absolute;
@@ -278,7 +282,9 @@
     border-radius:6px;
     border: 2px solid #fff;       
     outline: none;  
-   margin-bottom:10px;
+    left:5px;
+    position: absolute;   
+    bottom: 5px;       
 
    }
    .delete-btn{
@@ -289,18 +295,33 @@
     border-radius:6px;
     border: 2px solid #fff;       
     outline: none;  
-    float:right;
-    margin-bottom:10px;
+    right:5px;
+    position: absolute;   
+    bottom: 5px;       
 
    }
    .note-card{
-    background-color:white;
+    background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Website%20OS.jpg?raw=true');
     border-radius:16px;
     width:200px;
     height:80px;
     margin:15px;
+    position: relative;
+    
 
    }
+   .note-titel{
+    font-family:'Times New Roman', Times, serif;
+    position:absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   #notesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+    gap: 15px; /* Abstand zwischen den Karten */
+}
 
     </style>
   </head>
@@ -342,6 +363,7 @@
           <button class="add-note-btn" onclick="openNoteDialog()"></button>
           <img class="mySlides" src="https://files.catbox.moe/jt0qod.jpg" style= border-radius:16px;>
           <img class="mySlides" src="https://files.catbox.moe/ebzhfv.jpg" style= border-radius:16px;>
+          <img class="mySlides" src="https://github.com/253-Mathilde/My-first-OS/blob/main/Website%20OS%20(1).jpg?raw=true" style= border-radius:16px;>
           <img class="mySlides" src="https://files.catbox.moe/t2amjv.jpg" style= border-radius:16px;>
           <p></p>
           <div>
@@ -391,17 +413,16 @@
 
         <h1>My OS</h1>
 
-        <h3>Das ist meine Website.</h3>
+        <h3><img src="https://i.imgur.com/4mDI0Xu.gif">  Welcome to my own OS.</h3>
 
-        <h4>Sie ist noch sehr hässlslich</h4>
+        <h4>This OS is in a whole theme and so are the apps.</h4>
 
-        <p class="text">This is my text in this text I am goingt to say what I want to build becaus eI can say that because no one will look at this website because it is so ugly and unperfect but you need to trust the process.</p>
+        <p class="text">I did most of the graphics myself and gave my best.If you like my site and want to build something similar
+          than do so!<img src="https://i.imgur.com/4jU1iag.gif"> Every information you could use is in my README.You can always use that of course but please add a little bit of your 
+          personality.Thank you for having interest in my OS and stopping by on this site.<img src="https://i.imgur.com/sifDC2W.gif">
+        </p>
 
-        <p class="text2">Hi there this is another text just because I am supposed to write something about my things in my site 
-        but what should I write everytghing about me is just boring and I mean who do you think I am ?
-        I am not a celeb but anyways I am giving my best here jet alone this whole file thing etc. I do not want to talk about it! So yeah I just 
-        showed of my obsession with Pixel icons at the top like what should I write  so and what images like ,pleaseeeee I need a base to do everytghing
-        .No stoo I am not a quitter and I will not  complain! </p>
+        
       </div>
     </div>
   </div>
@@ -411,3 +432,10 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
