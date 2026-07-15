@@ -7,6 +7,9 @@ setInterval(updateTime, 1000);
 
 
 
+
+
+
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("journalWindow"));
@@ -20,6 +23,7 @@ function dragElement(element) {
   var initialY = 0;
   var currentX = 0;
   var currentY = 0;
+  
 
   // Step 3: Check if there is a special header element associated with the draggable element.
   if (document.getElementById(element.id + "header")) {
@@ -32,6 +36,7 @@ function dragElement(element) {
   function startDragging(e) {
     e = e || window.event;
     e.preventDefault();
+    
     initialX = e.clientX;
     initialY = e.clientY;
     document.onmouseup = stopDragging;
@@ -42,6 +47,7 @@ function dragElement(element) {
   function elementDrag(e) {   // FIXED NAME
     e = e || window.event;
     e.preventDefault();
+    
     currentX = initialX - e.clientX;
     currentY = initialY - e.clientY;
     initialX = e.clientX;
@@ -89,7 +95,7 @@ function openWindow(element) {
   
 
   if(element.id==="journalWindow"&& notes.length >0){
-    slideIndex=3;
+    slideIndex=4;
     showDivs(slideIndex);
   }
 }
@@ -255,7 +261,7 @@ return
 
 notesContainer.innerHTML =notes.map(note=>`
   <div class="note-card">
-  <h3 class="note-titel">${note.title}</h3>
+  <h6 class="note-titel">${note.title}</h6>
   
   <button class="edit-btn" onclick="openNoteDialog('${note.id}')" title="Edit Note">
 
