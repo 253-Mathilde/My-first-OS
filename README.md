@@ -2,9 +2,8 @@
 <img src="https://github.com/253-Mathilde/My-first-OS/blob/main/bild1%20(1).jpg?raw=true">
 <img src="https://github.com/253-Mathilde/My-first-OS/blob/main/bild2.jpg?raw=true">
 <img src="https://github.com/253-Mathilde/My-first-OS/blob/main/bild3.jpg?raw=true">
-<img src="https://github.com/253-Mathilde/My-first-OS/blob/main/bild3.jpg?raw=true">
-<img src="">
- 
+<img src="https://github.com/253-Mathilde/My-first-OS/blob/main/bild4.jpg?raw=true">
+
  
  Welcome to my README.A bigggg thank you to @nokira!!!!
   I used the official tutorial for this project ( I do not know if I really have to say that here
