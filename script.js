@@ -13,6 +13,7 @@ setInterval(updateTime, 1000);
 // Make the DIV element draggable:
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("journalWindow"));
+dragElement(document.getElementById("musicWindow"));
 
 
 
@@ -52,8 +53,16 @@ function dragElement(element) {
     currentY = initialY - e.clientY;
     initialX = e.clientX;
     initialY = e.clientY;
-    element.style.top = (element.offsetTop - currentY) + "px";
-    element.style.left = (element.offsetLeft - currentX) + "px";
+
+    var newTop = element.offsetTop - currentY;
+    var newLeft = element.offsetLeft - currentX;
+
+    
+    if (newTop < 50) {
+      newTop = 50;
+    }
+    element.style.top = newTop + "px";
+    element.style.left = newLeft + "px";
   }
 
   // Step 12: Define the `stopDragging` function
@@ -76,6 +85,18 @@ journalOpen.addEventListener("click", function() {
   openWindow(journalWindow);
 });
 
+var musicScreen = document.querySelector("#musicWindow")
+var musicScreenClose = document.querySelector("#musicclose")
+var musicScreenOpen = document.querySelector("#musicopen")
+
+musicScreenClose.addEventListener("click", function() {
+  closeWindow(musicScreen);
+});
+
+musicScreenOpen.addEventListener("click", function() {
+  openWindow(musicScreen);
+});
+
 
 
 
@@ -94,9 +115,9 @@ function openWindow(element) {
   element.style.top = element.style.left = ""; 
   
 
-  if(element.id==="journalWindow"&& notes.length >0){
-    slideIndex=4;
-    showDivs(slideIndex);
+    if(element.id === "journalWindow" && notes.length > 0){
+    slideIndex[0] = 4;
+    showDivs(slideIndex[0], 0);
   }
 }
 
@@ -107,6 +128,8 @@ welcomeScreenClose.addEventListener("click", function() {
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
 });
+
+
 
 
 
@@ -140,13 +163,14 @@ function handleIconTap(element, window) {
 
 var biggestIndex = 1;
 function handleWindowTap(element) {
-  biggestIndex += 1;
-  element.style.zIndex = biggestIndex;
-  console.log(element.id + " clicked. Z index: " + biggestIndex)
-  
-  // @nokira Just a small fix, it deselcts the icon when clicking on a window
+ if (parseInt(element.style.zIndex) < biggestIndex) {
+    biggestIndex++;
+    element.style.zIndex = biggestIndex;
+    if (topBar) topBar.style.zIndex = biggestIndex + 1;
+  }
   deselectIcon(selectedIcon);
 }
+
 
 function addWindowTapHandling(element) {
   element.addEventListener("mousedown", () =>
@@ -155,6 +179,7 @@ function addWindowTapHandling(element) {
 }
 addWindowTapHandling(document.getElementById("welcome"));
 addWindowTapHandling(document.getElementById("journalWindow"));
+addWindowTapHandling(document.getElementById("musicWindow"));
 
 
 
@@ -180,22 +205,24 @@ function initializeWindow(journal) {
 }
 
 
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex = [1,1];
+var slideId = ["mySlides", "mySlides2"]
+showDivs(1, 0);
+showDivs(1, 1);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
 }
 
-function showDivs(n) {
+function showDivs(n, no) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex[no]-1].style.display = "block";  
 }
 
 
@@ -309,6 +336,35 @@ function closeNoteDialog(){
    if(event.target===this){closeNoteDialog()}
   })
  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

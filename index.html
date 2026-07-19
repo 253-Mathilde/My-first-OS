@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+ <link rel="stylesheet" href="style.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
   <!-- Tinkerbell Yellow Glitter Wings - https://www.cursors-4u.com/cursor/tinkerbell-yellow-glitter-wings -->
   <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/tinkerbell-yellow-glitter-wings-1c14871a-32.css">
   <!-- End www.Cursors-4U.com Code -->
  <link rel="icon" href="https://i.imgur.com/PSPPuEl.gif">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -20,310 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
-  <style>
-    html {
-      overflow: scroll;
-      overflow-x: hidden;
-    }
-    ::-webkit-scrollbar {
-      width: 0; /* remove scrollbar space */
-      background: transparent; /* to make scrollbar invisible */
-    }
-    ::-webkit-scrollbar-thumb {
-      background: transparent;
-    }
 
-    ::selection {
-      /* Change highlight background color */
-      background: 	#f2f20a;
-      /* Change highlight text color */
-    }
-
-    body{
-      background-image:url('https://static.tumblr.com/12fa0f315d290bb1df15954e7a68536d/67u0lkf/NHgmnojyf/tumblr_static_tumblr_mmm5k4yecc1qmf2zwo1_r1_500.png');
-      background-repeat:repeat
-    }
-
-    h1{
-      font-family: "Audiowide", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size:90px;
-      margin-top:0;
-      text-align:center;
-      color:white;
-    }
-
-
-    h3{
-      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-      font-optical-sizing: auto;
-      font-weight: normal;
-      color:blue;
-      text-align:center;
-    }
-
-    h4{
-      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-      font-optical-sizing: auto;
-      font-weight: normal;
-      color:blue;
-      text-align:center;
-    }
-
-    .text {
-      font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
-      font-optical-sizing: auto;
-      font-weight: normal;
-      color:blue;
-      text-align:center;
-    }
-
-    .text2 {
-      font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
-      font-optical-sizing: auto;
-      font-weight: normal;
-      color:blue;
-      text-align:center;
-    }
-    .base{
-      border:solid;
-      width: 500px;
-      height:fit-content;
-      border-radius:16px; 
-      padding:16px;
-      border-color:#fff;
-      background-color: rgba(0, 0, 0, 0.125);
-
-      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
-      /* */
-      backdrop-filter: blur(50px);
-      padding-top:2px;
-    }
-
-    .base1{
-      border:solid;
-      width: 500px;
-      height:fit-content;
-      border-radius:16px; 
-      padding:16px;
-      border-color:#fff;
-      background-image:url('https://cdn.phototourl.com/free/2026-07-14-2b1a5669-2c84-469f-aaef-5894c5d5ed8e.jpg');
-      background-size:cover;
-      padding-top:2px;
-      
-    }
-
-    .info {
-      position: absolute;
-      width: 100%; 
-      display: flex; 
-      backdrop-filter: blur(5px);
-      background: rgba(0, 0, 0, 0.125);
-      color: #fff;
-      justify-content: space-between;
-      gap: 32px;
-
-    }
-
-    
-
-    #welcome{
-      position:absolute;
-      display: flex;        
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
-      margin: auto;
-      
-    }
-
-    #journalWindow{
-      position:absolute;
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
-      display: none;
-      
-    }
-
-    .symbole{
-      display: flex;
-      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
-      gap: 1px;
-      margin: 0;
-      padding: 0;
-    }
-
-    #desktopApps{
-      padding-top: 64px;
-      padding-left: 16px;
-    }
-
-    .icon.selected {
-    border: 7px double #f2f20a;  
-    border-radius:16px;
-
-    }
-    .add-note-btn{
-    background-image: url('https://files.catbox.moe/3xoizm.jpg');
-    background-size: cover; /* Passt das Bild an die Button-Größe an */
-    border-radius:5px;
-    height:40px;
-    width:100px;
-    display: flex;
-    justify-content: center;
-    border: 2px solid #fff;       
-    outline: none; 
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);    
-
-    }
-    #noteDialog{
-    border-radius: 16px;
-    border: 2px solid #fff;       
-    outline: none;
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-f1b808db-d3e0-4061-92a5-534fd8854a6a.jpg');
-    background-size: cover;
-    width:300px;
-    height:200px;        
-    
-    }
-   .w3_button_w3_display_left{
-    background-image: url('https://files.catbox.moe/x982uc.jpg');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;        
-    float: left;
-   }
-
-   .w3_button_w3_display_right{
-    background-image: url('https://files.catbox.moe/c39hwt.jpg');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;  
-    float: right;
-
-   }
-    header{
-     position: relative;
-    width: 100%;
-    display: block;}
-
-    .close-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-8fdf0b60-b81d-4064-b15e-c02382f7431b.jpg');
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;  
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-    }
-    .save-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-d6e22e70-e434-43b2-ae21-55e41308887e.jpg');
-    background-size: cover;
-    width: 80px;
-    height: 35px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;  
-    float:right;
-    }
-
-    .cancel-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-ada5051e-6707-4925-ae8a-13b5a4ab7462.jpg');
-    background-size: cover;
-    width: 80px;
-    height: 35px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;  
-    }
-    .dialog-header {
-    position: relative;
-    width: 100%;
-    
-    }
-
-
-   #noteContent{
-    width:290px  !important;
-    height:80px  !important;
-     display: block;
-    margin: 15px auto !important; 
-    text-align: center;
-    border-radius:6px;
-    background-color:#ffebef;
-   }
-
-   .dialog-title{
-    font-family:Tangerine ;
-   }
-
-   .edit-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-12452318-701b-40ca-947b-87d7fa72807a.jpg');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;  
-    left:5px;
-    position: absolute;   
-    bottom: 5px;       
-
-   }
-   .delete-btn{
-    background-image: url('https://i.postimg.cc/ZqHb5XJX/Buttons-for-website-(2).jpg');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius:6px;
-    border: 2px solid #fff;       
-    outline: none;  
-    right:5px;
-    position: absolute;   
-    bottom: 5px;       
-
-   }
-   .note-card{
-    background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Website%20OS.jpg?raw=true');
-    border-radius:16px;
-    width:200px;
-    height:80px;
-    margin:15px;
-    position: relative;
-    
-
-   }
-   .note-titel{
-    font-family:'Times New Roman', Times, serif;
-    position:absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-   }
-   #notesContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
-    gap: 15px; /* Abstand zwischen den Karten */
-}
-
-    </style>
   </head>
 
   <body>
@@ -335,20 +36,41 @@
       <p style="margin-left: 16px; ; padding: 4px 12px; position:center; ">
       - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
       </p>
-      <p id="timeElement" style="margin-right: 16px; background-color:#F5F5F5; padding: 4px 12px; border-radius: 5px; color:black;">Time</p>
+      <p id="timeElement" style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125);  padding: 4px 12px; border-radius: 16px; color:white;">Time</p>
     </div>
-
-
+   </div>
+   
+   
+   
     <div id="desktopApps">
       <!--  @nokira I removed an uncessesary DIV element (if that's okay..), and after that I put the "onclick" function to this icon, it basically run a function when it's clicked. The function called is "handleIconTap" and you pass the Icon div (this) and the name of the window you want to open (journalWindow)! -->
       <div class="icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content " onclick="handleIconTap(this, journalWindow)">
         
-        <img src="https://freepixel.art/cdn/sorted/marketplace-books-scrolls/leather_journal__with_red_leather_cover.png" height="80px" width="80px">
+        <img src="https://files.catbox.moe/ewtbef.png" height="80px" width="80px">
 
         <p style="margin: 0px; color: #fff;font-family:Tangerine; font-size:30px;">Journal</p>
       </div>
+      <div class="icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content;"  onclick="handleIconTap(this, musicWindow)" >
+     <img src="https://files.catbox.moe/ddgmrp.png" height="80px" width="80px">
+     <p style="margin: 0px; color: #fff;font-family:Tangerine; font-size:30px;">CD's</p>
+      </div>
     </div>
-
+    <div id="musicWindow">
+      <div  class="base2">
+        <div class="symbolemusic">
+          <p id="musicWindowheader">  <img src="https://i.imgur.com/Y4OL1On.gif"></p>
+          <p style="cursor: pointer" id="musicclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
+          <p style="cursor: pointer" id="musicopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
+        </div>
+       
+          <button class="musicslidesright" onclick="plusDivs(+1,1)" style="position: relative; z-index: 10;"></button>
+          <button class="musicslidesleft" onclick="plusDivs(-1,1)" style="position: relative; z-index: 10;"></button>
+           <div class="CD_i">
+          <img class="mySlides2" src="https://files.catbox.moe/g5cl68.png" style="position:absolute; top:-5px; margin-left:75px;user-select:none;">
+          <img class="mySlides2" src="https://files.catbox.moe/wvaxm3.png" style="position:absolute; top:-5px; margin-left:75px;user-select:none; ">
+        </div>
+        </div>
+    </div>
     <div id="journalWindow">
       <div  class="base1">
         <div class="symbole" >
@@ -358,8 +80,8 @@
         </div>
          <div class="hintergrund">
           <header>
-          <button class="w3_button_w3_display_left" onclick="plusDivs(-1)" ></button>
-          <button class="w3_button_w3_display_right" onclick="plusDivs(+1)"></button> 
+          <button class="w3_button_w3_display_left" onclick="plusDivs(-1,0)" ></button>
+          <button class="w3_button_w3_display_right" onclick="plusDivs(+1,0)"></button> 
           <button class="add-note-btn" onclick="openNoteDialog()"></button>
           <img class="mySlides" src="https://files.catbox.moe/jt0qod.jpg" style= border-radius:16px;>
           <img class="mySlides" src="https://files.catbox.moe/ebzhfv.jpg" style= border-radius:16px;>
@@ -426,6 +148,15 @@
       </div>
     </div>
   </div>
+  
+   <div class="search_background">
+   <form action="https://www.ecosia.org/search" method="GET"  target="_blank">
+    <div class="search">
+     <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ecosia-wordmark-light.png" style="width:50px; height:10px;">
+      <input class="search_input" type="search" placeholder="" name="q">
+    </div>
+   </form>
+   </div>
 
 
 
@@ -434,8 +165,6 @@
 </html>
 
 
-
-
-
+ 
 
 
