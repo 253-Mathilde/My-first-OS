@@ -108,12 +108,16 @@
       top: 0;                  
       left: 0; 
       width: 100%; 
-      display: flex; 
       backdrop-filter: blur(5px);
       background: rgba(0, 0, 0, 0.125);
       color: #fff;
-      justify-content: space-between;
-      gap: 32px;
+      gap: 3px;
+      flex-direction: row; 
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      margin-bottom:30px;         
+     
 
     }
 
@@ -396,6 +400,7 @@
         padding-left:0;
     }
 
+
      :root {
      --dreh-dauer: 50s; 
      }
@@ -454,50 +459,48 @@
     z-index: 10;
    }
 
-.details {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 25px;
+.loader{
+    position:fixed;
+    z-Index:99;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.loader.hidden{
+    animation: fadeOut 100s ease  forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+   100%{
+    opacity: 0;
+    visibility: hidden;
+    z-index:-1;
+   }
+    
 }
 
-.track-art {
-  margin: 25px;
-  height: 250px;
-  width: 250px;
-  background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: cover;
-  border-radius: 15%;
+
+#quotes{
+   animation: scroll-text 10s linear infinite;
+   display: inline-block;
+  white-space: nowrap;
+  margin-top: 5px;
 }
-
-.now-playing {
-  font-size: 1rem;
+@keyframes scroll-text{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
 }
-
-.track-name {
-  font-size: 3rem;
 }
-
-.track-artist {
-  font-size: 1.5rem;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-}
-
-.playpause-track, .prev-track, .next-track {
-  padding: 25px;
-  opacity: 0.8;
-
-  /* Smoothly transition the opacity */
-  transition: opacity .2s;
-}
-
-.playpause-track:hover, .prev-track:hover, .next-track:hover {
-  opacity: 1.0;
+h2[contenteditable="true"]:empty::before {
+    content: attr(data-placeholder);
+    color: rgba(255, 255, 255, 0.5); 
+    pointer-events: none;
 }

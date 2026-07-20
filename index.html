@@ -28,15 +28,40 @@
   </head>
 
   <body>
+   <div class="loader">
+   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnN2YzRsOWQzMmdidDd0cW84aW9lYXl3eTJ5ZHl4dnNkY3U0Mmd6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MydKZ8HdiPWALc0Lqf/giphy.gif" alt="">
+   </div>
+
     <div class="info" id="top">
-      <p style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-        <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style="color: white; text-decoration: none;">Mathilde 🔗 </a> 
+      <p style="  margin-left:9px; font-weight: 700; height:30px; width:fit-content; background-color: rgba(256, 256, 256, 0.125);  border-radius: 16px;">
+        <a href="https://stardance.hackclub.com/@253_Mathilde_IYKYK/projects" target="_blank" style=" padding:5px; color: white; text-decoration: none;">&nbsp; Mathilde 🔗&nbsp; </a> 
       </p>
 
-      <p style="margin-left: 16px; ; padding: 4px 12px; position:center; ">
+       <div style=" box-sizing: border-box;  height:30px; width:160px; overflow: hidden;  font-weight: 400; background-color: rgba(256, 256, 256, 0.125);  border-radius: 16px;white-space: nowrap;">
+      
+       
+      </div>
+
+     <div style="display: flex; align-items: center; padding: 0 10px ; box-sizing: border-box; height:30px; width:150px; overflow: hidden;  font-weight: 400; background-color: rgba(256, 256, 256, 0.125); border-radius: 16px;white-space: nowrap;">
+      <h2 id=timertext contenteditable="true" style="margin-top: 5px; margin: 0;"data-placeholder="00:00"></h2>
+      <button style="margin-left:auto; border-radius:6px; background-color: rgba(255, 255, 255, 0.5); border-color:white;">Start</button>
+       
+      </div>
+
+      <p style="  display: flex; justify-content:center;">
       - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
       </p>
-      <p id="timeElement" style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125);  padding: 4px 12px; border-radius: 16px; color:white;">Time</p>
+      <div style=" box-sizing: border-box;  height:30px; width:35px; overflow: hidden;font-weight: 400; background-color: rgba(256, 256, 256, 0.125); border-radius: 16px;white-space: nowrap;">
+      <img src="https://i.imgur.com/kMJykw4.gif" style="position:absolute; top:21px; left:518px; border-radius:6px;">
+       
+      </div>
+
+      <div style=" box-sizing: border-box;  height:30px; width:300px; overflow: hidden; font-weight: 400; background-color: rgba(256, 256, 256, 0.125); border-radius: 16px;white-space: nowrap;">
+       <span id="quotes" >
+        Quotes
+       </span></div>
+     
+      <p id="timeElement" style="padding:5px; margin-right:9px; height:30px; box-sizing: border-box;  background-color: rgba(256, 256, 256, 0.125);   border-radius: 16px; color:white;">&nbsp;&nbsp;Time&nbsp;&nbsp;</p>
     </div>
    </div>
    
@@ -52,7 +77,7 @@
       </div>
       <div class="icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content;"  onclick="handleIconTap(this, musicWindow)" >
      <img src="https://files.catbox.moe/ddgmrp.png" height="80px" width="80px">
-     <p style="margin: 0px; color: #fff;font-family:Tangerine; font-size:30px;">CD's</p>
+     <p style="margin: 0px; color: #fff;font-family:Tangerine; font-size:30px;">CDs</p>
       </div>
     </div>
     <div id="musicWindow">
@@ -123,7 +148,7 @@
       </div>
     </div>
 
-    <div id="jsi-rain-container" class="container"></div>
+    
 
     <div id="welcome">
       <div  class="base">
@@ -157,9 +182,6 @@
     </div>
    </form>
    </div>
-
-
-
     <script src="script.js"></script>
   </body>
 </html>

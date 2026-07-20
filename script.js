@@ -338,31 +338,61 @@ function closeNoteDialog(){
  })
 
 
+window.addEventListener("load",function(){
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+ loader.remove();
+ }, 1000);
+});
 
+setInterval(function(){
+document.getElementById("quotes").innerText = '"To live will be an awfully big adventure."';}
+,10000);
+setInterval(function(){
+document.getElementById("quotes").innerText = '"What if I fall? Oh, my darling What if you fly?"';}
+,20000);
+setInterval(function(){
+document.getElementById("quotes").innerText = '"Never break in somewhere unless you know the way out."';}
+,30000);
+setInterval(function(){
+document.getElementById("quotes").innerText = '"It is so much easier to get people to hate something than to believe something."';}
+,40000);
+setInterval(function(){
+document.getElementById("quotes").innerText = '"So come with me where dreams are born and time does not exist."';}
+,50000);
+setInterval(function(){
+document.getElementById("quotes").innerText = '"I will hold you in my heart until I can hold you in my arms."';}
+,60000);
+setInterval(function(){
+document.getElementById("quotes").innerText = '"Sometimes you have to take a leap of faith first and build your wings on the way down."';}
+,70000);
+setInterval(function(){
+document.getElementById("quotes").innerText = 'Never say goodbye,because sayong goodbye means going away and going away means forgetting."';}
+,80000);
+setInterval(function(){
+document.getElementById("quotes").innerText = 'And Peter pan chose this house because of the people there believed in him."';}
+,90000);
 
+const btn = document.querySelector('button')
+const timertext = document.querySelector("#timertext")
+let counter;
+let interval; 
+const timer = () => {
+  counter--
+  timertext.innerText =counter;
+  if( counter===0){
+    clearInterval(interval)
+   btn.disabled = false;
+   timertext.innerText = '';
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+btn.addEventListener('click',() =>{
+  counter = timertext.innerText; 
+  btn.disabled = true;
+  interval = setInterval(timer,60000)
+  
+})
 
 
 
