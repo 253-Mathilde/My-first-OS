@@ -118,6 +118,57 @@
       padding-top:2px;
       flex-shrink: 0;
     }
+   
+
+    .base4{
+      border:solid;
+      width: fit-content;
+      height:fit-content;
+      border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+      flex-shrink: 0;
+      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
+      /* */
+      backdrop-filter: blur(50px);
+      padding-top:2px;
+      z-Index:1;
+    }
+
+    .base5{
+      border:solid;
+      width: fit-content;
+      height:fit-content;
+      border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+      flex-shrink: 0;
+      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
+      /* */
+      backdrop-filter: blur(50px);
+      padding-top:2px;
+      z-Index:1;
+    }
+
+
+    .base6{
+      border:solid;
+      width: fit-content;
+      height:fit-content;
+      border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+      flex-shrink: 0;
+      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
+      /* */
+      backdrop-filter: blur(50px);
+      padding-top:2px;
+      z-Index:1;
+    }
+
 
     .info {
       position: absolute;
@@ -137,7 +188,41 @@
 
     }
 
-    
+    #tvWindow{
+      position:absolute;
+      display: flex;        
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
+      margin: auto;
+      display: none; 
+    }
+
+
+
+     #gameWindow{
+      position:absolute;
+      display: flex;        
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
+      margin: auto;
+      display: none; 
+    }
+
+
+    #galerieWindow{
+      position:absolute;
+      display: flex;        
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
+      margin: auto;
+      display: none; 
+    }
 
     #welcome{
       position:absolute;
@@ -196,6 +281,35 @@
       padding: 0;
       
     }
+
+    .symbolegalerie{
+      display: flex;
+      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .symbolegame{
+      display: flex;
+      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+
+   .symboletv{
+      display: flex;
+      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      
+    }
+
 
 
     #desktopApps{
@@ -429,10 +543,11 @@
         background-color: rgba(256, 256, 256, 0.125);
         border-radius:16px;
         width: fit-content;
-        height:fit-content;
+        height:500px;
         margin-top:80px;
         padding-top: 0px;
         padding-left:0;
+        overflow-y: auto;
     }
 
 
@@ -555,3 +670,53 @@ h2[contenteditable="true"]:empty::before {
     position: relative;
     z-index: 10;
    }
+
+   #galerieWindowheader{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #galerieclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #galerieopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+
+   #gameWindowheader{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #gameclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #gameopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+
+    #tvWindowheader{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #tvclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #tvopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+
+

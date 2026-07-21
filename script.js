@@ -15,6 +15,9 @@ dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("journalWindow"));
 dragElement(document.getElementById("musicWindow"));
 dragElement(document.getElementById("mapWindow"));
+dragElement(document.getElementById("galerieWindow"));
+dragElement(document.getElementById("gameWindow"));
+dragElement(document.getElementById("tvWindow"));
 
 
 
@@ -113,6 +116,47 @@ mapScreenOpen.addEventListener("click", function() {
 
 
 
+var galerieScreen = document.querySelector("#galerieWindow")
+var galerieScreenClose = document.querySelector("#galerieclose")
+var galerieScreenOpen = document.querySelector("#galerieopen")
+
+galerieScreenClose.addEventListener("click", function() {
+  closeWindow(galerieScreen);
+});
+
+galerieScreenOpen.addEventListener("click", function() {
+  openWindow(galerieScreen);
+});
+
+
+
+var gameScreen = document.querySelector("#gameWindow")
+var gameScreenClose = document.querySelector("#gameclose")
+var gameScreenOpen = document.querySelector("#gameopen")
+
+gameScreenClose.addEventListener("click", function() {
+  closeWindow(gameScreen);
+});
+
+gameScreenOpen.addEventListener("click", function() {
+  openWindow(gameScreen);
+});
+
+
+
+
+
+var tvScreen = document.querySelector("#tvWindow")
+var tvScreenClose = document.querySelector("#tvclose")
+var tvScreenOpen = document.querySelector("#tvopen")
+
+tvScreenClose.addEventListener("click", function() {
+  closeWindow(tvScreen);
+});
+
+tvScreenOpen.addEventListener("click", function() {
+  openWindow(tvScreen);
+});
 
 
 
@@ -198,6 +242,9 @@ addWindowTapHandling(document.getElementById("welcome"));
 addWindowTapHandling(document.getElementById("journalWindow"));
 addWindowTapHandling(document.getElementById("musicWindow"));
 addWindowTapHandling(document.getElementById("mapWindow"));
+addWindowTapHandling(document.getElementById("galerieWindow"));
+addWindowTapHandling(document.getElementById("gameWindow"));
+addWindowTapHandling(document.getElementById("tvWindow"));
 
 
 
