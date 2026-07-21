@@ -28,7 +28,7 @@
       font-size:90px;
       margin-top:0;
       text-align:center;
-      color:white;
+      color:blue;
     }
 
 
@@ -65,18 +65,20 @@
     }
     .base{
       border:solid;
-      width: 500px;
-      height:fit-content;
+      width: 900px;
+      height:450px;
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-color: rgba(0, 0, 0, 0.125);
+      background-color: rgba(237, 237, 183, 0.994);
       flex-shrink: 0;
       /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
       /* */
       backdrop-filter: blur(50px);
       padding-top:2px;
       z-Index:1;
+      overflow: hidden;
+      overflow-y: auto
     }
 
     .base3{
@@ -232,6 +234,7 @@
       right:80px;
       bottom:80px;
       margin: auto;
+      overflow-y: auto;
       
     }
 
@@ -718,5 +721,47 @@ h2[contenteditable="true"]:empty::before {
     position: relative;
     z-index: 10;
    }
+/*made with AI*/
+.grid-container {
+  overflow-y: auto;
+  display: grid;
+  /* Definiert 3 Spalten (Außenbereiche quadratisch, Mitte flexibel) */
+  grid-template-columns: 80px 1fr 80px;
+  /* Definiert die Zeilenhöhen basierend auf dem Layout */
+  grid-template-rows: auto auto auto auto;
+  gap: 15px; /* Abstand zwischen den Boxen */
+
+  /* Visuelle Zuordnung der Boxen (Sonderzeichen entfernt) */
+  grid-template-areas: 
+    "av-left   title     av-right"
+    "box-left  box-mid   box-right"
+    "long-bar  long-bar  box-right"
+    "foot-left foot-mid  foot-right";
+}
+
+/* Zuweisung der einzelnen Elemente zu den Bereichen */
+.avatar-left   { grid-area: av-left; }
+.title         { grid-area: title; }
+.avatar-right  { grid-area: av-right; }
+.box-left      { grid-area: box-left; }
+.box-center    { grid-area: box-mid; }
+/* Die rechte Box geht über zwei Zeilen */
+.box-right     { grid-area: box-right; } 
+.long-bar      { grid-area: long-bar; }
+.footer-left   { grid-area: foot-left; }
+.footer-center { grid-area: foot-mid; }
+.footer-right  { grid-area: foot-right; }
 
 
+/* Hintergrundfarbe für die Boxen zum Testen */
+.grid-container > div {
+  background:none;
+  border: none;
+ outline:none;
+  min-height: 40px;
+  padding: 10px;
+}
+/*the ai part ends*/
+.avatar-right{
+  margin-left:0px;
+}
