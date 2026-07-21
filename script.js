@@ -14,6 +14,7 @@ setInterval(updateTime, 1000);
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("journalWindow"));
 dragElement(document.getElementById("musicWindow"));
+dragElement(document.getElementById("mapWindow"));
 
 
 
@@ -96,6 +97,22 @@ musicScreenClose.addEventListener("click", function() {
 musicScreenOpen.addEventListener("click", function() {
   openWindow(musicScreen);
 });
+
+var mapScreen = document.querySelector("#mapWindow")
+var mapScreenClose = document.querySelector("#mapclose")
+var mapScreenOpen = document.querySelector("#mapopen")
+
+mapScreenClose.addEventListener("click", function() {
+  closeWindow(mapScreen);
+});
+
+mapScreenOpen.addEventListener("click", function() {
+  openWindow(mapScreen);
+});
+
+
+
+
 
 
 
@@ -180,6 +197,7 @@ function addWindowTapHandling(element) {
 addWindowTapHandling(document.getElementById("welcome"));
 addWindowTapHandling(document.getElementById("journalWindow"));
 addWindowTapHandling(document.getElementById("musicWindow"));
+addWindowTapHandling(document.getElementById("mapWindow"));
 
 
 

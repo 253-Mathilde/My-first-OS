@@ -79,6 +79,22 @@
       z-Index:1;
     }
 
+    .base3{
+      border:solid;
+      width: fit-content;
+      height:fit-content;
+      border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+      flex-shrink: 0;
+      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
+      /* */
+      backdrop-filter: blur(50px);
+      padding-top:2px;
+      z-Index:1;
+    }
+
     .base1{
       border:solid;
       width: 500px;
@@ -134,6 +150,18 @@
       
     }
 
+    #mapWindow{
+      position:absolute;
+      display: flex;        
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
+      margin: auto;
+      display: none; 
+      
+    }
+
     #journalWindow{
       position:absolute;
       top: 80px; 
@@ -160,7 +188,14 @@
       padding: 0;
       margin-left:80px;
     }
-
+  .symbolemap{
+      display: flex;
+      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      
+    }
 
 
     #desktopApps{
@@ -504,3 +539,19 @@ h2[contenteditable="true"]:empty::before {
     color: rgba(255, 255, 255, 0.5); 
     pointer-events: none;
 }
+
+#mapWindowheader{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #mapclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #mapopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }

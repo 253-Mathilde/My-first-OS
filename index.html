@@ -50,10 +50,10 @@
       <p style="  display: flex; justify-content:center;">
       - <img src="https://media.tumblr.com/tumblr_lkl5p4GxXx1qfamg6.gif" width="16px" height="16px"> -
       </p>
-      <div style=" box-sizing: border-box;  height:30px; width:35px; overflow: hidden;font-weight: 400; background-color: rgba(256, 256, 256, 0.125); border-radius: 16px;white-space: nowrap;">
-      <img src="https://i.imgur.com/kMJykw4.gif" style="position:absolute; top:21px; left:518px; border-radius:6px;">
+      <div class="icon" style=" display: flex; justify-content: center; align-items: center; position:relative; box-sizing: border-box;  height:30px; width:35px; overflow: hidden;font-weight: 400; background-color: rgba(256, 256, 256, 0.125); border-radius: 16px;white-space: nowrap;" onclick="handleIconTap(this, mapWindow)">
+     <img  src="https://i.imgur.com/kMJykw4.gif" style="border-radius: 6px;"> </div>
        
-      </div>
+      
 
       <div style=" box-sizing: border-box;  height:30px; width:300px; overflow: hidden; font-weight: 400; background-color: rgba(256, 256, 256, 0.125); border-radius: 16px;white-space: nowrap;">
        <span id="quotes" >
@@ -68,7 +68,7 @@
    
     <div id="desktopApps">
       <!--  @nokira I removed an uncessesary DIV element (if that's okay..), and after that I put the "onclick" function to this icon, it basically run a function when it's clicked. The function called is "handleIconTap" and you pass the Icon div (this) and the name of the window you want to open (journalWindow)! -->
-      <div class="icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content " onclick="handleIconTap(this, journalWindow)">
+      <div class="icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content " onclick="handleIconTap(this,journalWindow)">
         
         <img src="https://files.catbox.moe/ewtbef.png" height="80px" width="80px">
 
@@ -79,6 +79,19 @@
      <p style="margin: 0px; color: #fff;font-family:Tangerine; font-size:30px;">CDs</p>
       </div>
     </div>
+
+  <div id="mapWindow">
+      <div  class="base3">
+        <div class="symbolemap">
+          <p id="mapWindowheader">  <img src="https://i.imgur.com/Y4OL1On.gif"></p>
+          <p style="cursor: pointer" id="mapclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
+          <p style="cursor: pointer" id="mapopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
+        </div>
+       <img src="https://github.com/253-Mathilde/My-first-OS/blob/main/Design%20ohne%20Titel%20(7).jpg?raw=true"style="width:600px; border-radius:16px;">
+          
+        </div>
+    </div>
+
     <div id="musicWindow">
       <div  class="base2">
         <div class="symbolemusic">
@@ -107,10 +120,10 @@
           <button class="w3_button_w3_display_left" onclick="plusDivs(-1,0)" ></button>
           <button class="w3_button_w3_display_right" onclick="plusDivs(+1,0)"></button> 
           <button class="add-note-btn" onclick="openNoteDialog()"></button>
-          <img class="mySlides" src="https://files.catbox.moe/jt0qod.jpg" style= border-radius:16px;>
-          <img class="mySlides" src="https://files.catbox.moe/ebzhfv.jpg" style= border-radius:16px;>
+          <img class="mySlides" src="https://files.catbox.moe/jt0qod.jpg" style= "border-radius:16px;">
+          <img class="mySlides" src="https://files.catbox.moe/ebzhfv.jpg" style= "border-radius:16px;">
           <img class="mySlides" src="https://github.com/253-Mathilde/My-first-OS/blob/main/Website%20OS%20(1).jpg?raw=true" style= border-radius:16px;>
-          <img class="mySlides" src="https://files.catbox.moe/t2amjv.jpg" style= border-radius:16px;>
+          <img class="mySlides" src="https://files.catbox.moe/t2amjv.jpg" style="border-radius:16px;">
           <p></p>
           <div>
            
