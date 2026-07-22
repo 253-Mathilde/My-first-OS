@@ -28,7 +28,7 @@
       font-size:90px;
       margin-top:0;
       text-align:center;
-      color:blue;
+      color:white;
     }
 
 
@@ -45,7 +45,8 @@
       font-optical-sizing: auto;
       font-weight: normal;
       color:blue;
-      text-align:center;
+      margin-right:-400px;
+      width:500px;
     }
 
     .text {
@@ -70,7 +71,7 @@
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-color: rgba(237, 237, 183, 0.994);
+      background-color: rgba(0, 0, 0, 0.125);
       flex-shrink: 0;
       /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
       /* */
@@ -764,4 +765,9 @@ h2[contenteditable="true"]:empty::before {
 /*the ai part ends*/
 .avatar-right{
   margin-left:0px;
+}
+
+.box-center{
+  width:500px;
+  margin-right:0px;
 }
