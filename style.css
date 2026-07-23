@@ -124,18 +124,18 @@
    
 
     .base4{
-      border:solid;
-      width: fit-content;
-      height:fit-content;
+      border:none;
+      width: 600px;
+      height:400px;
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-color: rgba(0, 0, 0, 0.125);
+      background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Design%20ohne%20Titel%20(11).png?raw=true');
       flex-shrink: 0;
       /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
       /* */
-      backdrop-filter: blur(50px);
-      padding-top:2px;
+     background-repeat:no-repeat;
+      
       z-Index:1;
     }
 
@@ -292,6 +292,8 @@
       gap: 1px;
       margin: 0;
       padding: 0;
+      margin-left:80px;
+
       
     }
 
@@ -447,7 +449,7 @@
 
    }
    .delete-btn{
-    background-image: url('https://i.postimg.cc/ZqHb5XJX/Buttons-for-website-(2).jpg');
+    background-image: url('https://github.com/253-Mathilde/My-first-OS/blob/main/Buttons%20for%20website%20(2).jpg?raw=true');
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -773,4 +775,13 @@ h2[contenteditable="true"]:empty::before {
   top:250px;
   left:250px;
   margin:0px;
+}
+
+.galerieslidesleft{
+background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Pfeil%20nach%20links%20Kamera.png?raw=true');
+border:none;
+outline:none;
+position:absolute;
+left:200px;
+top:350px;
 }
