@@ -722,7 +722,7 @@ h2[contenteditable="true"]:empty::before {
     position: relative;
     z-index: 10;
    }
-/*made with AI*/
+/*made with help from AI*/
 .grid-container {
   overflow-y: auto;
   display: grid;
@@ -762,12 +762,15 @@ h2[contenteditable="true"]:empty::before {
   min-height: 40px;
   padding: 10px;
 }
-/*the ai part ends*/
+/*the ai help  part ends*/
 .avatar-right{
   margin-left:0px;
 }
 
 .box-center{
+  position:absolute;
   width:500px;
-  margin-right:0px;
+  top:250px;
+  left:250px;
+  margin:0px;
 }
