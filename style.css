@@ -28,7 +28,7 @@
       font-size:90px;
       margin-top:0;
       text-align:center;
-      color:white;
+      color:#e7bd44;
     }
 
 
@@ -36,7 +36,7 @@
       font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
-      color:blue;
+      color:#e7bd44;
       text-align:center;
     }
 
@@ -44,7 +44,7 @@
       font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
-      color:blue;
+      color:#e7bd44;
       margin-right:-400px;
       width:500px;
     }
@@ -53,7 +53,7 @@
       font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
-      color:blue;
+      color:#e7bd44;
       text-align:center;
     }
 
@@ -61,7 +61,7 @@
       font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
-      color:blue;
+      color:#e7bd44;
       text-align:center;
     }
     .base{
@@ -70,7 +70,7 @@
       height:450px;
       border-radius:16px; 
       padding:16px;
-      border-color:#fff;
+      border-color:#e7bd44;
       background-color: rgba(0, 0, 0, 0.125);
       flex-shrink: 0;
       /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
@@ -777,11 +777,38 @@ h2[contenteditable="true"]:empty::before {
   margin:0px;
 }
 
-.galerieslidesleft{
-background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Pfeil%20nach%20links%20Kamera.png?raw=true');
-border:none;
-outline:none;
-position:absolute;
-left:200px;
-top:350px;
+.button-left{
+  background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Pfeil%20nach%20links%20Kamera.png?raw=true');
+  width:40px;
+  height:40px;
+  border:none;
+  outline:none;
+  position:absolute;
+  top:268px;
+  left:436px;
+  border-radius:50%;
+}
+
+
+.button-right{
+  background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Pfeil%20nach%20links%20Kamera.png?raw=true');
+  width:40px;
+  height:40px;
+  border:none;
+  outline:none;
+  position:absolute;
+  top:268px;
+  left:507px;
+  transform:scaleX(-1);
+  border-radius:50%;
+}
+
+
+.mySlides3{
+  height:217px;
+  width:290px;
+  position:absolute;
+  left:104px;
+  top:90px;
+  border-radius:6px;
 }

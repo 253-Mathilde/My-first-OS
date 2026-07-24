@@ -270,10 +270,11 @@ function initializeWindow(journal) {
 }
 
 
-var slideIndex = [1,1];
-var slideId = ["mySlides", "mySlides2"]
+var slideIndex = [1,1,1];
+var slideId = ["mySlides", "mySlides2","mySlides3"]
 showDivs(1, 0);
 showDivs(1, 1);
+showDivs(1, 2);
 
 function plusDivs(n, no) {
   showDivs(slideIndex[no] += n, no);
