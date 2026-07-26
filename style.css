@@ -808,3 +808,13 @@ h2[contenteditable="true"]:empty::before {
   top:90px;
   border-radius:6px;
 }
+
+
+.vd{
+  width:382px;
+  height:320px;
+  margin-left:48px;
+  border-radius:30px;
+  overflow: hidden;
+  margin-top:-5px;
+}
