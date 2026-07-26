@@ -165,6 +165,7 @@
       padding-top:2px;
       z-Index:1;
       background-repeat:no-repeat;
+      position: relative;
     }
 
 
@@ -309,7 +310,9 @@
       margin: 0;
       padding: 0;
       margin-left:50px;
-      
+      position: relative;
+      z-index: 2; 
+      pointer-events: none;
     }
 
 
@@ -709,16 +712,19 @@ h2[contenteditable="true"]:empty::before {
     user-select:none;
     position: relative;
     z-index: 10;
+    pointer-events: auto; 
    }
    #tvclose{
     user-select:none;
     position: relative;
     z-index: 10;
+    pointer-events: auto; 
    }
    #tvopen{
     user-select:none;
     position: relative;
     z-index: 10;
+    pointer-events: auto; 
    }
 /*made with help from AI*/
 .grid-container {
@@ -817,4 +823,6 @@ h2[contenteditable="true"]:empty::before {
   border-radius:30px;
   overflow: hidden;
   margin-top:-5px;
+  z-index:1;
 }
+
