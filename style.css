@@ -157,19 +157,14 @@
 
 
     .base6{
-      border:solid;
-      width: fit-content;
-      height:fit-content;
-      border-radius:16px; 
-      padding:16px;
-      border-color:#fff;
-      background-color: rgba(0, 0, 0, 0.125);
-      flex-shrink: 0;
-      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
-      /* */
-      backdrop-filter: blur(50px);
+      border:none;
+      outline:none;
+      width: 600px;
+      height:500px;
+      background-image:url('https://i.postimg.cc/x8CVGQ85/tv.png');
       padding-top:2px;
       z-Index:1;
+      background-repeat:no-repeat;
     }
 
 
@@ -309,10 +304,11 @@
 
    .symboletv{
       display: flex;
-      justify-content: flex-start; /* Verteilt die Bilder gleichmäßig mit Abstand */
+      justify-content: flex-start; 
       gap: 1px;
       margin: 0;
       padding: 0;
+      margin-left:50px;
       
     }
 

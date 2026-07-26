@@ -166,6 +166,7 @@ var welcomeScreenClose = document.querySelector("#welcomeclose")
 var welcomeScreenOpen = document.querySelector("#welcomeopen")
 function closeWindow(element) {
   element.style.display = "none"
+  if (element.id === "tvWindow") element.querySelector("iframe").src = "";
 }
 function openWindow(element) {
   element.style.display = "flex"
@@ -175,7 +176,7 @@ function openWindow(element) {
  
   element.style.top = element.style.left = ""; 
   
-
+    if (element.id === "tvWindow") element.querySelector("iframe").src = "https://www.youtube-nocookie.com/embed/F8yQ8oKPXa0?si=iX7_ZonswRzdseuh";
     if(element.id === "journalWindow" && notes.length > 0){
     slideIndex[0] = 4;
     showDivs(slideIndex[0], 0);
