@@ -841,6 +841,7 @@ h2[contenteditable="true"]:empty::before {
   animation: slideright 600s infinite linear;
   bottom:0;
   background-size:cover;
+  z-index:1;
 }
 
 
@@ -859,7 +860,7 @@ h2[contenteditable="true"]:empty::before {
   width:50px;
   bottom:0;
   position:absolute;
-  z-index: 10;
+  z-index: 30;
 }
 
 .obstacle{
@@ -868,7 +869,16 @@ h2[contenteditable="true"]:empty::before {
   height:60px;
   position:absolute;
   bottom:0;
-  z-index: 10;
+  z-index: 20;
+}
+
+.grid{
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 20;
 }
 
 
