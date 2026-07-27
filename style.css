@@ -141,8 +141,8 @@
 
     .base5{
       border:solid;
-      width: fit-content;
-      height:fit-content;
+      width: 600px;
+      height:700px;
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
@@ -825,4 +825,50 @@ h2[contenteditable="true"]:empty::before {
   margin-top:-5px;
   z-index:1;
 }
+
+
+
+
+
+
+
+
+#background{
+  position:absolute;
+  height: 700px;
+  width:600px;
+  background-image:url('https://static0.anpoimages.com/wordpress/wp-content/uploads/2024/05/gendino-5-opening-scene.png?q=49&fit=contain&w=2557&h=1258&dpr=2');
+  animation: slideright 600s infinite linear;
+  bottom:0;
+  background-size:cover;
+}
+
+
+
+@keyframes slideright {
+ from{
+  background-position:7000% ;
+ }
+ to{ background-position:0%;}
+}
+
+
+.wendy{
+  background-image: url('https://files.catbox.moe/u52u37.png');
+  height:70px;
+  width:50px;
+  bottom:0;
+  position:absolute;
+  z-index: 10;
+}
+
+.obstacle{
+  background-image: url('https://files.catbox.moe/n5f03w.png');
+  width:60px;
+  height:60px;
+  position:absolute;
+  bottom:0;
+  z-index: 10;
+}
+
 
