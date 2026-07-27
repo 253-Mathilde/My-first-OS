@@ -142,7 +142,7 @@
     .base5{
       border:solid;
       width: 600px;
-      height:700px;
+      height:200px;
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
@@ -835,9 +835,9 @@ h2[contenteditable="true"]:empty::before {
 
 #background{
   position:absolute;
-  height: 700px;
+  height: 200px;
   width:600px;
-  background-image:url('https://static0.anpoimages.com/wordpress/wp-content/uploads/2024/05/gendino-5-opening-scene.png?q=49&fit=contain&w=2557&h=1258&dpr=2');
+  background-image:url('https://files.catbox.moe/xqsbzm.png');
   animation: slideright 600s infinite linear;
   bottom:0;
   background-size:cover;

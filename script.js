@@ -497,7 +497,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 20)
       }
       //move up
-      position += 30
+      position += 20
       count++
       position = position * gravity
       wendy.style.bottom = position + 'px'
