@@ -833,52 +833,41 @@ h2[contenteditable="true"]:empty::before {
 
 
 
-#background{
-  position:absolute;
-  height: 200px;
-  width:600px;
-  background-image:url('https://files.catbox.moe/xqsbzm.png');
-  animation: slideright 600s infinite linear;
-  bottom:0;
-  background-size:cover;
-  z-index:1;
+
+#background {
+    position: absolute;
+    background-image: url('https://files.catbox.moe/xqsbzm.png');
+    height: 200px;
+    width: 100%;
+    animation: slideright 600s infinite linear;
+    bottom: 0;
 }
 
+.wendy {
+    background-image: url('https://files.catbox.moe/u52u37.png');
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+.obstacle {
+    background-image: url('https://files.catbox.moe/n5f03w.png');
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
 
 
 @keyframes slideright {
- from{
-  background-position:7000% ;
- }
- to{ background-position:0%;}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 0; 
+    }
 }
 
-
-.wendy{
-  background-image: url('https://files.catbox.moe/u52u37.png');
-  height:70px;
-  width:50px;
-  bottom:0;
-  position:absolute;
-  z-index: 30;
-}
-
-.obstacle{
-  background-image: url('https://files.catbox.moe/n5f03w.png');
-  width:60px;
-  height:60px;
-  position:absolute;
-  bottom:0;
-  z-index: 20;
-}
-
-.grid{
-  position: absolute;
-  bottom: 0;
-  width: 600px;
-  height: 200px;
-  overflow: hidden;
-  z-index: 20;
-}
 
 
