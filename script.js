@@ -458,80 +458,63 @@ btn.addEventListener('click',() =>{
   counter = timertext.innerText; 
   btn.disabled = true;
   interval = setInterval(timer,60000)
-  
-})
-document.addEventListener('DOMContentLoaded', () => {
-  const wendy = document.querySelector('.wendy')
-  const grid = document.querySelector('.grid')
-  const alert = document.getElementById('alert')
-  let gravity = 0.9
-  let isJumping = false
-  let isGameOver = false
+  }); 
 
-  function control(e) {
-    if (e.code === "Space") {
-      if (!isJumping) {
-        jump()
-      }
+
+var block = document.getElementById("block");
+var hole = document.getElementById("hole");
+var character = document.getElementById("character");
+var jumping = 0;
+var counter = 0;
+
+hole.addEventListener('animationiteration', () => {
+    var random = -((Math.random()*300)+150);
+    hole.style.top = random + "px";
+    counter++;
+});
+setInterval(function(){
+    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    if(jumping==0){
+        character.style.top = (characterTop+3)+"px";
     }
-  }
-  document.addEventListener('keydown', control)
+    var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
+    var cTop = -(500-characterTop);
+    if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
+        alert("Game over. Score: "+(counter-1));
+        character.style.top = 100 + "px";
+        counter=0;
+    }
+},10);
 
-  let position = 0
-  function jump() {
-    isJumping = true
-    let count = 0
-    let timerId = setInterval(function () {
-      //move down
-      if (count === 15) {
-        clearInterval(timerId)
-        let downTimerId = setInterval(function () {
-          if (count === 0) {
-            clearInterval(downTimerId)
-            isJumping = false
-          }
-          position -= 5
-          count--
-          position = position * gravity
-          wendy.style.bottom = position + 'px'
-        }, 20)
-      }
-      //move up
-      position += 20
-      count++
-      position = position * gravity
-      wendy.style.bottom = position + 'px'
-    }, 20)
-  }
-
-  function generateObstacles() {
-    if (!isGameOver) {
-      let randomTime = Math.random() * 4000
-      let obstaclePosition = 1000
-      const obstacle = document.createElement('div')
-      obstacle.classList.add('obstacle')
-      grid.appendChild(obstacle)
-      obstacle.style.left = obstaclePosition + 'px'
-
-      let timerId = setInterval(function () {
-        if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
-          clearInterval(timerId)
-          alert.innerHTML = 'Game Over'
-          isGameOver = true
-          //remove all children
-          while (grid.firstChild) {
-            grid.removeChild(grid.lastChild)
-          }
+function jump(){
+    jumping = 1;
+    let jumpCount = 0;
+    var jumpInterval = setInterval(function(){
+        var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+        if((characterTop>6)&&(jumpCount<15)){
+            character.style.top = (characterTop-5)+"px";
         }
-        obstaclePosition -= 10
-        obstacle.style.left = obstaclePosition + 'px'
-      }, 20)
-      
-      setTimeout(generateObstacles, randomTime)
-    }
-  }
-  generateObstacles()
-})
+        if(jumpCount>20){
+            clearInterval(jumpInterval);
+            jumping=0;
+            jumpCount=0;
+        }
+        jumpCount++;
+    },10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -585,8 +568,8 @@ function bubba() { if (document.getElementById) {
     div.left="0px";
     div.bottom="1px";
     div.right="0px";
-    div.borderLeft="1px solid "+colours[3];
-    div.borderRight="1px solid "+colours[1];
+    div.borderLeft="1px solid "+colours[3]; // KORRIGIERT
+    div.borderRight="1px solid "+colours[1]; // KORRIGIERT
 
     div=createDiv("auto", "auto");
     rats.appendChild(div);
@@ -594,9 +577,9 @@ function bubba() { if (document.getElementById) {
     div.top="0px";
     div.left="1px";
     div.right="1px";
-    div.bottom="0px";   // FIXED SEMIKOLON
-    div.borderTop="1px solid "+colours[0];
-    div.borderBottom="1px solid "+colours[2];
+    div.bottom="0px";   
+    div.borderTop="1px solid "+colours[0]; // KORRIGIERT
+    div.borderBottom="1px solid "+colours[2]; // KORRIGIERT
 
     div=createDiv("auto", "auto");
     rats.appendChild(div);
@@ -605,7 +588,7 @@ function bubba() { if (document.getElementById) {
     div.right="1px";
     div.bottom="1px";
     div.top="1px";
-    div.backgroundColor=colours[4];
+    div.backgroundColor=colours[4]; // KORRIGIERT
     if (ie_version && ie_version<10) div.filter="alpha(opacity=50)";
     else div.opacity=0.5;
 
@@ -622,7 +605,7 @@ function bubble() {
     bubb[c].left=(bubbx[c]=Math.floor(swide/6+Math.random()*swide/1.5)-10)+"px";
     bubb[c].top=(bubby[c]=shigh)+"px";
     bubb[c].width="3px";
-    bubb[c].height="3px";   // FIXED SEMIKOLON
+    bubb[c].height="3px";   
     bubb[c].visibility="visible";
     bubbs[c]=3;
     break;
@@ -684,3 +667,4 @@ function createDiv(height, width) {
   div.style.backgroundColor="transparent";
   return (div);
 }
+

@@ -153,6 +153,7 @@
       backdrop-filter: blur(50px);
       padding-top:2px;
       z-Index:1;
+      overflow: hidden;
     }
 
 
@@ -828,46 +829,41 @@ h2[contenteditable="true"]:empty::before {
 
 
 
+#block{
+width:50px;
+height:700px;
+background-color: aquamarine;
+position:relative;
+left:400px;
+animation:block 3s infinite ;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
 
+#hole{
+  width:50px;
+  height:70px;
+  background-color: #fff;
+  position:relative;
+  left:400px;
+  top:-700px;
+  animation:block 3s infinite ;
+}
 
-
-
-
-
-#background {
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: red;
     position: absolute;
-    background-image: url('https://files.catbox.moe/xqsbzm.png');
-    height: 200px;
-    width: 100%;
-    animation: slideright 600s infinite linear;
-    bottom: 0;
-}
-
-.wendy {
-    background-image: url('https://files.catbox.moe/u52u37.png');
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    bottom: 0;
-}
-
-.obstacle {
-    background-image: url('https://files.catbox.moe/n5f03w.png');
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
+    top: 100px;
+    border-radius: 50%;
 }
 
 
-@keyframes slideright {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: -10000px 0; 
-    }
-}
+
+
 
 
 
