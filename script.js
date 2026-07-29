@@ -468,7 +468,7 @@ var gamecounter = 0;
 
 hole.addEventListener('animationiteration', () => {
    
-    var randomHeight = Math.floor(Math.random() * 200) + 90;
+    var randomHeight = Math.floor(Math.random() * 299) + 150;
     
   
     block.style.height = randomHeight + "px";
