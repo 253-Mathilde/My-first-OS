@@ -141,15 +141,14 @@
 
     .base5{
       border:solid;
-      width: 600px;
-      height:200px;
+      width: 400px;
+      height:500px;
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
       background-color: rgba(0, 0, 0, 0.125);
       flex-shrink: 0;
-      /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
-      /* */
+      position:relative;
       backdrop-filter: blur(50px);
       padding-top:2px;
       z-Index:1;
@@ -831,11 +830,12 @@ h2[contenteditable="true"]:empty::before {
 
 #block{
 width:50px;
-height:700px;
+height:200px;
 background-color: aquamarine;
 position:relative;
 left:400px;
-animation:block 3s infinite ;
+animation:block 2s infinite ;
+top:300px;
 }
 @keyframes block{
     0%{left:400px}
@@ -844,12 +844,12 @@ animation:block 3s infinite ;
 
 #hole{
   width:50px;
-  height:70px;
-  background-color: #fff;
+  height:300px;
+  background-color:transparent;
   position:relative;
   left:400px;
-  top:-700px;
-  animation:block 3s infinite ;
+  top:0px;
+  animation:block 2s infinite ;
 }
 
 #character{

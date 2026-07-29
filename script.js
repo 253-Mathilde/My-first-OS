@@ -464,47 +464,51 @@ btn.addEventListener('click',() =>{
 var block = document.getElementById("block");
 var hole = document.getElementById("hole");
 var character = document.getElementById("character");
-var jumping = 0;
-var counter = 0;
+var gamecounter = 0;
 
 hole.addEventListener('animationiteration', () => {
-    var random = -((Math.random()*300)+150);
-    hole.style.top = random + "px";
-    counter++;
+   
+    var randomHeight = Math.floor(Math.random() * 200) + 90;
+    
+  
+    block.style.height = randomHeight + "px";
+    block.style.top = (500 - randomHeight) + "px"; 
+    
+  
+    hole.style.height = (500 - randomHeight) + "px";
+    hole.style.top = "0px"; 
+    
+    gamecounter++;
 });
+
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    if(jumping==0){
-        character.style.top = (characterTop+3)+"px";
-    }
+    character.style.top = (characterTop + 3) + "px"; 
+    
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
-    var cTop = -(500-characterTop);
-    if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
-        alert("Game over. Score: "+(counter-1));
-        character.style.top = 100 + "px";
-        counter=0;
+    var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
+    
+   
+    if (characterTop > 480 || (blockLeft < 20 && blockLeft > -50 && (characterTop + 20 > blockTop))) {
+        character.style.top = 100 + "px"; 
+        gamecounter = 0;
     }
-},10);
+}, 10);
 
 function jump(){
-    jumping = 1;
-    let jumpCount = 0;
-    var jumpInterval = setInterval(function(){
-        var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-        if((characterTop>6)&&(jumpCount<15)){
-            character.style.top = (characterTop-5)+"px";
-        }
-        if(jumpCount>20){
-            clearInterval(jumpInterval);
-            jumping=0;
-            jumpCount=0;
-        }
-        jumpCount++;
-    },10);
+    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    if(characterTop > 30){
+        character.style.top = (characterTop - 80) + "px";   
+    }
 }
 
 
+window.addEventListener("keydown", function(event) {
+    if (event.code === "ArrowUp" || event.keyCode === 38) {
+        event.preventDefault(); 
+        jump();
+    }
+});
 
 
 
