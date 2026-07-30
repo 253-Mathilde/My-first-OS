@@ -181,7 +181,24 @@ function openWindow(element) {
     slideIndex[0] = 4;
     showDivs(slideIndex[0], 0);
   }
+ 
+   
+    if (element.id === "gameWindow") {
+        const intro = document.getElementById("appIntro");
+        if (intro) {
+            intro.style.display = "block";
+            
+            setTimeout(() => {
+                intro.style.display = "none"; 
+            }, 30000); 
+        }
+    }
 }
+
+
+
+
+
 
 welcomeScreenClose.addEventListener("click", function() {
   closeWindow(welcomeScreen);
@@ -517,7 +534,6 @@ window.addEventListener("keydown", function(event) {
         jump();
     }
 });
-
 
 
 
