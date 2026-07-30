@@ -468,7 +468,7 @@ var gamecounter = 0;
 
 hole.addEventListener('animationiteration', () => {
    
-    var randomHeight = Math.floor(Math.random() * 299) + 150;
+    var randomHeight = Math.floor(Math.random() * 250) + 150;
     
   
     block.style.height = randomHeight + "px";
@@ -479,6 +479,13 @@ hole.addEventListener('animationiteration', () => {
     hole.style.top = "0px"; 
     
     gamecounter++;
+    console.log(gamecounter);
+    if (gamecounter >= 100){
+      document.getElementById("h6").innerHTML = "Welcome to Neverland";
+      document.getElementById('block').style.display='none';
+      document.querySelector('.base5').style.backgroundImage="url('https://i.postimg.cc/fyGnLPTv/Design-ohne-Titel-(21).png')";
+      document.getElementById('character').style.display='none';
+    }
 });
 
 setInterval(function(){
@@ -492,6 +499,7 @@ setInterval(function(){
     if (characterTop > 480 || (blockLeft < 20 && blockLeft > -50 && (characterTop + 20 > blockTop))) {
         character.style.top = 100 + "px"; 
         gamecounter = 0;
+        
     }
 }, 10);
 

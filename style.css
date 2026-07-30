@@ -149,7 +149,7 @@
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-color:black;
+      background-image:url('https://i.postimg.cc/wxw4qZbL/Design-ohne-Titel-(19).png');
       flex-shrink: 0;
       position:absolute;
       backdrop-filter: blur(50px);
@@ -864,6 +864,7 @@ left:400px;
 animation:block 2s infinite;
 top:300px;
 background-size:100% 100%;
+
 }
 @keyframes block{
     0%{left:400px}
@@ -881,12 +882,12 @@ background-size:100% 100%;
 }
 
 #character{
-    width: 20px;
-    height: 20px;
-    background-color: red;
+    width: 50px;
+    height: 50px;
+    background-image:url('https://i.postimg.cc/LXtXkjG9/Design-ohne-Titel-(20).png');
     position: absolute;
     top: 100px;
-    border-radius: 50%;
+  
 }
 
 
@@ -894,12 +895,19 @@ background-size:100% 100%;
     0%{
       background-position-x:0px}
     100%{
-     background-position-x: 480px;
+     background-position-x: 800px;
 }
 }
 
 
 
+#h6 {
+    position: relative;
+    z-index: 10; 
+    color: white; 
+    font-size: 16px;
+    margin: 5px;
+}
 
 
 
