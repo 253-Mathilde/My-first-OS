@@ -149,7 +149,7 @@
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-image:url('https://files.catbox.moe/9jwnto.png');
+      background-color:black;
       flex-shrink: 0;
       position:absolute;
       backdrop-filter: blur(50px);
@@ -857,7 +857,7 @@ h2[contenteditable="true"]:empty::before {
 #block{
 width:50px;
 height:0px;
-background-image:url('https://files.catbox.moe/5exvv6.crdownload');
+background-image:url('https://files.catbox.moe/7ryrjg.png');
 background-repeat:no-repeat;
 position:relative;
 left:400px;
