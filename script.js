@@ -190,7 +190,8 @@ function openWindow(element) {
             
             setTimeout(() => {
                 intro.style.display = "none"; 
-            }, 30000); 
+                gameStarted = true;
+            }, 10000); 
         }
     }
 }
@@ -482,48 +483,65 @@ var block = document.getElementById("block");
 var hole = document.getElementById("hole");
 var character = document.getElementById("character");
 var gamecounter = 0;
+var gameStarted = false;
 
-hole.addEventListener('animationiteration', () => {
-   
-    var randomHeight = Math.floor(Math.random() * 250) + 150;
-    
-  
+block.addEventListener('animationiteration', () => {
+
+    var randomHeight = Math.floor(Math.random() * 240) + 120;
     block.style.height = randomHeight + "px";
-    block.style.top = (500 - randomHeight) + "px"; 
-    
-  
-    hole.style.height = (500 - randomHeight) + "px";
-    hole.style.top = "0px"; 
-    
+    block.style.top = (500 - randomHeight) + "px";  
     gamecounter++;
     console.log(gamecounter);
     if (gamecounter >= 100){
-      document.getElementById("h6").innerHTML = "Welcome to Neverland";
-      document.getElementById('block').style.display='none';
-      document.querySelector('.base5').style.backgroundImage="url('https://i.postimg.cc/fyGnLPTv/Design-ohne-Titel-(21).png')";
-      document.getElementById('character').style.display='none';
+        document.getElementById("h6").innerHTML = "Welcome to Neverland";
+        document.getElementById('block').style.display = 'none';
+        document.querySelector('.base5').style.backgroundImage = "url('https://i.postimg.cc/4NSwzZXQ/Zwischenuberschrift-hinzufugen-(1).png')";
+        document.getElementById('character').style.display = 'none';
     }
 });
 
 setInterval(function(){
+   if (!gameStarted) return;
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    character.style.top = (characterTop + 3) + "px"; 
+    character.style.top = (characterTop + 6) + "px"; 
     
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
     
    
     if (characterTop > 480 || (blockLeft < 20 && blockLeft > -50 && (characterTop + 20 > blockTop))) {
+       gameStarted = false;
         character.style.top = 100 + "px"; 
         gamecounter = 0;
-        
+        document.getElementById("h6").innerHTML = "Oh no,looks like you lost! Time to try again!";
+        document.getElementById('block').style.display='none';
+        document.querySelector('.base5').style.backgroundImage="url('https://i.postimg.cc/8zV8hhpM/Zwischenuberschrift-hinzufugen-(2).png')";
+        document.getElementById('character').style.display='none';
+       
+         setTimeout(function() {
+            document.getElementById("h6").innerHTML = ""; 
+            document.getElementById('block').style.display = 'block'; 
+            document.querySelector('.base5').style.backgroundImage = "url('https://i.postimg.cc/wxw4qZbL/Design-ohne-Titel-(19).png')"; 
+            document.getElementById('character').style.display = 'block'; 
+            character.style.top = "150px";
+            character.style.pointerEvents = "none"; 
+          
+           document.querySelector('.base5').style.backgroundPosition = "center center"; 
+           document.querySelector('.base5').style.backgroundSize = "cover";
+            
+        }, 20000)
+        setTimeout(function() {
+                character.style.pointerEvents = "auto"; 
+                gameStarted = true; 
+            }, 300);
     }
-}, 10);
+
+    }, 50);
 
 function jump(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(characterTop > 30){
-        character.style.top = (characterTop - 80) + "px";   
+        character.style.top = (characterTop - 70) + "px";   
     }
 }
 
