@@ -553,6 +553,104 @@ window.addEventListener("keydown", function(event) {
     }
 });
 
+let music = document.querySelector("#myMusic");
+let poster = document.querySelector("#poster");
+let name = document.querySelector(".name");
+let singer = document.querySelector(".singer");
+let back = document.querySelector(".fa-fast-backward");
+let next = document.querySelector(".fa-fast-forward");
+let ppBtn = document.querySelector(".play-pause-btn");
+const songs = [
+  {
+    name: "Apple Vines",
+    singer: "The Autocollants",
+    poster: "https://files.catbox.moe/k0qeux.jpg",
+    audio: "https://files.catbox.moe/reqe54.mp3"
+  },
+  {
+    name: "Pictures of Venus",
+    singer: "Aldehyde",
+    poster: "https://files.catbox.moe/gnwfd0.webp",
+    audio: "https://files.catbox.moe/mdpf3v.mp3"
+  },
+  {
+    name: "LEASE",
+    singer: "Takeshi Abo",
+    poster: "https://i.postimg.cc/1tkgPNzx/Welcome-to-Peter-s-and-Tinker-s-Playlist-(5).png",
+    audio: "https://files.catbox.moe/rdnozd.mp3"
+  },
+  {
+    name: "Dinner is Not Over",
+    singer: "Jack Stauber",
+    poster: "https://i.postimg.cc/1tkgPNzx/Welcome-to-Peter-s-and-Tinker-s-Playlist-(5).png",
+    audio: "https://files.catbox.moe/nbfxps.mp3"
+  },
+  {
+    name: "Dramatic",
+    singer: "Mass of the Fermenting Dregs",
+    poster: "https://i.postimg.cc/Bn3m4MYc/Welcome-to-Peter-s-and-Tinker-s-Playlist-(6).png",
+    audio: "https://files.catbox.moe/hvlg1q.mp3"
+  }
+];
+let isPlaying = false;
+const playAudio = () => {
+  isPlaying = true;
+  music.play();
+};
+const pauseAudio = () => {
+  isPlaying = false;
+  music.pause();
+  
+};
+ppBtn.addEventListener("click", () => {
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (isPlaying) {
+    pauseAudio();
+    playIcon.style.display = "inline";
+    pauseIcon.style.display = "none";
+  } else {
+    playAudio();
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+const loadSongs = (song) => {
+  name.innerText = song.name;
+  singer.innerText = song.singer;
+  poster.src = song.poster;
+  music.src = song.audio;
+};
+let songIndex = 0;
+const nextSong = () => {
+  songIndex = (songIndex + 1) % songs.length;
+  loadSongs(songs[songIndex]);
+  playAudio();
+};
+const prevSong = () => {
+  songIndex = (songIndex - 1 + songs.length) % songs.length;
+  loadSongs(songs[songIndex]);
+  playAudio();
+};
+next.addEventListener("click", nextSong);
+back.addEventListener("click", prevSong);
+music.addEventListener("ended", nextSong);
+if (closeBtn && ppBtn) {
+  closeBtn.addEventListener("click", () => {
+    pauseAudio();
+    const playIcon = ppBtn.querySelector(".fa-play");
+    const pauseIcon = ppBtn.querySelector(".fa-pause");
+    if (playIcon) playIcon.style.display = "inline";
+    if (pauseIcon) pauseIcon.style.display = "none";
+  });
+}
+window.addEventListener("load", () => {
+  loadSongs(songs[songIndex]);
+});
+
+
+
+
 
 
 

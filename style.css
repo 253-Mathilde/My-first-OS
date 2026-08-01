@@ -587,21 +587,7 @@
      :root {
      --dreh-dauer: 50s; 
      }
-    .CD{
-       position:absolute;
-       top:-5px;
-       margin-left:75px;
-     
-       animation: flacheDrehung var(--dreh-dauer) linear infinite;
-    }
-     @keyframes flacheDrehung {
-     from {
-     transform: rotate(0deg);
-     }
-      to {
-     transform: rotate(360deg);
-       }
-      }
+    
        
 
 .musicslidesright{
@@ -929,6 +915,99 @@ background-size: 100% 100%;
     object-fit: cover; 
     pointer-events: none;
 }
+
+
+
+@font-face {
+  font-family: "myriad";
+  src: url("https://files.catbox.moe/s0igcb.OTF");
+}
+
+.ipod .controls:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ececec;
+  box-shadow: inset 24px 24px 48px #c6c6c6, inset -24px -24px 48px #ffffff;
+  border: 0.5px solid #ccc;
+}
+
+.ipod .controls .fa-fast-backward {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  transform: translate(0, -50%);
+  color: #aaa;
+  font-size: 1.2em;
+  cursor: pointer;
+
+}
+
+.ipod .controls .fa-fast-backward:active {
+  color: #888;
+}
+
+.ipod .controls .fa-fast-forward {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  transform: translate(0, -50%);
+  color: #aaa;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.ipod .controls .fa-fast-forward:active {
+  color: #888;
+}
+
+.ipod .controls .play-pause-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 0;
+  outline: 0;
+  background: none;
+  color: #aaa;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.ipod .controls .play-pause-btn:active {
+  color: #888;
+}
+
+.ipod .screen .music .content .name {
+  font-size: 0.95em;
+}
+
+.ipod .screen .music .content .singer {
+  font-size: 0.55em;
+  font-family: "myriad";
+}
+
+#poster{
+       user-select:none;
+       position:absolute;
+       top:-5px;
+       margin-left:75px;
+      
+       animation: flacheDrehung var(--dreh-dauer) linear infinite;
+    }
+     @keyframes flacheDrehung {
+     from {
+     transform: rotate(0deg);
+     }
+      to {
+     transform: rotate(360deg);
+       }
+      }
 
 
 
