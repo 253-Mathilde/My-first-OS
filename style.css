@@ -923,21 +923,20 @@ background-size: 100% 100%;
   src: url("https://files.catbox.moe/s0igcb.OTF");
 }
 
-.ipod .controls:before {
+.controls:before {
   content: "";
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ececec;
-  box-shadow: inset 24px 24px 48px #c6c6c6, inset -24px -24px 48px #ffffff;
-  border: 0.5px solid #ccc;
+  background: transparent;
+  border:none;
+  user-select:none;
 }
 
-.ipod .controls .fa-fast-backward {
+ .controls .fa-fast-backward {
   position: absolute;
   top: 30px;
   left: 20px;
@@ -948,11 +947,11 @@ background-size: 100% 100%;
 
 }
 
-.ipod .controls .fa-fast-backward:active {
+.controls .fa-fast-backward:active {
   color: #888;
 }
 
-.ipod .controls .fa-fast-forward {
+.controls .fa-fast-forward {
   position: absolute;
   top: 30px;
   right: 20px;
@@ -962,13 +961,13 @@ background-size: 100% 100%;
   cursor: pointer;
 }
 
-.ipod .controls .fa-fast-forward:active {
+.controls .fa-fast-forward:active {
   color: #888;
 }
 
-.ipod .controls .play-pause-btn {
+.controls .play-pause-btn {
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   left: 50%;
   transform: translate(-50%, 0);
   border: 0;
@@ -979,24 +978,31 @@ background-size: 100% 100%;
   cursor: pointer;
 }
 
-.ipod .controls .play-pause-btn:active {
+.controls .play-pause-btn:active {
   color: #888;
 }
 
-.ipod .screen .music .content .name {
+.name {
   font-size: 0.95em;
+  position:absolute;
+  left:5px;
+  rotate:90deg;
 }
 
-.ipod .screen .music .content .singer {
+.singer {
+  top:200px;
   font-size: 0.55em;
   font-family: "myriad";
+  position:absolute;
+  left:10px;
+  rotate:90deg;
 }
 
 #poster{
        user-select:none;
        position:absolute;
        top:-5px;
-       margin-left:75px;
+       margin-left:-55px;
       
        animation: flacheDrehung var(--dreh-dauer) linear infinite;
     }
