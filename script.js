@@ -591,19 +591,19 @@ const songs = [
   {
     name: "LEASE",
     singer: "Takeshi Abo",
-    poster: "https://files.catbox.moe/t9tyjh.png",
+    poster: "Welcome to Peter’s and Tinker’s Playlist (5).png",
     audio: "https://files.catbox.moe/rdnozd.mp3"
   },
   {
     name: "Dinner is Not Over",
     singer: "Jack Stauber",
-    poster: "https://files.catbox.moe/t9tyjh.png",
+    poster: "Welcome to Peter’s and Tinker’s Playlist (5).png",
     audio: "https://files.catbox.moe/nbfxps.mp3"
   },
   {
     name: "Dramatic",
     singer: "Mass of the Fermenting Dregs",
-    poster: "https://files.catbox.moe/2a9yyz.png",
+    poster: "Welcome to Peter’s and Tinker’s Playlist (6).png",
     audio: "https://files.catbox.moe/hvlg1q.mp3"
   }
 ];
