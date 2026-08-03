@@ -5,12 +5,18 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
-
+window.addEventListener("load",function(){
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+ loader.remove();
+ }, 1000);
+});
 
 
 
 
 // Make the DIV element draggable:
+dragElement(document.getElementById("hubbleWindow"));
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("journalWindow"));
 dragElement(document.getElementById("musicWindow"));
@@ -89,12 +95,25 @@ journalOpen.addEventListener("click", function() {
   openWindow(journalWindow);
 });
 
+var hubbleWindow = document.querySelector("#hubbleWindow")
+var hubbleClose = document.querySelector("#hubbleclose")
+var hubbleOpen = document.querySelector("#hubbleopen")
+
+hubbleClose.addEventListener("click", function() {
+  closeWindow(hubbleWindow);
+});
+
+hubbleOpen.addEventListener("click", function() {
+  openWindow(hubbleWindow);
+});
+
 var musicScreen = document.querySelector("#musicWindow")
 var musicScreenClose = document.querySelector("#musicclose")
 var musicScreenOpen = document.querySelector("#musicopen")
 
 musicScreenClose.addEventListener("click", function() {
   closeWindow(musicScreen);
+
 });
 
 musicScreenOpen.addEventListener("click", function() {
@@ -264,6 +283,7 @@ addWindowTapHandling(document.getElementById("mapWindow"));
 addWindowTapHandling(document.getElementById("galerieWindow"));
 addWindowTapHandling(document.getElementById("gameWindow"));
 addWindowTapHandling(document.getElementById("tvWindow"));
+addWindowTapHandeling(document.getElementById("hubbleWindow"));
 
 
 
@@ -423,12 +443,7 @@ function closeNoteDialog(){
  })
 
 
-window.addEventListener("load",function(){
-  const loader = document.querySelector(".loader");
-  setTimeout(() => {
- loader.remove();
- }, 1000);
-});
+
 
 setInterval(function(){
 document.getElementById("quotes").innerText = '"To live will be an awfully big adventure."';}
