@@ -179,16 +179,19 @@
   
 
      .base8{
-      
-      outline:none;
-      border: 2px solid #fff;
-      width: 600px;
-      height:500px;
-      padding-top:2px;
-      z-Index:10;
-      background-repeat:no-repeat;
+     border:solid;
+      width: 900px;
+      height:450px;
       border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+      flex-shrink: 0;
       backdrop-filter: blur(50px);
+      padding-top:2px;
+      z-Index:1;
+      overflow: hidden;
+      overflow-y: auto
     }
 
     .base6{
@@ -299,7 +302,7 @@
       right:80px;
       bottom:80px;
       display: none;
-      pointer-events: none;
+     
     }
     .symbole{
       display: flex;
@@ -367,10 +370,8 @@
       gap: 1px;
       margin: 0;
       padding: 0;
-      margin-left:50px;
-      position: relative;
-      z-index: 2; 
-      pointer-events: none;
+      top:50px;
+      z-Index:1000;
     }
 
   
@@ -765,6 +766,7 @@ h2[contenteditable="true"]:empty::before {
     pointer-events: auto; 
    }
     #hubbleWindowheader{
+    z-index: 9999;
     user-select:none;
     position: relative;
     z-index: 10;
