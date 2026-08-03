@@ -176,17 +176,17 @@
     pointer-events: none;
     border-radius:16px;
   }
+  
 
      .base8{
-       border-color:#fff;
-       outline:none;
-      border:solid;
+      
+      outline:none;
+      border: 2px solid #fff;
       width: 600px;
       height:500px;
       padding-top:2px;
-      z-Index:1;
+      z-Index:10;
       background-repeat:no-repeat;
-      position: absolute;
       border-radius:16px; 
       backdrop-filter: blur(50px);
     }
@@ -299,6 +299,7 @@
       right:80px;
       bottom:80px;
       display: none;
+      pointer-events: none;
     }
     .symbole{
       display: flex;
@@ -360,7 +361,17 @@
       pointer-events: none;
     }
 
-
+   .symbolehubble{
+      display: flex;
+      justify-content: flex-start; 
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      margin-left:50px;
+      position: relative;
+      z-index: 2; 
+      pointer-events: none;
+    }
 
   
     .icon.selected {

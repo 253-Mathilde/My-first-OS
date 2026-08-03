@@ -283,7 +283,7 @@ addWindowTapHandling(document.getElementById("mapWindow"));
 addWindowTapHandling(document.getElementById("galerieWindow"));
 addWindowTapHandling(document.getElementById("gameWindow"));
 addWindowTapHandling(document.getElementById("tvWindow"));
-addWindowTapHandeling(document.getElementById("hubbleWindow"));
+addWindowTapHandling(document.getElementById("hubbleWindow"));
 
 
 
@@ -650,6 +650,7 @@ const prevSong = () => {
 next.addEventListener("click", nextSong);
 back.addEventListener("click", prevSong);
 music.addEventListener("ended", nextSong);
+const closeBtn = document.querySelector("#musicclose");
 if (closeBtn && ppBtn) {
   closeBtn.addEventListener("click", () => {
     pauseAudio();
