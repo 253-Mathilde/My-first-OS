@@ -177,15 +177,18 @@
     border-radius:16px;
   }
 
- .base8{
-      border:none;
-      outline:none;
+     .base8{
+       border-color:#fff;
+       outline:none;
+      border:solid;
       width: 600px;
       height:500px;
       padding-top:2px;
       z-Index:1;
       background-repeat:no-repeat;
-      position: relative;
+      position: absolute;
+      border-radius:16px; 
+      backdrop-filter: blur(50px);
     }
 
     .base6{
