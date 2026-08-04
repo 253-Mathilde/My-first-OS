@@ -1,6 +1,21 @@
 alert("Welcome to Neverland.");
 
+window.addEventListener("load", function () {
+const loader = document.querySelector(".loader");
+const vid = document.querySelector("#vd");
 
+
+vid.addEventListener("canplay", () => {
+vid.muted = false;
+vid.play();
+});
+vid.addEventListener("ended", () => {
+loader.remove();
+});
+setTimeout(() => {
+loader.remove();
+}, 20000);
+});
 
 
 function updateTime() {
@@ -10,15 +25,7 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
-window.addEventListener("load",function(){
-  const loader = document.querySelector(".loader");
-  const vid = document.querySelector("#vd");
-  vid.muted = false ;
-  vid.play();
-  setTimeout(() => {
- loader.remove();
- }, 20000);
-});
+
 
 
 
