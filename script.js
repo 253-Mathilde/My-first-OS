@@ -12,8 +12,8 @@ setInterval(updateTime, 1000);
 
 window.addEventListener("load",function(){
   const loader = document.querySelector(".loader");
-  const vid = document.querySelector("vd");
-  vid.muted = false
+  const vid = document.querySelector("#vd");
+  vid.muted = false ;
   vid.play();
   setTimeout(() => {
  loader.remove();
