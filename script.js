@@ -665,6 +665,19 @@ window.addEventListener("load", () => {
 });
 
 
+const dramaticMenuBtn = document.querySelector("#Dramaticmenu");
+dramaticMenuBtn.addEventListener("click", () => {
+  songIndex = 4;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+
 
 
 
