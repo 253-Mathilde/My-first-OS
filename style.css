@@ -228,10 +228,10 @@
     #tvWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       margin: auto;
       display: none; 
     }
@@ -241,10 +241,10 @@
      #gameWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       margin: auto;
       display: none; 
     }
@@ -253,10 +253,10 @@
     #galerieWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       margin: auto;
       display: none; 
     }
@@ -264,10 +264,10 @@
     #welcome{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       margin: auto;
       overflow-y: auto;
       
@@ -276,10 +276,10 @@
     #mapWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       margin: auto;
       display: none; 
       
@@ -287,21 +287,23 @@
 
     #journalWindow{
       position:absolute;
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       display: none;
+      margin: auto;
       
     }
 
    #hubbleWindow{
       position:absolute;
-      top: 80px; 
-      left: 80px; 
-      right:80px;
-      bottom:80px;
+      top: 0px; 
+      left: 0px; 
+      right:0px;
+      bottom:0px;
       display: none;
+      margin:auto;
      
     }
     .symbole{
