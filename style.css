@@ -228,10 +228,10 @@
     #tvWindow{
       position:absolute;
       display: flex;        
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       margin: auto;
       display: none; 
     }
@@ -241,10 +241,10 @@
      #gameWindow{
       position:absolute;
       display: flex;        
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       margin: auto;
       display: none; 
     }
@@ -253,10 +253,10 @@
     #galerieWindow{
       position:absolute;
       display: flex;        
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       margin: auto;
       display: none; 
     }
@@ -264,10 +264,10 @@
     #welcome{
       position:absolute;
       display: flex;        
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       margin: auto;
       overflow-y: auto;
       
@@ -276,10 +276,10 @@
     #mapWindow{
       position:absolute;
       display: flex;        
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       margin: auto;
       display: none; 
       
@@ -287,23 +287,21 @@
 
     #journalWindow{
       position:absolute;
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       display: none;
-      margin: auto;
       
     }
 
    #hubbleWindow{
       position:absolute;
-      top: 0px; 
-      left: 0px; 
-      right:0px;
-      bottom:0px;
+      top: 80px; 
+      left: 80px; 
+      right:80px;
+      bottom:80px;
       display: none;
-      margin:auto;
      
     }
     .symbole{
@@ -560,7 +558,7 @@
   
  .search_background {
   position: fixed;
-  top: 100px; 
+  top: 120px; 
   left: 50%;
   transform: translateX(-50%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
