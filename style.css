@@ -640,17 +640,17 @@
  #musicWindowheader{
     user-select:none;
     position: relative;
-    z-index: 10;
+    z-index: 8000;
    }
    #musicclose{
     user-select:none;
     position: relative;
-    z-index: 10;
+    z-index: 8000;
    }
    #musicopen{
     user-select:none;
     position: relative;
-    z-index: 10;
+    z-index: 8000;
    }
 
 .loader{
