@@ -1065,5 +1065,6 @@ background-size: 100% 100%;
   top:-10px;
   left:65px;
   z-Index:299;
+  pointer-events:none;
 }
 
