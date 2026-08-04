@@ -3,12 +3,13 @@ alert("Welcome to Neverland.");
 window.addEventListener("load", function () {
 const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
-
+const audio = document.querySelector("#intro");
 
 vid.addEventListener("canplay", () => {
 vid.muted = false;
 vid.play();
 });
+audio.play();
 vid.addEventListener("ended", () => {
 loader.remove();
 });
