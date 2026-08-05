@@ -1,6 +1,6 @@
 alert("Welcome to Neverland. Please click somewhere random to start .Make sure to have your speakers on.");
 
-window.addEventListener("load", function () {
+window.addEventListener("click", function () {
 const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
 const audio = document.querySelector("#intro");
