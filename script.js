@@ -5,7 +5,6 @@ const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
 const audio = document.querySelector("#intro");
 
-document.addEventListener("click", () => {
 vid.muted = true;
 vid.play();
 audio.play();
@@ -16,7 +15,7 @@ loader.remove();
 audio.remove();
 vid.remove();
 });
-});
+
 
 
 function updateTime() {
