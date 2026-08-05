@@ -1108,3 +1108,14 @@ background-size: 100% 100%;
  width:0;
  height:0;
 }
+
+@font-face {
+font-family:'yipes';
+src: url(https://dl.dropbox.com/s/qrdm3wived8sm66/Yipes.ttf);
+}
+
+#textforthehubble {
+font-family:'yipes';
+font-size: 4em;
+color:#e7bd44;
+}
