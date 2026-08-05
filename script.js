@@ -1,26 +1,21 @@
-alert("Welcome to Neverland.");
+alert("Welcome to Neverland.Please click somewhere random to start.Make sure to have your speakers on.");
 
 window.addEventListener("load", function () {
 const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
 const audio = document.querySelector("#intro");
 
-vid.addEventListener("canplay", () => {
+document.addEventListener("click", () => {
 vid.muted = false;
 vid.play();
-});
+audio.play();
+}, { once: true });
+
 vid.addEventListener("ended", () => {
 loader.remove();
 });
-setTimeout(() => {
-loader.remove();
-}, 20000);
-});
 
-document.addEventListener("click", () => {
-    const audio = new Audio("https://files.catbox.moe/167zdf.mp3");
-    audio.play();
-});
+
 
 function updateTime() {
   var currentTime = new Date().toLocaleString();
