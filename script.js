@@ -9,7 +9,6 @@ vid.addEventListener("canplay", () => {
 vid.muted = false;
 vid.play();
 });
-audio.play();
 vid.addEventListener("ended", () => {
 loader.remove();
 });
@@ -18,6 +17,9 @@ loader.remove();
 }, 20000);
 });
 
+window.addEventListener("mousemove", () => {
+audio.play();
+}, { once: true });
 
 function updateTime() {
   var currentTime = new Date().toLocaleString();
