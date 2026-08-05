@@ -1095,7 +1095,14 @@ background-size: 100% 100%;
 .hubblesitedesign{
   width:100%;
   height:100%;
-  scrollbar-width: 0px;
  border:none;
  outline:none;
+ margin:0px;
+ padding:0px;
+ border-radius:6px;
+}
+
+hubblesitedesign::-webkit-scrollbar{
+  display:none;
+  scrollbar-width:none;
 }
