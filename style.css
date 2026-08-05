@@ -1110,12 +1110,13 @@ background-size: 100% 100%;
 }
 
 @font-face {
-font-family:'yipes';
-src: url(https://dl.dropbox.com/s/qrdm3wived8sm66/Yipes.ttf);
+src: url(https://dl.dropbox.com/s/8p8mi5uzbekohv7/Starborn.ttf);
+font-family: starborn;
 }
 
+
 #textforthehubble {
-font-family:'yipes';
-font-size: 80px;
+font-family:'starbon';
+font-size: 40px;
 color:#e7bd44;
 }
