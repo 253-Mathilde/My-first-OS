@@ -136,11 +136,11 @@ NASAClose.addEventListener("click", function() {
 });
 
 NASAOpen.addEventListener("click", function() {
- window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/", "_blank");
+ window.open("https://www.nasa.gov/", "_blank");
 });
 
 document.querySelector(".iconNASA").addEventListener("dblclick", () => {
-window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/", "_blank");
+window.open("https://www.nasa.gov/", "_blank");
 });
 
 

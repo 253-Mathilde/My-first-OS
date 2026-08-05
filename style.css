@@ -400,7 +400,17 @@
       z-Index:1000;
     }
 
-  
+  .symboleNASA{
+      display: flex;
+      justify-content: flex-start; 
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      top:50px;
+      z-Index:1000;
+    }
+
+
     .icon.selected {
     border: 7px double #f2f20a;  
     border-radius:16px;
