@@ -39,7 +39,7 @@ dragElement(document.getElementById("mapWindow"));
 dragElement(document.getElementById("galerieWindow"));
 dragElement(document.getElementById("gameWindow"));
 dragElement(document.getElementById("tvWindow"));
-
+dragElement(document.getElementById("NASAWindow"));
 
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
@@ -127,6 +127,21 @@ window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-
 });
 
 
+var NASAWindow = document.querySelector("#NASAWindow")
+var NASAClose = document.querySelector("#NASAclose")
+var NASAOpen = document.querySelector("#NASAopen")
+
+NASAClose.addEventListener("click", function() {
+  closeWindow(NASAWindow);
+});
+
+NASAOpen.addEventListener("click", function() {
+ window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/", "_blank");
+});
+
+document.querySelector(".iconNASA").addEventListener("dblclick", () => {
+window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/", "_blank");
+});
 
 
 

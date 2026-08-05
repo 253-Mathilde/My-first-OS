@@ -304,6 +304,16 @@
       display: none;
      
     }
+
+    #NASAWindow{
+      position:absolute;
+      top: 200px; 
+      left: 491px; 
+      right:80px;
+      bottom:80px;
+      display: none;
+     
+    }
     .symbole{
       display: flex;
       justify-content: flex-start; 
@@ -777,6 +787,24 @@ h2[contenteditable="true"]:empty::before {
     z-index: 10;
    }
    #hubbleopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+
+
+    #NASAWindowheader{
+    z-index: 9999;
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #NASAclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #NASAopen{
     user-select:none;
     position: relative;
     z-index: 10;
