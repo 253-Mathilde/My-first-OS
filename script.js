@@ -17,7 +17,7 @@ loader.remove();
 }, 20000);
 });
 
-window.addEventListener("mousemove", () => {
+window.addEventListener("click", () => {
 audio.play();
 }, { once: true });
 
