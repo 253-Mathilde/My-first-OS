@@ -14,7 +14,7 @@ audio.play();
 vid.addEventListener("ended", () => {
 loader.remove();
 });
-
+});
 
 
 function updateTime() {
