@@ -119,7 +119,7 @@ hubbleClose.addEventListener("click", function() {
 });
 
 hubbleOpen.addEventListener("click", function() {
-  openWindow(hubbleWindow);
+  window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-birthday/", "_blank");
 });
 
 var musicScreen = document.querySelector("#musicWindow")
