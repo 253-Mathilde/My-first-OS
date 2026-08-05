@@ -228,8 +228,8 @@
     #tvWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
+      top: 200px; 
+      left: 491px; 
       right:80px;
       bottom:80px;
       margin: auto;
@@ -241,8 +241,8 @@
      #gameWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
+      top: 200px; 
+      left: 491px; 
       right:80px;
       bottom:80px;
       margin: auto;
@@ -253,8 +253,8 @@
     #galerieWindow{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
+      top: 200px; 
+      left: 491px; 
       right:80px;
       bottom:80px;
       margin: auto;
@@ -264,8 +264,8 @@
     #welcome{
       position:absolute;
       display: flex;        
-      top: 80px; 
-      left: 80px; 
+      top: 200px; 
+      left: 491px; 
       right:80px;
       bottom:80px;
       margin: auto;
@@ -277,7 +277,7 @@
       position:absolute;
       display: flex;        
       top: 80px; 
-      left: 80px; 
+      left: 900px; 
       right:80px;
       bottom:80px;
       margin: auto;
@@ -287,8 +287,8 @@
 
     #journalWindow{
       position:absolute;
-      top: 80px; 
-      left: 80px; 
+      top: 200px; 
+      left: 491px; 
       right:80px;
       bottom:80px;
       display: none;
@@ -297,8 +297,8 @@
 
    #hubbleWindow{
       position:absolute;
-      top: 80px; 
-      left: 80px; 
+      top: 200px; 
+      left: 491px; 
       right:80px;
       bottom:80px;
       display: none;
@@ -964,64 +964,70 @@ background-size: 100% 100%;
   src: url("https://files.catbox.moe/s0igcb.OTF");
 }
 
-.controls:before {
-  content: "";
+.controls::before {
+  content: "controls";
   position: absolute;
   left: 50%;
   top: 50%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: transparent;
+  background-image:url('https://files.catbox.moe/9b9b86.png');
   border:none;
   user-select:none;
+  z-Index:29999;
 }
 
  .controls .fa-fast-backward {
   position: absolute;
   top: 30px;
   left: 20px;
-  transform: translate(0, -50%);
+  height:50px;
+  width:50px;
   color: #aaa;
   font-size: 1.2em;
   cursor: pointer;
+  background-image:url('https://files.catbox.moe/lqn3lw.png');
 
 }
 
 .controls .fa-fast-backward:active {
   color: #888;
+  background-image:url('https://files.catbox.moe/lqn3lw.png');
 }
 
 .controls .fa-fast-forward {
   position: absolute;
   top: 30px;
   right: 20px;
-  transform: translate(0, -50%);
+  height:50px;
+  width:50px;
   color: #aaa;
   font-size: 1.2em;
   cursor: pointer;
+  background-image:url('https://files.catbox.moe/z5lfxi.png');
 }
 
 .controls .fa-fast-forward:active {
   color: #888;
+  background-image:url('https://files.catbox.moe/z5lfxi.png');
 }
 
 .controls .play-pause-btn {
   position: absolute;
-  top: 20px;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, 0);
   border: 0;
   outline: 0;
-  background: none;
+  background-image:url('https://files.catbox.moe/9b9b86.png');
   color: #aaa;
   font-size: 1em;
   cursor: pointer;
+  z-Index:10000000;
 }
 
-.controls .play-pause-btn:active {
-  color: #888;
-}
+
 
 .name {
   font-size: 0.95em;
@@ -1071,7 +1077,7 @@ background-size: 100% 100%;
 
 #Dramaticmenu {
   position: absolute;
-  left: 150px;
+  left: 70px;
   top: 80px;
   z-index: 999;
   cursor: pointer; 
