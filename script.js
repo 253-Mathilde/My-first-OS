@@ -6,13 +6,15 @@ const vid = document.querySelector("#vd");
 const audio = document.querySelector("#intro");
 
 document.addEventListener("click", () => {
-vid.muted = false;
+vid.muted = true;
 vid.play();
 audio.play();
 }, { once: true });
 
 vid.addEventListener("ended", () => {
 loader.remove();
+audio.remove();
+vid.remove();
 });
 });
 
