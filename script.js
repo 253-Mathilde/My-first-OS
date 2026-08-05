@@ -1,20 +1,20 @@
-//alert("Welcome to Neverland.Please click somewhere random to start.Make sure to have your speakers on.");
+alert("Welcome to Neverland. Please click somewhere random to start .Make sure to have your speakers on.");
 
-//window.addEventListener("load", function () {
-//const loader = document.querySelector(".loader");
-//const vid = document.querySelector("#vd");
-//const audio = document.querySelector("#intro");
+window.addEventListener("load", function () {
+const loader = document.querySelector(".loader");
+const vid = document.querySelector("#vd");
+const audio = document.querySelector("#intro");
 
-//document.addEventListener("click", () => {
-//vid.muted = false;
-//vid.play();
-//audio.play();
-//}, { once: true });
+document.addEventListener("click", () => {
+vid.muted = false;
+vid.play();
+audio.play();
+}, { once: true });
 
-//vid.addEventListener("ended", () => {
-//loader.remove();
-//});
-//});
+vid.addEventListener("ended", () => {
+loader.remove();
+});
+});
 
 
 function updateTime() {
