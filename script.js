@@ -17,9 +17,10 @@ loader.remove();
 }, 20000);
 });
 
-window.addEventListener("click", () => {
-audio.play();
-}, { once: true });
+document.addEventListener("click", () => {
+    const audio = new Audio("https://files.catbox.moe/167zdf.mp3");
+    audio.play();
+});
 
 function updateTime() {
   var currentTime = new Date().toLocaleString();
