@@ -170,7 +170,6 @@ musicScreenClose.addEventListener("click", function() {
 
 musicScreenOpen.addEventListener("click", function() {
   openWindow(musicScreen);
- 
 });
 
 var mapScreen = document.querySelector("#mapWindow")
@@ -182,8 +181,8 @@ mapScreenClose.addEventListener("click", function() {
 });
 
 mapScreenOpen.addEventListener("click", function() {
-  openWindow(mapScreen); 
- playAudio();
+  openWindow(mapScreen);
+  playAudio();
 });
 
 
@@ -313,7 +312,12 @@ function handleIconTap(element, window) {
     selectIcon(element)
   }
 }
-
+function handleWindowTap(element) {
+  biggestIndex++;  // Increment biggestIndex by 1
+  element.style.zIndex = biggestIndex;
+  topBar.style.zIndex = biggestIndex + 1;
+  deselectIcon(selectedIcon)
+}
 var biggestIndex = 1;
 function handleWindowTap(element) {
  if (parseInt(element.style.zIndex) < biggestIndex) {
