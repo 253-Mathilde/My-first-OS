@@ -40,6 +40,7 @@ dragElement(document.getElementById("galerieWindow"));
 dragElement(document.getElementById("gameWindow"));
 dragElement(document.getElementById("tvWindow"));
 dragElement(document.getElementById("NASAWindow"));
+dragElement(document.getElementById("ManualWindow"));
 
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
