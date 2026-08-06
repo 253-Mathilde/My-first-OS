@@ -318,15 +318,7 @@ function handleWindowTap(element) {
   topBar.style.zIndex = biggestIndex + 1;
   deselectIcon(selectedIcon)
 }
-var biggestIndex = 1;
-function handleWindowTap(element) {
- if (parseInt(element.style.zIndex) < biggestIndex) {
-    biggestIndex++;
-    element.style.zIndex = biggestIndex;
-    if (topBar) topBar.style.zIndex = biggestIndex + 1;
-  }
-  deselectIcon(selectedIcon);
-}
+
 
 
 function addWindowTapHandling(element) {
