@@ -1222,19 +1222,12 @@ margin-left:40px;
 margin-right:40px;
 }
 
-@font-face {
-  font-family: PixelText;
-  src: url(https://assets.codepen.io/36869/Grand9KPixel_1.ttf);
+
 }
 
 :root {
   --slides: 10;
-  font-family: 'PixelText', serif;
-  font-optical-sizing: auto;
   line-height: 1.5;
-  font-weight: 400;
-
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
