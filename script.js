@@ -183,7 +183,7 @@ mapScreenClose.addEventListener("click", function() {
 
 mapScreenOpen.addEventListener("click", function() {
   openWindow(mapScreen); 
-
+ playAudio();
 });
 
 
