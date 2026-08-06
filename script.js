@@ -105,7 +105,7 @@ ManualClose.addEventListener("click", function() {
   closeWindow(ManualWindow);
 });
 
-ManaulOpen.addEventListener("click", function() {
+ManualOpen.addEventListener("click", function() {
   openWindow(ManualWindow);
 });
 
