@@ -330,6 +330,17 @@
       display: none;
      
     }
+
+ #ManualWindow{
+      position:absolute;
+      top: 200px; 
+      left: 491px; 
+      right:80px;
+      bottom:80px;
+      display: none;
+     
+    }
+
     .symbole{
       display: flex;
       justify-content: flex-start; 
@@ -401,6 +412,16 @@
     }
 
   .symboleNASA{
+      display: flex;
+      justify-content: flex-start; 
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      top:50px;
+      z-Index:1000;
+    }
+
+ .symboleManual{
       display: flex;
       justify-content: flex-start; 
       gap: 1px;
@@ -819,7 +840,7 @@ h2[contenteditable="true"]:empty::before {
    }
 
 
-    #NASAWindowheader{
+   #NASAWindowheader{
     z-index: 9999;
     user-select:none;
     position: relative;
@@ -835,6 +856,24 @@ h2[contenteditable="true"]:empty::before {
     position: relative;
     z-index: 10;
    }
+
+   #ManualWindowheader{
+    z-index: 9999;
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #Manualclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #Manualopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+
 /*made with HELP from AI*/
 .grid-container {
   overflow-y: auto;

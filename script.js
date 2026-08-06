@@ -97,6 +97,18 @@ function dragElement(element) {
   }
 }
 
+var ManualWindow = document.querySelector("#ManualWindow")
+var ManualClose = document.querySelector("#Manualclose")
+var ManualOpen = document.querySelector("#Manualopen")
+
+ManualClose.addEventListener("click", function() {
+  closeWindow(ManualWindow);
+});
+
+ManaulOpen.addEventListener("click", function() {
+  openWindow(ManualWindow);
+});
+
 
 var journalWindow = document.querySelector("#journalWindow")
 var journalClose = document.querySelector("#journalclose")
@@ -323,6 +335,7 @@ addWindowTapHandling(document.getElementById("galerieWindow"));
 addWindowTapHandling(document.getElementById("gameWindow"));
 addWindowTapHandling(document.getElementById("tvWindow"));
 addWindowTapHandling(document.getElementById("hubbleWindow"));
+addWindowTapHandling(document.getElementById("ManualWindow"));
 
 
 
