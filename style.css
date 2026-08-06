@@ -673,6 +673,32 @@
 
      :root {
      --dreh-dauer: 50s; 
+      font-optical-sizing: auto;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+
+  /* sprite image */
+  --sprite-image: url(https://assets.codepen.io/36869/book.webp);
+
+  /* sprite animation settings */
+  /* animation duration */
+  --sprite-as: .8s;
+  /* animation direction */
+  --sprite-ad: normal;
+  /* animation fill mode */
+  --sprite-af: none;
+  /* animation play state */
+  --sprite-ap: running;
+  /* animation iteration count */
+  --sprite-ai: infinite;
+  /* animation timing function */
+  --sprite-at: linear;
+  /* animation frame rate */
+  --sprite-fr: 12;
      }
     
        
@@ -1223,36 +1249,8 @@ margin-right:40px;
 }
 
 
-}
 
-:root {
-  --slides: 10;
-  line-height: 1.5;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 
-  /* sprite image */
-  --sprite-image: url(https://assets.codepen.io/36869/book.webp);
-
-  /* sprite animation settings */
-  /* animation duration */
-  --sprite-as: .8s;
-  /* animation direction */
-  --sprite-ad: normal;
-  /* animation fill mode */
-  --sprite-af: none;
-  /* animation play state */
-  --sprite-ap: running;
-  /* animation iteration count */
-  --sprite-ai: infinite;
-  /* animation timing function */
-  --sprite-at: linear;
-  /* animation frame rate */
-  --sprite-fr: 12;
-}
 
 @layer base {
   *{
