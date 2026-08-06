@@ -115,7 +115,139 @@
           <p style="cursor: pointer" id="Manualclose"><img src="https://i.imgur.com/q5TmYNg.gif"></p>
           <p style="cursor: pointer" id="Manualopen"><img src="https://i.imgur.com/3nBda2J.gif"></p>
         </div>
-    
+      <div class="container">
+  <h1>
+    CSS <span style="color: #f840a8; text-decoration: underline">Sprite-Based</span> Flip Carousel Using <span style="color: #f840a8; text-decoration: underline">Scroll-Timeline</span>
+  </h1>
+  <div class="sprite-wrapper">
+    <div class="book">
+      <!--  Carousel container -->
+      <div class="carousel" style="--slides: 4;">
+        <!--  Bg sprite -->
+        <div class="sprite"></div>
+        <!--  Carousel items -->
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div>
+                <p style="margin: 0; text-indent: 1rem">
+                  🧩 Overview This project is a pure CSS-based dynamic interactive book that simulates page-flipping
+                  animations using cutting-edge features available in modern <span style="text-decoration-line: spelling-error;">Chrome (134–135+)</span>. It seamlessly combines
+                  several powerful CSS technologies to create a fully scrollable, sprite-driven animated experience
+                  resembling a book with turning pages.
+                </p>
+                <img src="https://assets.codepen.io/36869/brilliant.gif" alt="" style="width: 100%">
+              </div>
+            </div>
+            <div class="page right-page">
+              <div>
+                <p style="margin: 0; text-indent: 1rem">
+                  🚀 Core Features
+                </p>
+                <p style="margin: 0; text-indent: 1rem">
+                  📚 Book-like Page Flipping
+                </p>
+                <p style="margin: 0; text-indent: 1rem">
+                  Each "slide" or section of the book corresponds to a virtual page. The animation mimics a realistic
+                  flipping effect using sprite sheets and scroll-driven animations.
+                </p><br>
+                <p style="margin: 0; text-indent: 1rem">🔧 Technologies Used</p>
+                <ul style="padding: 0; list-style: auto; list-style-position: inside; margin: 0">
+                  <li>Scroll Snap</li>
+                  <li>View Timeline + Scroll Timeline</li>
+                  <li>Sprite Sheets (mod, round)</li>
+                  <li>Dynamic Sizing</li>
+                  <li>Dynamic Sprite Calculation</li>
+                </ul><br>
+                <p style="margin: 0; text-indent: 1rem">
+                  🧠 Dynamic Behavior
+                </p>
+                <p style="margin: 0; text-indent: 1rem">
+                  All animations are automatically adjusted when changing the number of slides via the --slides
+                  variable. Frame
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div>
+                <p style="margin: 0;">
+                  count, sprite layout, and total animation length adapt based on user-defined CSS variables.
+                  The animation is responsive to scroll progress using scroll-timeline and is scoped per element using
+                  timeline-scope.
+                </p><br>
+                <p style="margin: 0; text-indent: 1rem">🖼️ Visual Layers</p>
+                <p style="margin: 0; text-indent: 1rem">
+                  The book page uses a layered sprite system:
+                  One sprite sheet per page flip animation
+                  Positioned and animated via background-image
+                  The correct frame is selected based on scroll or button input
+                </p><br>
+                <p style="margin: 0; text-indent: 1rem">🧪 Browser Support</p>
+                <p style="margin: 0; text-indent: 1rem">
+                  Requires Chrome 134+ for experimental CSS features like scroll-timeline, animation-timeline, ::scroll-button, and ::scroll-marker
+                  Best viewed with flags enabled or origin trials if needed
+                </p>
+              </div>
+            </div>
+            <div class="page right-page">
+              <div>
+                <p style="margin: 0; text-indent: 1rem">📦 Use Cases</p>
+                <p style="margin: 0;">
+                  Digital storytelling<br>
+                  Visual novels<br>
+                  Portfolio presentations<br>
+                  Interactive learning materials
+                </p><br>
+                <img src="https://assets.codepen.io/36869/pixel-cat.jpg" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui quibusdam suscipit unde velit veritatis vitae voluptas? Aliquid deleniti deserunt dolorem expedita id in iusto libero maiores minima molestiae natus non odio perferendis placeat provident quae quaerat qui quidem reiciendis, rem repellendus sit sunt tempore unde vero vitae voluptatum. Earum ipsum rem tempora voluptas? Debitis eaque, labore natus sit voluptatem voluptatum. Asperiores assumenda autem consequatur deleniti eligendi magnam natus nihil quidem repudiandae, soluta veniam voluptates. Eaque eveniet sed sunt voluptas.
+              </div>
+            </div>
+            <div class="page right-page">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui quibusdam suscipit unde velit veritatis vitae voluptas? Aliquid deleniti deserunt dolorem expedita id in iusto libero maiores minima molestiae natus non odio perferendis placeat provident quae quaerat qui quidem reiciendis, rem repellendus sit sunt tempore unde vero vitae voluptatum. Earum ipsum rem tempora voluptas? Debitis eaque, labore natus sit voluptatem voluptatum. Asperiores assumenda autem consequatur deleniti eligendi magnam natus nihil quidem repudiandae, soluta veniam voluptates. Eaque eveniet sed sunt voluptas.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="page-container">
+            <div class="page left-page">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui quibusdam suscipit unde velit veritatis vitae voluptas? Aliquid deleniti deserunt dolorem expedita id in iusto libero maiores minima molestiae natus non odio perferendis placeat provident quae quaerat qui quidem reiciendis, rem repellendus sit sunt tempore unde vero vitae voluptatum. Earum ipsum rem tempora voluptas? Debitis eaque, labore natus sit voluptatem voluptatum. Asperiores assumenda autem consequatur deleniti eligendi magnam natus nihil quidem repudiandae, soluta veniam voluptates. Eaque eveniet sed sunt voluptas.
+              </div>
+            </div>
+            <div class="page right-page">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui quibusdam suscipit unde velit veritatis vitae voluptas? Aliquid deleniti deserunt dolorem expedita id in iusto libero maiores minima molestiae natus non odio perferendis placeat provident quae quaerat qui quidem reiciendis, rem repellendus sit sunt tempore unde vero vitae voluptatum. Earum ipsum rem tempora voluptas? Debitis eaque, labore natus sit voluptatem voluptatum. Asperiores assumenda autem consequatur deleniti eligendi magnam natus nihil quidem repudiandae, soluta veniam voluptates. Eaque eveniet sed sunt voluptas.
+              </div>
+            </div>
+             <div class="page left-page">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui quibusdam suscipit unde velit veritatis vitae voluptas? Aliquid deleniti deserunt dolorem expedita id in iusto libero maiores minima molestiae natus non odio perferendis placeat provident quae quaerat qui quidem reiciendis, rem repellendus sit sunt tempore unde vero vitae voluptatum. Earum ipsum rem tempora voluptas? Debitis eaque, labore natus sit voluptatem voluptatum. Asperiores assumenda autem consequatur deleniti eligendi magnam natus nihil quidem repudiandae, soluta veniam voluptates. Eaque eveniet sed sunt voluptas.
+              </div>
+            </div>
+             <div class="page right-page">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui quibusdam suscipit unde velit veritatis vitae voluptas? Aliquid deleniti deserunt dolorem expedita id in iusto libero maiores minima molestiae natus non odio perferendis placeat provident quae quaerat qui quidem reiciendis, rem repellendus sit sunt tempore unde vero vitae voluptatum. Earum ipsum rem tempora voluptas? Debitis eaque, labore natus sit voluptatem voluptatum. Asperiores assumenda autem consequatur deleniti eligendi magnam natus nihil quidem repudiandae, soluta veniam voluptates. Eaque eveniet sed sunt voluptas.
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
       
     </div>
 
