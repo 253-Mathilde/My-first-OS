@@ -1,4 +1,4 @@
-var biggestIndex =1 ;
+var biggestIndex = 1;
 alert("Welcome to Neverland. Please click somewhere random to start .Make sure to have your speakers on.");
 const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
