@@ -344,12 +344,7 @@ var topBar = document.querySelector("#top")
 
 
 
-function handleWindowTap(element) {
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
-  topBar.style.zIndex = biggestIndex + 1;
-  deselectIcon(selectedIcon)
-}
+
 
 
 
