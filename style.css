@@ -99,6 +99,13 @@
       backdrop-filter: blur(50px);
       padding-top:2px;
       z-Index:1;
+      position:relative;
+    }
+
+    #mapWindow iframe {
+      position:absolute;
+      left:400px;
+      top:100px;
     }
 
     .base1{
