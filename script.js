@@ -1,18 +1,18 @@
 alert("Welcome to Neverland. Please click somewhere random to start .Make sure to have your speakers on.");
 const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
-const audio = document.querySelector("#intro");
+const intro = document.querySelector("#intro");
 
 window.addEventListener("click", function () {
 
 vid.muted = true;
 vid.play();
-audio.play();
+intro.play();
 }, { once: true });
 
 vid.addEventListener("ended", () => {
 loader.remove();
-audio.remove();
+intro.remove();
 vid.remove();
 });
 
@@ -170,6 +170,7 @@ musicScreenClose.addEventListener("click", function() {
 
 musicScreenOpen.addEventListener("click", function() {
   openWindow(musicScreen);
+ 
 });
 
 var mapScreen = document.querySelector("#mapWindow")
@@ -181,7 +182,8 @@ mapScreenClose.addEventListener("click", function() {
 });
 
 mapScreenOpen.addEventListener("click", function() {
-  openWindow(mapScreen);
+  openWindow(mapScreen); 
+
 });
 
 
