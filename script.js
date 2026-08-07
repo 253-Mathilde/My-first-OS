@@ -42,7 +42,7 @@ dragElement(document.getElementById("gameWindow"));
 dragElement(document.getElementById("tvWindow"));
 dragElement(document.getElementById("NASAWindow"));
 dragElement(document.getElementById("ManualWindow"));
-
+dragElement(document.getElementById("WikiWindow"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -141,6 +141,23 @@ window.open("https://science.nasa.gov/specials/apps/what-did-hubble-see-on-your-
 });
 
 
+var WikiWindow = document.querySelector("#WikiWindow")
+var WikiClose = document.querySelector("#Wikiclose")
+var WikiOpen = document.querySelector("#Wikiopen")
+
+WikiClose.addEventListener("click", function() {
+  closeWindow(WikiWindow);
+});
+
+WikiOpen.addEventListener("click", function() {
+ window.open("https://en.wikipedia.org/wiki/Main_Page", "_blank");
+});
+
+document.querySelector(".iconWiki").addEventListener("dblclick", () => {
+window.open("https://en.wikipedia.org/wiki/Main_Page", "_blank");
+});
+
+
 var NASAWindow = document.querySelector("#NASAWindow")
 var NASAClose = document.querySelector("#NASAclose")
 var NASAOpen = document.querySelector("#NASAopen")
@@ -176,6 +193,7 @@ musicScreenOpen.addEventListener("click", function() {
 var mapScreen = document.querySelector("#mapWindow")
 var mapScreenClose = document.querySelector("#mapclose")
 var mapScreenOpen = document.querySelector("#mapopen")
+const mapaudio = document.querySelector("#mapaudiofromMars");
 
 mapScreenClose.addEventListener("click", function() {
   closeWindow(mapScreen);
@@ -183,7 +201,7 @@ mapScreenClose.addEventListener("click", function() {
 
 mapScreenOpen.addEventListener("click", function() {
   openWindow(mapScreen);
-  playAudio();
+  mapaudio.play();
 });
 
 

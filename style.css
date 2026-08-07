@@ -225,6 +225,22 @@
       position: relative;
     }
 
+  .base13{
+     border:solid;
+      width: 900px;
+      height:450px;
+      border-radius:16px; 
+      padding:16px;
+      border-color:#fff;
+      background-color: rgba(0, 0, 0, 0.125);
+      flex-shrink: 0;
+      backdrop-filter: blur(50px);
+      padding-top:2px;
+      z-Index:1;
+      overflow: hidden;
+      overflow-y: auto
+    }
+
 
     .info {
       position: absolute;
@@ -334,6 +350,16 @@
      
     }
 
+   #WikiWindow{
+      position:absolute;
+      top: 200px; 
+      left: 491px; 
+      right:80px;
+      bottom:80px;
+      display: none;
+     
+    }
+
  #ManualWindow{
       position:absolute;
       top: 200px; 
@@ -417,6 +443,16 @@
     }
 
   .symboleNASA{
+      display: flex;
+      justify-content: flex-start; 
+      gap: 1px;
+      margin: 0;
+      padding: 0;
+      top:50px;
+      z-Index:1000;
+    }
+
+    .symboleWiki{
       display: flex;
       justify-content: flex-start; 
       gap: 1px;
@@ -888,6 +924,25 @@ h2[contenteditable="true"]:empty::before {
     z-index: 10;
    }
 
+ #WikiWindowheader{
+    z-index: 9999;
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #Wikiclose{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+   #Wikiopen{
+    user-select:none;
+    position: relative;
+    z-index: 10;
+   }
+
+
+
    #ManualWindowheader{
     z-index: 9999;
     user-select:none;
@@ -1240,7 +1295,7 @@ font-family: starborn;
 
 
 #textforthehubble {
-font-family:'starbon';
+font-family:"starbon";
 font-size: 40px;
 color:#e7bd44;
 text-align:justify;
