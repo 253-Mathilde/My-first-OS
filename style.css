@@ -1307,31 +1307,32 @@ margin-right:40px;
 
 
 
-.baseforthebook{
-  margin:0;
-  padding:0;
-  display:grid;
-  place-content:center;
-  height:100vh;
-  width:100vh;
-}
-.flipbook{
-  width:500px;
-  height:700px;
 
+input{
+  display:none;
 }
-.flipbook.hard{
-  background:green;
-  border:none;
-}
-.flipbook.page{
-  background:white;
+.book{
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
-  border: 1px solid black;
-
 }
-
+#cover{
+  width:250px;
+  height:400px;
+}
+.flip-book{
+  width:250px;
+  height:250px;
+  position:relative;
+  perspective:1500px;
+}
+.flip{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  transform-origin: left;
+  transform-style:preserve-3d;
+  transform:rotateY(0deg);
+  transition: .5s;
+  color:#000;
+}
