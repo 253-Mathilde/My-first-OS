@@ -1340,6 +1340,7 @@ input{
   transform:rotateY(0deg);
   transition: .5s;
   color:black;
+  
 }
 
 .front{  
@@ -1353,6 +1354,8 @@ input{
   box-sizing:border-box;
   padding:0px 13px;
   box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,rgba(0,0,0,.5));
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 .back{
   position:absolute;
@@ -1364,13 +1367,15 @@ input{
   transform:rotateY(180deg);
   backface-visibility: hidden;
   background-color:pink;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 .next-btn{
   position:absolute;
   bottom:13px;
   right:13px;
   cursor:pointer;
-  color:#000;
+  color:coral;
   width:20px;
   height:20px;
  
@@ -1380,18 +1385,11 @@ input{
   bottom: 13px;
   right:13px;
   cursor:pointer;
-  color:#fff;
+  color:coral;
   width:20px;
   height:20px;
 
-  mark {
-    color: white;
-    background: #9a8c98;
-    border: 1px dashed #fff;
-    box-shadow: 0 0 0 3px #9a8c98;
-    padding: 2px;
-    font-family: Arial Black, Gadget, sans-serif;
-  }
+ 
 }
 #p1{
   z-index:9;
