@@ -1,4 +1,4 @@
-message = "i can make u dance around me like a hula hoop! ";
+message = "....Welcome to Neverland...❁....This is an OS... ";
 function step() {
 message = message.substr(1) + message.substr(0,1);
 document.title = message.substr(0,15);
@@ -7,7 +7,7 @@ document.title = message.substr(0,15);
 
 
 var biggestIndex = 1;
-alert("Welcome to Neverland. Please click somewhere random to start .Make sure to have your speakers on.");
+alert("Welcome to Neverland. Please click somewhere random to start. Make sure to have your speakers on.Thank you!");
 const loader = document.querySelector(".loader");
 const vid = document.querySelector("#vd");
 const intro = document.querySelector("#intro");
