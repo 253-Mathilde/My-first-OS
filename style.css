@@ -106,8 +106,8 @@
 
     .base1{
       border:solid;
-      width: fit-content;
-      height:fit-content;
+      width: 500;
+      height:650;
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
@@ -149,7 +149,7 @@
       border:solid;
       width: 370px;
       height:480px;
-      left:80px;
+      left:60px;
       right:50px;
       top:30px;
       border-radius:16px; 
