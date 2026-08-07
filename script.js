@@ -1,3 +1,11 @@
+message = "i can make u dance around me like a hula hoop! ";
+function step() {
+message = message.substr(1) + message.substr(0,1);
+document.title = message.substr(0,15);
+}
+
+
+
 var biggestIndex = 1;
 alert("Welcome to Neverland. Please click somewhere random to start .Make sure to have your speakers on.");
 const loader = document.querySelector(".loader");
