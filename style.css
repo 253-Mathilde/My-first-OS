@@ -114,6 +114,7 @@
       background-image:url('https://cdn.phototourl.com/free/2026-07-14-2b1a5669-2c84-469f-aaef-5894c5d5ed8e.jpg');
       background-size:cover;
       padding-top:2px;
+      position: absolute;
       
     }
     .base2{
