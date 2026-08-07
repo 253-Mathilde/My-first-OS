@@ -1315,12 +1315,12 @@ input{
   display:flex;
 }
 #cover{
-  width:250px;
-  height:400px;
+  width:550px;
+  height:700px;
 }
 .flip-book{
-  width:250px;
-  height:250px;
+  width:550px;
+  height:700px;
   position:relative;
   perspective:1500px;
 }
@@ -1334,7 +1334,7 @@ input{
   transform-style:preserve-3d;
   transform:rotateY(0deg);
   transition: .5s;
-  color:#000;
+  color:greenyellow;
 }
 
 .front{
@@ -1357,7 +1357,7 @@ input{
   z-index:99;
   transform:rotateY(180deg);
   backface-visibility: hidden;
-  background-color:#000;
+  background-color:pink;
 }
 .next-btn{
   position:absolute;
