@@ -106,7 +106,7 @@
 
     .base1{
       border:solid;
-      width: 500px;
+      width: fit-content;
       height:fit-content;
       border-radius:16px; 
       padding:16px;
@@ -149,7 +149,7 @@
       border:solid;
       width: 370px;
       height:480px;
-      left:44px;
+      left:80px;
       right:50px;
       top:30px;
       border-radius:16px; 
@@ -327,6 +327,7 @@
       right:80px;
       bottom:80px;
       display: none;
+
       
     }
 
