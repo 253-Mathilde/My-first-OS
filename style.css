@@ -470,7 +470,7 @@
       gap: 1px;
       margin: 0;
       padding: 0;
-      top:50px;
+      top:0px;
       z-Index:1000;
       left:20px;
       position:absolute;
@@ -1371,6 +1371,9 @@ input{
   right:13px;
   cursor:pointer;
   color:#000;
+  width:20px;
+  height:20px;
+ 
 }
 .back-btn{
   position:absolute;
@@ -1378,6 +1381,17 @@ input{
   right:13px;
   cursor:pointer;
   color:#fff;
+  width:20px;
+  height:20px;
+
+  mark {
+    color: white;
+    background: #9a8c98;
+    border: 1px dashed #fff;
+    box-shadow: 0 0 0 3px #9a8c98;
+    padding: 2px;
+    font-family: Arial Black, Gadget, sans-serif;
+  }
 }
 #p1{
   z-index:9;
