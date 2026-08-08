@@ -1359,6 +1359,9 @@ input[type="checkbox" i] {
   box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,rgba(0,0,0,.5));
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
 }
 .back{
   position:absolute;
