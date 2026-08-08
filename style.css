@@ -1345,6 +1345,9 @@ input[type="checkbox" i] {
   color:black;
   
 }
+@font-face {
+src: url(https://dl.dropbox.com/s/kp4x66rhekt1fz5/AdabelleHandwriting-Regular.ttf);
+font-family: adabelle;
 
 .front{  
   font-family:'Times New Roman', Times, serif ;
@@ -1378,7 +1381,8 @@ input[type="checkbox" i] {
   text-align: justify;
   text-align-last: center;
   hyphens: auto;
- 
+  font-family: adabelle;
+ font-size:3em;
 }
 .next-btn{
   position:absolute;
