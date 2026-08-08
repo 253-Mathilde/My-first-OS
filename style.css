@@ -1310,7 +1310,7 @@ margin-right:40px;
 
 
 
-input{
+#c1 #c2 #c3 #c4 #c5 #c6 #c7 #c8 #c9{
   display:none;
 }
 .book{
@@ -1375,7 +1375,7 @@ input{
   bottom:13px;
   right:13px;
   cursor:pointer;
-  color:coral;
+  color:black;
   width:20px;
   height:20px;
  
@@ -1385,7 +1385,7 @@ input{
   bottom: 13px;
   right:13px;
   cursor:pointer;
-  color:coral;
+  color:black;
   width:20px;
   height:20px;
 
