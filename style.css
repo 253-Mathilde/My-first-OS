@@ -1383,7 +1383,7 @@ input[type="checkbox" i] {
 .back-btn{
   position:absolute;
   bottom: 13px;
-  right:13px;
+  left:13px;
   cursor:pointer;
   color:black;
   width:20px;
