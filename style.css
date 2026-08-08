@@ -1382,7 +1382,7 @@ font-family: adabelle;}
   text-align-last: center;
   hyphens: auto;
   font-family: adabelle;
- font-size:3em;
+ font-size:6px;
 }
 .next-btn{
   position:absolute;
@@ -1402,6 +1402,7 @@ font-family: adabelle;}
   color:black;
   width:20px;
   height:20px;
+  font-family: 'Times New Roman', Times, serif;
 
  
 }
