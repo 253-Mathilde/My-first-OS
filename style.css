@@ -1347,7 +1347,7 @@ input[type="checkbox" i] {
 }
 @font-face {
 src: url(https://dl.dropbox.com/s/kp4x66rhekt1fz5/AdabelleHandwriting-Regular.ttf);
-font-family: adabelle;
+font-family: adabelle;}
 
 .front{  
   font-family:'Times New Roman', Times, serif ;
