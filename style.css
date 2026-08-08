@@ -1355,7 +1355,7 @@ input[type="checkbox" i] {
   left:0;
   background-image:url('https://files.catbox.moe/u9n95b.png');
   box-sizing:border-box;
-  padding:0px 13px;
+  padding:10px 13px;
   box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,rgba(0,0,0,.5));
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1378,6 +1378,7 @@ input[type="checkbox" i] {
   text-align: justify;
   text-align-last: center;
   hyphens: auto;
+  padding: 10px 13px;
 }
 .next-btn{
   position:absolute;
