@@ -1325,7 +1325,10 @@ input[type="checkbox" i] {
   height:700px;
   position:relative;
   perspective:1500px;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
+
   
 
 }
