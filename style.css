@@ -1375,6 +1375,9 @@ input[type="checkbox" i] {
   background-color:pink;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
 }
 .next-btn{
   position:absolute;
