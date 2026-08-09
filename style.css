@@ -1365,6 +1365,10 @@ font-family: adabelle;}
   text-align: justify;
   text-align-last: center;
   hyphens: auto;
+  font-family:adabelle;
+  color:darkblue;
+  font-size:16px;
+  
 }
 .back{
   position:absolute;
@@ -1382,7 +1386,8 @@ font-family: adabelle;}
   text-align-last: center;
   hyphens: auto;
   font-family: adabelle;
- font-size:16px;
+  font-size:16px;
+  color:darkblue;
 }
 .next-btn{
   position:absolute;
