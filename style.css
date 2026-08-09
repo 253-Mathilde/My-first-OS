@@ -1170,6 +1170,7 @@ background-size: 100% 100%;
   font-size: 1.2em;
   cursor: pointer;
   background-image:url('https://files.catbox.moe/lqn3lw.png');
+  z-index:500;
 
 }
 
@@ -1183,6 +1184,7 @@ background-size: 100% 100%;
   font-size: 1.2em;
   cursor: pointer;
   background-image:url('https://files.catbox.moe/z5lfxi.png');
+  z-index:500;
 }
 
 .controls .play-pause-btn {
