@@ -205,6 +205,7 @@ const mapaudio = document.querySelector("#mapaudiofromMars");
 
 mapScreenClose.addEventListener("click", function() {
   closeWindow(mapScreen);
+  mapaudio.stop();
 });
 
 mapScreenOpen.addEventListener("click", function() {
@@ -714,11 +715,15 @@ const nextSong = () => {
   songIndex = (songIndex + 1) % songs.length;
   loadSongs(songs[songIndex]);
   playAudio();
+   document.querySelector('#play').style.display ="none";
+   document.querySelector('#pause').style.display ="inline";
 };
 const prevSong = () => {
   songIndex = (songIndex - 1 + songs.length) % songs.length;
   loadSongs(songs[songIndex]);
   playAudio();
+   document.querySelector('#play').style.display ="none";
+   document.querySelector('#pause').style.display ="inline";
 };
 next.addEventListener("click", nextSong);
 back.addEventListener("click", prevSong);
