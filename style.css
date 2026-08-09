@@ -1202,8 +1202,14 @@ background-size: 100% 100%;
   width:80px;
 }
 
-
-
+@font-face {
+src: url(https://dl.dropbox.com/s/mes7b666uvig5wc/Winkle-Regular.otf);
+font-family: winkle;
+}
+@font-face {
+src: url(https://dl.dropbox.com/s/16ntpxj8fny66d6/Quick%20Love.ttf);
+font-family: quick-love;
+}
 .name {
   font-size: 20px;
   position:absolute;
@@ -1212,17 +1218,19 @@ background-size: 100% 100%;
   top:120px;
   left:-50px;
   text-align:center;
-}
+  font-family:"quick-love";
+  
 
 .singer {
   top:390px;
   font-size: 16px;
-  font-family: "myriad";
+  font-family: "winkle";
   position:absolute;
   left:-100px;
   rotate:90deg;
   width:300px;
   text-align:left;
+ 
 }
 
 #poster{
