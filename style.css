@@ -1153,7 +1153,7 @@ background-size: 100% 100%;
   top: 50px;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 16px;;
   background-image:url('https://files.catbox.moe/9b9b86.png');
   border:none;
   user-select:none;
@@ -1173,15 +1173,10 @@ background-size: 100% 100%;
 
 }
 
-.controls .fa-fast-backward:active {
-  color: #888;
-  background-image:url('https://files.catbox.moe/lqn3lw.png');
-}
-
 .controls .fa-fast-forward {
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 40px;
   height:50px;
   width:50px;
   color: #aaa;
@@ -1190,16 +1185,10 @@ background-size: 100% 100%;
   background-image:url('https://files.catbox.moe/z5lfxi.png');
 }
 
-.controls .fa-fast-forward:active {
-  color: #888;
-  background-image:url('https://files.catbox.moe/z5lfxi.png');
-}
-
 .controls .play-pause-btn {
   position: absolute;
   top: 200px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 80px;
   border: 0;
   outline: 0;
   background-image:url('https://files.catbox.moe/9b9b86.png');
