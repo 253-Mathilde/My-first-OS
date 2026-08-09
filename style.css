@@ -1206,21 +1206,23 @@ background-size: 100% 100%;
 
 .name {
   font-size: 20px;
-  position:relative;
-  left:0px;
+  position:absolute;
   rotate:90deg;
   width:200px;
-  top:0px;
+  top:120px;
+  left:-50px;
+  text-align:center;
 }
 
 .singer {
-  top:200px;
+  top:390px;
   font-size: 16px;
   font-family: "myriad";
-  position:relative;
-  left:0px;
+  position:absolute;
+  left:-100px;
   rotate:90deg;
   width:300px;
+  text-align:left;
 }
 
 #poster{
