@@ -1246,7 +1246,7 @@ background-size: 100% 100%;
   position:absolute;
   top:-10px;
   left:65px;
- 
+  pointer-events:none;
 
 
 }
