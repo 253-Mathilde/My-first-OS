@@ -863,7 +863,7 @@ h2[contenteditable="true"]:empty::before {
    #gameWindowheader{
     user-select:none;
     position: relative;
-    z-index: 100000000;
+    z-index: 10000;
    }
    #gameclose{
     user-select:none;
