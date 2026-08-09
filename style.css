@@ -1161,7 +1161,7 @@ background-size: 100% 100%;
 }
 
  .controls .fa-fast-backward {
-  position: absolute;
+  position:relative;
   top: 490px;
   left: -150px;
   height:50px;
@@ -1174,7 +1174,7 @@ background-size: 100% 100%;
 }
 
 .controls .fa-fast-forward {
-  position: absolute;
+  position: relative;
   top: 490px;
   right: 150px;
   height:50px;
