@@ -1164,7 +1164,7 @@ background-size: 100% 100%;
  .controls .fa-fast-backward {
   position: absolute;
   top: 498px;
-  left: 379px;
+  right: -280px;
   height:50px;
   width:50px;
   color: #aaa;
@@ -1178,7 +1178,7 @@ background-size: 100% 100%;
 .controls .fa-fast-forward {
   position: absolute;
   top: 498px;
-  right: -280px;
+  left: 379px;
   height:50px;
   width:50px;
   color: #aaa;
@@ -1288,8 +1288,8 @@ font-family: quick-love;
 
 #AppleVinesmenu{
   position: absolute;
-  left: 120px;
-  top: 70px;
+  left: 119px;
+  top: 45px;
   cursor: pointer; 
   display: inline-block; 
 }
