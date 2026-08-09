@@ -653,13 +653,13 @@ const songs = [
   {
     name: "Apple Vines",
     singer: "The Autocollants",
-    poster: "https://files.catbox.moe/i3xvwt.png",
+    poster: "https://files.catbox.moe/op0a7s.png",
     audio: "https://files.catbox.moe/reqe54.mp3"
   },
   {
     name: "Pictures of Venus",
     singer: "Aldehyde",
-    poster: "https://files.catbox.moe/rdou25.png",
+    poster: "https://files.catbox.moe/zxeez1.png",
     audio: "https://files.catbox.moe/mdpf3v.mp3"
   },
   {
@@ -758,7 +758,7 @@ dramaticMenuBtn.addEventListener("click", () => {
 
 const appleVinesMenuBtn = document.querySelector("#AppleVinesmenu");
 appleVinesMenuBtn.addEventListener("click", () => {
-  songIndex = 1;
+  songIndex = 0;
   loadSongs(songs[songIndex]);
   playAudio();
   const playIcon = ppBtn.querySelector(".fa-play");
