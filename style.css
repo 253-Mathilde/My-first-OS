@@ -696,6 +696,7 @@
       right:80px;
       bottom:80px;
       display: none;
+      overflow: hidden;
       
     }
 
@@ -1163,7 +1164,7 @@ background-size: 100% 100%;
  .controls .fa-fast-backward {
   position: absolute;
   top: 498px;
-  left: 479px;
+  left: 379px;
   height:50px;
   width:50px;
   color: #aaa;
