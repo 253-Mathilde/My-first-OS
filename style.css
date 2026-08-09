@@ -1246,9 +1246,11 @@ background-size: 100% 100%;
   position:absolute;
   top:-10px;
   left:65px;
-  z-Index:299;
+ 
+
 
 }
+#menu:hover { z-index: 999999; }
 
 #Dramaticmenu {
   position: absolute;
@@ -1389,6 +1391,7 @@ font-family: adabelle;}
   color:black;
   width:20px;
   height:20px;
+  user-select:none;
  
 }
 .back-btn{
@@ -1401,7 +1404,7 @@ font-family: adabelle;}
   height:20px;
   font-family: 'Times New Roman', Times, serif;
   font-size:20px;
-
+ user-select:none;
  
 }
 #p1{
