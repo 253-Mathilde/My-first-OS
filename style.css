@@ -1211,26 +1211,27 @@ src: url(https://dl.dropbox.com/s/16ntpxj8fny66d6/Quick%20Love.ttf);
 font-family: quick-love;
 }
 .name {
-  font-size: 20px;
+  font-size: 15px;
   position:absolute;
   rotate:90deg;
   width:200px;
   top:120px;
   left:-50px;
-  text-align:center;
-  font-family:"quick-love";}
+  text-align:right;
+  font-family:"quick-love";
+  color:darkblue;}
   
 
 .singer {
   top:390px;
-  font-size: 16px;
+  font-size: 22px;
   font-family: "winkle";
   position:absolute;
   left:-100px;
   rotate:90deg;
   width:300px;
   text-align:left;
- 
+ color:darkblue;
 }
 
 #poster{
