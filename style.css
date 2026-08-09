@@ -1350,7 +1350,7 @@ input[type="checkbox" i] {
   transform-style:preserve-3d;
   transform:rotateY(0deg);
   transition: .5s;
-  color:black;
+  color:black;}
   
 }
 @font-face {
