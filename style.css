@@ -863,17 +863,17 @@ h2[contenteditable="true"]:empty::before {
    #gameWindowheader{
     user-select:none;
     position: relative;
-    z-index: 10;
+    z-index: 100000000;
    }
    #gameclose{
     user-select:none;
     position: relative;
-    z-index: 10;
+    z-index: 10000000;
    }
    #gameopen{
     user-select:none;
     position: relative;
-    z-index: 10;
+    z-index: 10000000;
    }
 
     #tvWindowheader{
