@@ -1206,7 +1206,7 @@ background-size: 100% 100%;
 
 .name {
   font-size: 20px;
-  position:absolute;
+  position:relative;
   left:0px;
   rotate:90deg;
   width:200px;
@@ -1217,7 +1217,7 @@ background-size: 100% 100%;
   top:200px;
   font-size: 16px;
   font-family: "myriad";
-  position:absolute;
+  position:relative;
   left:0px;
   rotate:90deg;
   width:300px;
