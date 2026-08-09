@@ -1250,6 +1250,7 @@ background-size: 100% 100%;
 
 
 }
+#menu:hover { z-index: 999999; }
 
 #Dramaticmenu {
   position: absolute;
@@ -1258,7 +1259,8 @@ background-size: 100% 100%;
   cursor: pointer; 
   display: inline-block; 
 }
-#Dramaticmenu #Dramaticmenu img #menu :hover { z-index: 999999; }
+ #Dramaticmenu img  :hover { z-index: 999999; }
+ 
 
 #Dramaticmenu img {
   position:absolute;
