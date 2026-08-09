@@ -653,26 +653,26 @@ const songs = [
   {
     name: "Apple Vines",
     singer: "The Autocollants",
-    poster: "https://files.catbox.moe/k0qeux.jpg",
+    poster: "https://files.catbox.moe/i3xvwt.png",
     audio: "https://files.catbox.moe/reqe54.mp3"
   },
   {
     name: "Pictures of Venus",
     singer: "Aldehyde",
-    poster: "https://files.catbox.moe/gnwfd0.webp",
+    poster: "https://files.catbox.moe/rdou25.png",
     audio: "https://files.catbox.moe/mdpf3v.mp3"
   },
   {
-    name: "LEASE",
-    singer: "Takeshi Abo",
-    poster: "Welcome to Peter’s and Tinker’s Playlist (5).png",
-    audio: "https://files.catbox.moe/rdnozd.mp3"
+    name: "",
+    singer: "",
+    poster: "",
+    audio: ""
   },
   {
-    name: "Dinner is Not Over",
-    singer: "Jack Stauber",
-    poster: "Welcome to Peter’s and Tinker’s Playlist (5).png",
-    audio: "https://files.catbox.moe/nbfxps.mp3"
+    name: "",
+    singer: "",
+    poster: "",
+    audio: ""
   },
   {
     name: "Dramatic",
@@ -756,6 +756,18 @@ dramaticMenuBtn.addEventListener("click", () => {
   }
 });
 
+const appleVinesMenuBtn = document.querySelector("#AppleVinesmenu");
+appleVinesMenuBtn.addEventListener("click", () => {
+  songIndex = 1;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
 
 
 

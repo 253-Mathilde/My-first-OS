@@ -1273,7 +1273,8 @@ font-family: quick-love;
   cursor: pointer; 
   display: inline-block; 
 }
- #Dramaticmenu img  :hover { z-index: 999999; }
+
+
 
 
 #Dramaticmenu img {
@@ -1283,7 +1284,29 @@ font-family: quick-love;
   height: auto;
   pointer-events:auto;
   left:30px !important;
+} #Dramaticmenu img  :hover { z-index: 999999; }
+
+#AppleVinesmenu{
+  position: absolute;
+  left: 120px;
+  top: 70px;
+  cursor: pointer; 
+  display: inline-block; 
 }
+
+#AppleVinesmenu img {
+  position:absolute;
+  display: block; 
+  width: 50px;  
+  height: auto;
+  pointer-events:auto;
+  left:30px !important;
+}
+
+
+#AppleVinesmenu img  :hover { z-index: 999999; }
+
+
 .hubblesitedesign{
   width:100%;
   height:100%;
