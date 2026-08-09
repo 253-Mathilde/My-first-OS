@@ -1195,10 +1195,11 @@ background-size: 100% 100%;
   border: none;
   outline: none;
   background-image:url('https://files.catbox.moe/9b9b86.png');
-  font-size: 1em;
   cursor: pointer;
   z-Index:10000000;
   background-color:transparent;
+  height:20px;
+  width:80px;
 }
 
 
