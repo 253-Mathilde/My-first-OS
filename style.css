@@ -1147,8 +1147,7 @@ background-size: 100% 100%;
   src: url("https://files.catbox.moe/s0igcb.OTF");
 }
 
-.controls::before {
-  content: "controls";
+.controls {
   position: absolute;
   left: 50px;
   top: 50px;
