@@ -1151,8 +1151,8 @@ background-size: 100% 100%;
   position: absolute;
   left: 50px;
   top: 50px;
-  width: 50px;
-  height: 50px;
+  width:fit-content ;
+  height: fit-content;
   border-radius: 16px;;
   background-image:url('https://files.catbox.moe/9b9b86.png');
   border:none;
@@ -1162,7 +1162,7 @@ background-size: 100% 100%;
 
  .controls .fa-fast-backward {
   position: absolute;
-  top: 300px;
+  top: 500px;
   left: 20px;
   height:50px;
   width:50px;
@@ -1175,7 +1175,7 @@ background-size: 100% 100%;
 
 .controls .fa-fast-forward {
   position: absolute;
-  top: 30px;
+  top: 500px;
   right: 40px;
   height:50px;
   width:50px;
