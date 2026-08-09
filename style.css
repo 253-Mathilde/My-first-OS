@@ -1209,6 +1209,7 @@ background-size: 100% 100%;
   position:absolute;
   left:5px;
   rotate:90deg;
+  width:200px;
 }
 
 .singer {
@@ -1218,6 +1219,7 @@ background-size: 100% 100%;
   position:absolute;
   left:10px;
   rotate:90deg;
+  width:300px;
 }
 
 #poster{
@@ -1260,7 +1262,7 @@ background-size: 100% 100%;
   display: inline-block; 
 }
  #Dramaticmenu img  :hover { z-index: 999999; }
- 
+
 
 #Dramaticmenu img {
   position:absolute;
