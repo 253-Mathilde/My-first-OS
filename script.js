@@ -769,6 +769,18 @@ appleVinesMenuBtn.addEventListener("click", () => {
   }
 });
 
+const VenusMenuBtn = document.querySelector("#Venusmenu");
+VenusMenuBtn.addEventListener("click", () => {
+  songIndex = 1;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
 
 
 var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc");
