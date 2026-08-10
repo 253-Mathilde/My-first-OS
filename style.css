@@ -81,7 +81,6 @@
       backdrop-filter: blur(50px);
       padding-top:2px;
       z-Index:1;
-      overflow: hidden;
       overflow-y: auto
     }
 
