@@ -136,7 +136,7 @@
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Design%20ohne%20Titel%20(11).png?raw=true');
+      background-image:url('253-Mathilde/My-first-OS/images,audio,videos(all the graphic stuff)/Design ohne Titel (11).png');
       flex-shrink: 0;
       /* @nokira This should not be applied. If you want to position the window, apply the CSS to the top div element, for example "journalWindow", not the inside content, or it would create bugs when detecting the clicks. */
       /* */
@@ -602,7 +602,7 @@
 
    }
    .delete-btn{
-    background-image: url('https://github.com/253-Mathilde/My-first-OS/blob/main/Buttons%20for%20website%20(2).jpg?raw=true');
+    background-image: url('253-Mathilde/My-first-OS/images,audio,videos(all the graphic stuff)/Buttons for website (2).jpg');
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -615,7 +615,7 @@
 
    }
    .note-card{
-    background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Website%20OS.jpg?raw=true');
+    background-image:url('253-Mathilde/My-first-OS/images,audio,videos(all the graphic stuff)/Website OS.jpg');
     border-radius:16px;
     width:200px;
     height:80px;
@@ -1018,7 +1018,7 @@ h2[contenteditable="true"]:empty::before {
 }
 
 .button-left{
-  background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Pfeil%20nach%20links%20Kamera.png?raw=true');
+  background-image:url('253-Mathilde/My-first-OS/images,audio,videos(all the graphic stuff)/Pfeil nach links Kamera.png');
   width:40px;
   height:40px;
   border:none;
@@ -1031,7 +1031,7 @@ h2[contenteditable="true"]:empty::before {
 
 
 .button-right{
-  background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Pfeil%20nach%20links%20Kamera.png?raw=true');
+  background-image:url('253-Mathilde/My-first-OS/images,audio,videos(all the graphic stuff)/Pfeil nach rechts Kamera.png');
   width:40px;
   height:40px;
   border:none;
