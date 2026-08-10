@@ -661,16 +661,16 @@ const songs = [
     audio: "https://files.catbox.moe/mdpf3v.mp3"
   },
   {
-    name: "",
-    singer: "",
-    poster: "",
-    audio: ""
+    name:"background-music",
+    singer: "Mykola Odnoroh (Pixabay)",
+    poster: "https://files.catbox.moe/cdoy1q.png",
+    audio: "https://files.catbox.moe/q0mmok.mp3"
   },
   {
-    name: "",
-    singer: "",
-    poster: "",
-    audio: ""
+    name: "background-music #2",
+    singer: "chill background (Pixabay)",
+    poster: "https://files.catbox.moe/5plnq8.png",
+    audio: "https://files.catbox.moe/chyuf4.mp3"
   },
   {
     name: "Dramatic",
@@ -770,6 +770,32 @@ appleVinesMenuBtn.addEventListener("click", () => {
 const VenusMenuBtn = document.querySelector("#Venusmenu");
 VenusMenuBtn.addEventListener("click", () => {
   songIndex = 1;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+
+const studyMenuBtn = document.querySelector("#studymenu");
+studyMenuBtn.addEventListener("click", () => {
+  songIndex = 2;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+
+const waterMenuBtn = document.querySelector("#watermenu");
+waterMenuBtn.addEventListener("click", () => {
+  songIndex = 3;
   loadSongs(songs[songIndex]);
   playAudio();
   const playIcon = ppBtn.querySelector(".fa-play");
