@@ -5,6 +5,19 @@ document.title = message.substr(0,15);
 }
 
 
+function scalePage(){
+  const wrapper = document.getElementById('wholepage');
+  const baseWidth = 1487;
+  const scaleFactor = window.innerWidth / baseWidth;
+  wrapper.style.transform = `scale(${scaleFactor})`;
+  document.body.style.height = (wrapper.getBoundingClientRect().height)+'px';
+  
+}
+
+window.addEventListener('load', scalePage);
+window.addEventListener('resize', scalePage);
+
+
 
 var biggestIndex = 1;
 alert("Welcome to Neverland. Please click somewhere random to start. Make sure to have your speakers on.Thank you!");
