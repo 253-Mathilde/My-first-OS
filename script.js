@@ -677,6 +677,13 @@ const songs = [
     singer: "Mass of the Fermenting Dregs",
     poster: "Welcome to Peter’s and Tinker’s Playlist (6).png",
     audio: "https://files.catbox.moe/hvlg1q.mp3"
+  },
+
+  {
+    name:"chill,sleepy music",
+    singer:"Mikhal Vereitinov",
+    poster:"https://files.catbox.moe/031dvm.png",
+    audio:"https://files.catbox.moe/p5guka.mp3"
   }
 ];
 let isPlaying = false;
@@ -796,6 +803,20 @@ studyMenuBtn.addEventListener("click", () => {
 const waterMenuBtn = document.querySelector("#watermenu");
 waterMenuBtn.addEventListener("click", () => {
   songIndex = 3;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+
+
+const sleepMenuBtn = document.querySelector("#sleepmenu");
+sleepMenuBtn.addEventListener("click", () => {
+  songIndex = 5;
   loadSongs(songs[songIndex]);
   playAudio();
   const playIcon = ppBtn.querySelector(".fa-play");
