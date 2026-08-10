@@ -684,6 +684,12 @@ const songs = [
     singer:"Mikhal Vereitinov (Pixabay)",
     poster:"https://files.catbox.moe/031dvm.png",
     audio:"https://files.catbox.moe/p5guka.mp3"
+  },
+  { name:"study music",
+    singer:"Roman Rumyantsev (Pixabay)",
+    poster:"https://files.catbox.moe/mbhoa4.png",
+    audio:"https://files.catbox.moe/1avzaq.mp3"
+
   }
 ];
 let isPlaying = false;
@@ -826,6 +832,22 @@ sleepMenuBtn.addEventListener("click", () => {
     pauseIcon.style.display = "inline";
   }
 });
+
+
+const lernMenuBtn = document.querySelector("#lernmenu");
+lernMenuBtn.addEventListener("click", () => {
+  songIndex = 6;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+
+
 
 
 var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc");
