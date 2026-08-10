@@ -1,4 +1,4 @@
-<img src="https://github.com/253-Mathilde/My-first-OS/blob/main/Banner.jpg?raw=true">
+<img src="images,audio,videos(all the graphic stuff)/Banner.jpg">
 Welcome to my README.
 
 A bigggg thank you to @nokira!!!!
