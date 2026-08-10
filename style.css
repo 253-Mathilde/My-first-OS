@@ -1371,8 +1371,8 @@ font-family: quick-love;
 
 #sleepmenu{
   position: absolute;
-  left: 300px;
-  top: 20px;
+  left: 360px;
+  top: 35px;
   cursor: pointer; 
   display: inline-block; 
 }
