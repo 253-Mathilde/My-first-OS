@@ -16,16 +16,6 @@
       /* Change highlight text color */
     }
 
-
-
-    *{
-      overflow-y: auto;
-       overflow-x: hidden;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-         word-break: break-word;
-
-    }
     body{
       background-image:url('https://static.tumblr.com/12fa0f315d290bb1df15954e7a68536d/67u0lkf/NHgmnojyf/tumblr_static_tumblr_mmm5k4yecc1qmf2zwo1_r1_500.png');
       background-repeat:repeat-x;
@@ -1340,13 +1330,13 @@ font-family: quick-love;
 
 #studymenu{
   position: absolute;
-  left: 175px;
+  left: 30px;
   top: 24px;
   cursor: pointer; 
   display: inline-block; 
 }
 
-#menumenu img {
+#studymenu img {
   position:absolute;
   display: block; 
   width: 50px;  
@@ -1361,7 +1351,7 @@ font-family: quick-love;
 
 #watermenu{
   position: absolute;
-  left: 175px;
+  left: 200px;
   top: 24px;
   cursor: pointer; 
   display: inline-block; 
