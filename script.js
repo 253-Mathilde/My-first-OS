@@ -10,8 +10,6 @@ function scalePage(){
   const baseWidth = 1487;
   const scaleFactor = window.innerWidth / baseWidth;
   wrapper.style.transform = `scale(${scaleFactor})`;
-  document.body.style.height = (wrapper.getBoundingClientRect().height)+'px';
-  
 }
 
 window.addEventListener('load', scalePage);
