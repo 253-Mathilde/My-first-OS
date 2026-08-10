@@ -22,18 +22,7 @@
       background-size:auto 100vh;
       background-attachment: fixed; 
       overflow-x:hidden;
-      margin:0px;
     }
-
-   #wholepage{
-    width:1487px ;
-    transform-origin:top left;
-    position:relative;
-   }
-
-
-
-
 
     h1{
       font-family: "Audiowide", sans-serif;

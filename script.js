@@ -4,19 +4,6 @@ message = message.substr(1) + message.substr(0,1);
 document.title = message.substr(0,15);
 }
 
-
-function scalePage(){
-  const wrapper = document.getElementById('wholepage');
-  const baseWidth = 1487;
-  const scaleFactor = window.innerWidth / baseWidth;
-  wrapper.style.transform = `scale(${scaleFactor})`;
-}
-
-window.addEventListener('load', scalePage);
-window.addEventListener('resize', scalePage);
-
-
-
 var biggestIndex = 1;
 alert("Welcome to Neverland. Please click somewhere random to start. Make sure to have your speakers on.Thank you!");
 const loader = document.querySelector(".loader");
