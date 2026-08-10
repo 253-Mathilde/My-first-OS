@@ -1330,8 +1330,8 @@ font-family: quick-love;
 
 #studymenu{
   position: absolute;
-  left: 30px;
-  top: 24px;
+  left: 235px;
+  top: 16px;
   cursor: pointer; 
   display: inline-block; 
 }
@@ -1351,8 +1351,8 @@ font-family: quick-love;
 
 #watermenu{
   position: absolute;
-  left: 200px;
-  top: 24px;
+  left: 300px;
+  top: 20px;
   cursor: pointer; 
   display: inline-block; 
 }
