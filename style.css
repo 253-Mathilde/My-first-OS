@@ -110,7 +110,7 @@
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-image:url('https://cdn.phototourl.com/free/2026-07-14-2b1a5669-2c84-469f-aaef-5894c5d5ed8e.jpg');
+      background-image:url('images,audio,videos(all the graphic stuff)/paperimg.jpg');
       background-size:cover;
       padding-top:2px;
       position: absolute;
@@ -122,7 +122,7 @@
       height:600px;
       padding:none;
       border:none;
-      background-image:url('https://files.catbox.moe/aspie4.png');
+      background-image:url('images,audio,videos(all the graphic stuff)/musicappcdcoverforbackground.png');
       background-size:cover;
       padding-top:2px;
       flex-shrink: 0;
@@ -155,7 +155,7 @@
       border-radius:16px; 
       padding:16px;
       border-color:#fff;
-      background-image:url('https://i.postimg.cc/wxw4qZbL/Design-ohne-Titel-(19).png');
+      background-image:url('images,audio,videos(all the graphic stuff)/starrynightforthegame.png');
       flex-shrink: 0;
       position:absolute;
       backdrop-filter: blur(50px);
@@ -218,7 +218,7 @@
       outline:none;
       width: 600px;
       height:500px;
-      background-image:url('https://i.postimg.cc/x8CVGQ85/tv.png');
+      background-image:url('images,audio,videos(all the graphic stuff)/tvbackground.png');
       padding-top:2px;
       z-Index:1;
       background-repeat:no-repeat;
@@ -482,7 +482,7 @@
 
     }
     .add-note-btn{
-    background-image: url('https://files.catbox.moe/3xoizm.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/newbuttonforthejournalapp.jpg');
     background-size: cover; /* Passt das Bild an die Button-Größe an */
     border-radius:5px;
     height:40px;
@@ -501,14 +501,14 @@
     border-radius: 16px;
     border: 2px solid #fff;       
     outline: none;
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-f1b808db-d3e0-4061-92a5-534fd8854a6a.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/kork.jpg');
     background-size: cover;
     width:300px;
     height:200px;        
     
     }
    .w3_button_w3_display_left{
-    background-image: url('https://files.catbox.moe/x982uc.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/arrowtotheleftforthejournal.jpg');
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -519,7 +519,7 @@
    }
 
    .w3_button_w3_display_right{
-    background-image: url('https://files.catbox.moe/c39hwt.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/arrowtotheright.jpg');
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -535,7 +535,7 @@
     display: block;}
 
     .close-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-8fdf0b60-b81d-4064-b15e-c02382f7431b.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/deletebuttonforthejournal.jpg');
     background-size: cover;
     width: 20px;
     height: 20px;
@@ -548,7 +548,7 @@
     
     }
     .save-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-d6e22e70-e434-43b2-ae21-55e41308887e.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/savebuttonforthejournal.jpg');
     background-size: cover;
     width: 80px;
     height: 35px;
@@ -559,7 +559,7 @@
     }
 
     .cancel-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-ada5051e-6707-4925-ae8a-13b5a4ab7462.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/cancelbuttonforthejournal.jpg');
     background-size: cover;
     width: 80px;
     height: 35px;
@@ -589,7 +589,7 @@
    }
 
    .edit-btn{
-    background-image: url('https://cdn.phototourl.com/free/2026-07-14-12452318-701b-40ca-947b-87d7fa72807a.jpg');
+    background-image: url('images,audio,videos(all the graphic stuff)/editbuttonforthejournalapp.jpg');
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -744,7 +744,7 @@
        
 
 .musicslidesright{
-    background-image: url('https://files.catbox.moe/dj5c1v.png');
+    background-image: url('images,audio,videos(all the graphic stuff)/arrowtotherightforthemusicapp.png');
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -755,7 +755,7 @@
     margin-right:30px;
 }
 .musicslidesleft{
-    background-image: url('https://files.catbox.moe/k2j1zv.png');
+    background-image: url('images,audio,videos(all the graphic stuff)/arrowtotheleftforthemusicapp.png');
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -1072,7 +1072,7 @@ h2[contenteditable="true"]:empty::before {
 #block{
 width:50px;
 height:300px;
-background-image:url('https://files.catbox.moe/7ryrjg.png');
+background-image:url('images,audio,videos(all the graphic stuff)/blockforthegame.png');
 background-repeat:no-repeat;
 position:absolute;
 left:400px;
@@ -1100,7 +1100,7 @@ background-size: 100% 100%;
 #character{
     width: 50px;
     height: 50px;
-    background-image:url('https://i.postimg.cc/LXtXkjG9/Design-ohne-Titel-(20).png');
+    background-image:url('images,audio,videos(all the graphic stuff)/wendyforthegame.png');
     position: absolute;
     top: 100px;
   
@@ -1154,7 +1154,7 @@ background-size: 100% 100%;
   width:fit-content ;
   height: fit-content;
   border-radius: 16px;;
-  background-image:url('https://files.catbox.moe/9b9b86.png');
+  background-image:url('images,audio,videos(all the graphic stuff)/controlsbackgroundforthemusicapp.png');
   border:none;
   user-select:none;
   z-Index:29999;
@@ -1169,7 +1169,7 @@ background-size: 100% 100%;
   color: #aaa;
   font-size: 1.2em;
   cursor: pointer;
-  background-image:url('https://files.catbox.moe/lqn3lw.png');
+  background-image:url('images,audio,videos(all the graphic stuff)/controlforthemusicappback.png');
   z-index:500;
 
 }
@@ -1183,7 +1183,7 @@ background-size: 100% 100%;
   color: #aaa;
   font-size: 1.2em;
   cursor: pointer;
-  background-image:url('https://files.catbox.moe/z5lfxi.png');
+  background-image:url('images,audio,videos(all the graphic stuff)/controlsforthemusicappforward.png');
   z-index:500;
 }
 
@@ -1193,7 +1193,7 @@ background-size: 100% 100%;
   left: 282px;
   border: none;
   outline: none;
-  background-image:url('https://files.catbox.moe/9b9b86.png');
+  background-image:url('images,audio,videos(all the graphic stuff)/controlsbackgroundforthemusicapp.png');
   cursor: pointer;
   z-Index:10000000;
   background-color:transparent;
@@ -1252,7 +1252,7 @@ font-family: quick-love;
       }
 
 #menu{
-  background-image:url('https://files.catbox.moe/2hs9m9.png');
+  background-image:url('images,audio,videos(all the graphic stuff)/menuforthecdbackgroundgrey.png');
   background-repeat:no-repeat;
   height:600px;
   width:600px;
@@ -1490,7 +1490,7 @@ font-family: adabelle;}
   height:100%;
   top:0;
   left:0;
-  background-image:url('https://files.catbox.moe/u9n95b.png');
+  background-image:url('images,audio,videos(all the graphic stuff)/backgroundforthejournalappforthetextpart.png');
   box-sizing:border-box;
   padding:20px 20px;
   box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,rgba(0,0,0,.5));
