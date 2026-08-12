@@ -602,7 +602,7 @@
 
    }
    .delete-btn{
-    background-image: url('https://github.com/253-Mathilde/My-first-OS/blob/main/Buttons%20for%20website%20(2).jpg?raw=true');
+    background-image: url('images,audio,videos(all the graphic stuff)/deletebutton.jpg');
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -615,7 +615,7 @@
 
    }
    .note-card{
-    background-image:url('https://github.com/253-Mathilde/My-first-OS/blob/main/Website%20OS.jpg?raw=true');
+    background-image:url('images,audio,videos(all the graphic stuff)/Website OS.jpg');
     border-radius:16px;
     width:200px;
     height:80px;
