@@ -675,7 +675,7 @@ const songs = [
   {
     name: "Dramatic",
     singer: "Mass of the Fermenting Dregs",
-    poster: "Welcome to Peter’s and Tinker’s Playlist (6).png",
+    poster: "images,audio,videos(all the graphic stuff)/DramaticCD.png",
     audio: "https://files.catbox.moe/hvlg1q.mp3"
   },
 
