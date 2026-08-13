@@ -1039,7 +1039,6 @@ h2[contenteditable="true"]:empty::before {
   position:absolute;
   top:268px;
   left:507px;
-  transform:scaleX(-1);
   border-radius:50%;
 }
 
