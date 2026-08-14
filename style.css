@@ -23,9 +23,16 @@
       background-attachment: fixed; 
       overflow-x:hidden;
     }
+    
+@font-face {
+font-family:'Magic';
+src: url(https://dl.dropbox.com/s/fez9i3nk7qelaae/Magic%20Funk.ttf); 
+}
+
+
 
     h1{
-      font-family: "Audiowide", sans-serif;
+      font-family: 'Magic', sans-serif;
       font-weight: 400;
       font-style: normal;
       font-size:90px;
@@ -1008,14 +1015,7 @@ h2[contenteditable="true"]:empty::before {
 .avatar-right{
   margin-left:0px;
 }
-@font-face {
-font-family:'Magic';
-src: url(https://dl.dropbox.com/s/fez9i3nk7qelaae/Magic%20Funk.ttf); 
-}
 
-.title{
-  font-family:'Magic';
-}
 .box-center{
   position:absolute;
   width:500px;
