@@ -664,13 +664,13 @@ const songs = [
     name:"background-music",
     singer: "Mykola Odnoroh (Pixabay)",
     poster: "https://files.catbox.moe/cdoy1q.png",
-    audio: "https://files.catbox.moe/q0mmok.mp3"
+    audio: "images,audio,videos(all the graphic stuff)/q0mmok.mp3"
   },
   {
     name: "background-music #2",
     singer: "chill background (Pixabay)",
     poster: "https://files.catbox.moe/5plnq8.png",
-    audio: "https://files.catbox.moe/chyuf4.mp3"
+    audio: "images,audio,videos(all the graphic stuff)/chyuf4.mp3"
   },
   {
     name: "Dramatic",
@@ -683,12 +683,18 @@ const songs = [
     name:"chill,sleepy music",
     singer:"Mikhal Vereitinov (Pixabay)",
     poster:"https://files.catbox.moe/031dvm.png",
-    audio:"https://files.catbox.moe/p5guka.mp3"
+    audio:"images,audio,videos(all the graphic stuff)/p5guka.mp3"
   },
   { name:"study music",
     singer:"Roman Rumyantsev (Pixabay)",
     poster:"https://files.catbox.moe/mbhoa4.png",
-    audio:"https://files.catbox.moe/1avzaq.mp3"
+    audio:"images,audio,videos(all the graphic stuff)/1avzaq.mp3"
+
+  },
+  { name:"motiving,energy music",
+    singer:"Viktor Sklemin(Pixabay)",
+    poster:"images,audio,videos(all the graphic stuff)/energy music.png",
+    audio:"images,audio,videos(all the graphic stuff)/soundsurfer-chill-music-580596.mp3"
 
   }
 ];
@@ -837,6 +843,19 @@ sleepMenuBtn.addEventListener("click", () => {
 const lernMenuBtn = document.querySelector("#lernmenu");
 lernMenuBtn.addEventListener("click", () => {
   songIndex = 6;
+  loadSongs(songs[songIndex]);
+  playAudio();
+  const playIcon = ppBtn.querySelector(".fa-play");
+  const pauseIcon = ppBtn.querySelector(".fa-pause");
+  if (playIcon && pauseIcon) {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  }
+});
+
+const energyMenuBtn = document.querySelector("#energymenu");
+energyMenuBtn.addEventListener("click", () => {
+  songIndex = 7;
   loadSongs(songs[songIndex]);
   playAudio();
   const playIcon = ppBtn.querySelector(".fa-play");
