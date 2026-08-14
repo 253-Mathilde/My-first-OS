@@ -1410,8 +1410,8 @@ font-family: quick-love;
 
 #energymenu{
   position: absolute;
-  left: 600px;
-  top: 60px;
+  left: 450px;
+  top: 95px;
   cursor: pointer; 
   display: inline-block; 
 }
