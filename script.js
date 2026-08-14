@@ -691,7 +691,7 @@ const songs = [
     audio:"images,audio,videos(all the graphic stuff)/1avzaq.mp3"
 
   },
-  { name:"motiving,energy music",
+  { name:"motivating,energy music",
     singer:"Viktor Sklemin(Pixabay)",
     poster:"images,audio,videos(all the graphic stuff)/energy music.png",
     audio:"images,audio,videos(all the graphic stuff)/soundsurfer-chill-music-580596.mp3"
