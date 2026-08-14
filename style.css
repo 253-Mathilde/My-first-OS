@@ -1008,7 +1008,14 @@ h2[contenteditable="true"]:empty::before {
 .avatar-right{
   margin-left:0px;
 }
+@font-face {
+font-family:'Magic';
+src: url(https://dl.dropbox.com/s/fez9i3nk7qelaae/Magic%20Funk.ttf); 
+}
 
+.title{
+  font-family:'Magic';
+}
 .box-center{
   position:absolute;
   width:500px;
