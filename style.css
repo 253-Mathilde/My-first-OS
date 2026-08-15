@@ -88,7 +88,7 @@ src: url(https://dl.dropbox.com/s/fez9i3nk7qelaae/Magic%20Funk.ttf);
       backdrop-filter: blur(50px);
       padding-top:2px;
       z-Index:1;
-      overflow-y: auto
+      overflow-y: auto;
     }
 
     .base3{
