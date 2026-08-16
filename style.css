@@ -230,7 +230,7 @@ src: url(https://dl.dropbox.com/s/fez9i3nk7qelaae/Magic%20Funk.ttf);
       z-Index:1;
       background-repeat:no-repeat;
       position: relative;
-      pointer-events:none;
+ 
     }
 
   .base13{
