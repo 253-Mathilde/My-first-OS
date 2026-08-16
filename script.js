@@ -274,7 +274,7 @@ function openWindow(element) {
  
   element.style.top = element.style.left = ""; 
   
-    if (element.id === "tvWindow") element.querySelector("iframe").src = "https://www.youtube.com/embed/-ev4Nqk8-4Q?si=pFv6Fzet1ZdqkIA";
+    if (element.id === "tvWindow") element.querySelector("iframe").src = "https://www.youtube.com/embed/5Gy8X99jaOQ?si=kvGdbEHKnom67PcS";
     if(element.id === "journalWindow" && notes.length > 0){
     slideIndex[0] = 4;
     showDivs(slideIndex[0], 0);
