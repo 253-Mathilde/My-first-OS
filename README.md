@@ -91,13 +91,13 @@
  For the coding I used the offical tutorial from the mission (for the timer,the top bar,the dragging) 
  but because of the fact that I couldn't understand that tutorial I started pretty soon to work 
  without it.
- The link at the top is just like a normla link but as a <p> in a div and the timer is a easy one 
-  with set interval and a <h2> (it need to be editble). The hidden map works the same as an app 
-    but instead of an icon it works with the gif. For the Ecosia bar I just usead a yt vd (https://www.youtube.com/watch?v=f6ocDCkCmhM) 
-    and then changed that code. I also used a site for the weather widget (https://weatherwidget.org/) and I changed the height and 
-    width form that. For the moving text I used basic css and for the JS I worked with a loop and multiple 
-    set Interval (the first after 30 sec teh nect one after 60 sec yk). And I added a little bubble effect for the background (https://scripted.neocities.org/cursor-bg the one
-    at the bottom).
+ The link at the top is just like a normla link but as a <p></p> in a div and the timer is a easy one 
+  with set interval and a <h2></h2> (it need to be editble). The hidden map works the same as an app 
+  but instead of an icon it works with the gif. For the Ecosia bar I just usead a yt vd (https://www.youtube.com/watch?v=f6ocDCkCmhM) 
+  and then changed that code. I also used a site for the weather widget (https://weatherwidget.org/) and I changed the height and 
+   width form that. For the moving text I used basic css and for the JS I worked with a loop and multiple 
+   set Interval (the first after 30 sec teh nect one after 60 sec yk). And I added a little bubble effect for the background (https://scripted.neocities.org/cursor-bg the one
+   at the bottom).
 
     <img src="images,audio,videos(all the graphic stuff)/sites.png">
 
