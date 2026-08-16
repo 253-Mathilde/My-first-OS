@@ -1,7 +1,7 @@
 <img src="images,audio,videos(all the graphic stuff)/Banner.jpg">
 <img src="images,audio,videos(all the graphic stuff)/whole site.png">
 <img src="images,audio,videos(all the graphic stuff)/whole.png">
-<video controls><source src="images,audio,videos(all the graphic stuff)/The whole site as a video.mp4"type="video/mp4"></video>
+\<video src="https://github.com/253-Mathilde/My-first-OS/blob/95fd70d1df0f4140d4de07bfe080e24805c7e812/images%2Caudio%2Cvideos(all%20the%20graphic%20stuff)/The%20whole%20site%20as%20a%20video.mp4" controls width="100%"></video>
 <img src="images,audio,videos(all the graphic stuff)/journal.png">
 <img src="images,audio,videos(all the graphic stuff)/music.png">
 <img src="images,audio,videos(all the graphic stuff)/camera.png">
