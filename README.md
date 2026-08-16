@@ -99,6 +99,6 @@
    set Interval (the first after 30 sec teh nect one after 60 sec yk). And I added a little bubble effect for the background (https://scripted.neocities.org/cursor-bg the one
    at the bottom).
 
-    <img src="images,audio,videos(all the graphic stuff)/sites.png">
+   <img src="images,audio,videos(all the graphic stuff)/sites.png">
 
  
