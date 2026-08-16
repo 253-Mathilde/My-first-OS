@@ -1,113 +1,104 @@
+ <img src="images,audio,videos(all the graphic stuff)/Banner.jpg">
 
+  Hi there and welcome to my README here everything is explained so if you liked a feature on this site and 
+  want to rebuild it: your'e in the right place. All the vision and coding for each app is explained seperatly and 
+  ofc we also have the coding for all the other samller features (Ecosia searchbar for example) explained.
+  At the bottom we also have all the sources for the images as well as the sites I used for help etc.
+  
+  All the features that this OS has are in this vd ↴ ,it is pretty bad quality because I had to compress it :(
 
+  https://github.com/user-attachments/assets/126fecce-fc1a-4e5e-af55-eb33982530a5
 
+  Neverland OS is an OS that is both attractive and extremely practical. This OS can so way more things then jsut looking pretty.
 
-<img src="images,audio,videos(all the graphic stuff)/Banner.jpg">
-<img src="images,audio,videos(all the graphic stuff)/whole site.png">
-<img src="images,audio,videos(all the graphic stuff)/whole.png">
+  <img src="images,audio,videos(all the graphic stuff)/whole site.png">
+  
+  To get started: The Vision behind Neverland OS. The coding for all the extra features is behind the coding progress 
+  from the apps so if you were searching for that: just scroll a little bit more.
+  Okay so back to the vision. My vision for Neverland OS started with the idea to build an OS 
+  that has a big whimsical factor but still fit's in the real world. So I created Neverland Os 
+  but as you might have noticed: I've focused a little more on Tinker Bell than in the original story. 
+  Okay so I also wanted to keep all the apps really realistic so ,oh and I almost forgot: Ofc it was supposed 
+  to be a little bit older from the style (yk what I mean). Welllll that was quite a task to put all that in a OS 
+  but I think I got it. Always happy to hear some feedback tho! Okay so that was basically the idea and mind you: 
+  I never was really good at JS and the last time I did something with JS was about 4 years ago so I basically started from 0.
 
-https://github.com/user-attachments/assets/126fecce-fc1a-4e5e-af55-eb33982530a5
+  <img src="images,audio,videos(all the graphic stuff)/journal.png">
 
-<img src="images,audio,videos(all the graphic stuff)/journal.png">
-<img src="images,audio,videos(all the graphic stuff)/music.png">
-<img src="images,audio,videos(all the graphic stuff)/camera.png">
-<img src="images,audio,videos(all the graphic stuff)/game.png">
-<img src="images,audio,videos(all the graphic stuff)/tv.png">
-<img src="images,audio,videos(all the graphic stuff)/web.png">
-<img src="images,audio,videos(all the graphic stuff)/manual.png">
-<img src="images,audio,videos(all the graphic stuff)/sites.png">
-<img src="images,audio,videos(all the graphic stuff)/imges.png">
+  Let's start with the Journal app. I already made that app in the WebOS 1 mission so yeah.
+  The vision for it was to make it look like a real scrapbook/notebook or pinboard where you pin your notes and cute stuff.
+  Since every notes app looks just ugly or is paid or is not made for a laptop or a deskop I decided to do it myself.
+  I basically used a yt vd (https://www.youtube.com/watch?v=gzoifHuIsrI) and changed a lot of stuff because that 
+  tutorial looked way to basic and wasn't made for an app (it was for a whole site). I often use yt vd in my code 
+  but please mind: I understand everything and type everything myself,no copy and paste.
+  So I changed the desing and also deleted the screen at the beginning (if you watch the vd you now what I mean).
+  I also didn't do a dark mode and added a grid to all the notes that already exist.
+  I also added a slideshow at the beginning that only shows when you don't have any notes so that when you come back to the site 
+  and already have notes it won't show but you still can go back.
+  This is the site with the tutorial for the slidehsow  https://www.w3schools.com/w3css/w3css_slideshow.asp.
+  
+  <img src="images,audio,videos(all the graphic stuff)/music.png"> 
 
+  Okay so the music app was quite a struggle because you won't find one like this online. I wanted it to give teh same vibes
+  as an old CD pplayer or these crazy CD clear art things. And I wanted the buttons to look like a real mp3 player.
+  To get which one I mean I put a picture up here because I feel like the world has a million mp3 players.
+  I also wanted to build something unique and not the the five-hundredth one that looks exactly the same.
+  So I grabbed myself some code for the buttons (https://codepen.io/DEFKON_1/pen/KwPwrPW)and completly changed the look from everyhting,improved 
+  the JS fixed some bugs in it and added more songs.
+  I also added a menu that I builded completly from scratch and I also added a slideshow at the beginning.
 
+ <img src="images,audio,videos(all the graphic stuff)/camera.png">
 
+ I think the galerie app is one of the easiest apps in this whole project.
+ I wanted it to look like a real digi cam and I wanted the buttons to look like real camera buttons too.
+ So I used Canva to cut and edit the digi cam and then added a slideshow in the hole of the digi cam
+ and connected the buttons to them with a basic slideshow code.
 
- CURRENTLY BUILDING SO IGNORE THE PART THAT FOLLOWS:
- Welcome to my README.
- This OS was made by me (@Mathilde_253, 14years) and in this README you will see my whole progress (from the brainstorming,the ideas and the actual coding progress).
-  If you only want to see my codings just go straight to my files because here I also explained everything and put in a little bit more work then just
-  pasting in my code.
-There may be some grammar mistakes here.
+ <img src="images,audio,videos(all the graphic stuff)/game.png">
 
+ I wanted the game app to look a littel bit like one of these old controlers or to give the same vibe yk.
+ And I wanted it to be simple because I wanted to create something that relaxes the brain a little bit.
+ The game app was pretty hard again because I even deleted everything (on purpose) because it didn't work.
+ In the end I used a flappy bird tutorial(https://www.youtube.com/watch?v=3SsYZDJdeXk) for the wendy and did the moving and winning screen so as the 
+ losing screen with online research.I also added something like a pre-loader because I wanted 
+ to make it more harder (yk now you now need to react and don't have a start button).
+ I also added a frame for the window and added a hidden h1 that only shows when the winning or losing screen 
+ shows. 
 
+ <img src="images,audio,videos(all the graphic stuff)/tv.png">
 
+ The tv app works the same way as the galerie app and I also wanted it to look like a real TV 
+ but one of the old ones, not the new ones. So I did the same with Canva and used the yt embed feature 
+ and changed the width and height.
 
+ <img src="images,audio,videos(all the graphic stuff)/web.png">
 
- <p>
-I first of all started with brainstorming and searching the web for things that I might use.
-Unfortunataly I did not find much so I basically did most of the stuff myself.
-The whole site is based on two things: the whole story of Peter Pan and the movies from Tinkerbell.
-I kind of combined these two themes because in the whole Peter Pan story, Tinkerbell is just a side character.
-As you can see, I used Pinterest, but for the people who do not know these childhood series, I also included some screens of the series.
-My goal was it to build a website where you have, like, the city at night, and the whole apps and stuff are supposed to look like the real things.
-I choose that theme because it is pretty hard to build an OS for a fantasy world where tech does not exist.
-Let's just pretend this is the OS on Wendy's PC in the new (more modern)series.
-I think the theme made it a little bit whimsical ( I hope that you feel the same) .
-So that is basically the concept for the whole site (whimiscal+ modern+ practical).</p>
-<p>
- As already said, the goal was to make the apps look like real things. Every note or writing-stuff app looks nothing like a real notebook.
-I wanted to change that because there is nothing like an app that combines the like tech aspect and the reality factor (maybe there is one, but not one I know).
-And all the apps that look like a real journal are not made for laptops or PCs; they are all made for iPads and such stuff.
-Who said that you can only have ugly note apps on your laptop? Sooooo
-I spent way too much time on Pinterest and searched way too long for graphics to find some good stuff.
-After all of that, I spent way too much time again on building all these graphics, so I really hope you like them.
-This is just a short explanation of my work. I changed a lot more details and stuff; for these details I do not have an explanation here because that would take too long.
-I followed the guide for this mission until the part where it started with creating your own app.
-I decided after some time to ignore the whole part after that and started building myself.
-For the base and the JS, I did use a tutorial. My code does not even look close to the thing that it would have looked like if I had just copied and pasted the code from that.
+ I just wanted these sites in my web OS to make it more practical.
+ The web app all work the same way so this part is for all 3 of them. Instead of an iframe I directly connected the sites
+ and opend them in a new tab. I also connected that function in the JS to the opening smybol(the green heart)
+ and made a window that explains everything.
 
-So here is what I changed:
+ <img src="images,audio,videos(all the graphic stuff)/manual.png">
 
-First of all, I made a slide system that introduces you to the app and how to use the app when you do not have any islands.
-That also works when you refresh the page it just doesn't show when you already have island already. 
-But you can still go back(just in case if you forgot something) or use the manual app. Btw, an island is a note.
-.For that, I used a tutorial from W3Schools(teh tutorial for slideshows).
-I changed the position of the buttons and combined that code with the code for the journal app so that the buttons are 
-on the right and on the left to the Journal create an island button
-I did not make a dark mode for my journal app and also removed the container with the text that normally shows (just skip these parts in 
-the yt vd)).
-.I also added a gridding system (2 island each row)so it looks a little bit more organized.
-I also changed every button, every container, and every part of text.
-At all, I watched the video while coding and typed every word myself, and I did not use the CSS from the vd.
-That is also a reason why mine is a little bit messy (I needed some time to figure out what element is in what class, etc.).
-I also changed something in the JS for the Journal app so that the whole part works (the part that if there is already an island...).
-To do that you need to play a little bit with the numbers and the W3 school code.
+ I wanted the manual to look like a real manual so not like a book but like 
+ these typical small booklets that you get when you buy something new.
+ I also wanted to include the Tinkerbell factor because of all the technical things she often drwas on 
+ leaves for her invetions. I used a yt vd (https://www.youtube.com/watch?v=A5fdu8HZKic)for the book effect but changed a lot like the size,the desing etc.
+ I also added a litlle star effect when you click on the thank you text(https://www.kirilv.com/canvas-confetti/).
 
-Most of my time went of for the CSS in that app.
+ <img src="images,audio,videos(all the graphic stuff)/whole.png">
 
+ For the coding I used the offical tutorial from the mission (for the timer,the top bar,the dragging) 
+ but because of the fact that I couldn't understand that tutorial I started pretty soon to work 
+ without it.
+ The link at the top is just like a normla link but as a <p> in a div and the timer is a easy one 
+  with set interval and a <h2> (it need to be editble). The hidden map works the same as an app 
+    but instead of an icon it works with the gif. For the Ecosia bar I just usead a yt vd (https://www.youtube.com/watch?v=f6ocDCkCmhM) 
+    and then changed that code. I also used a site for the weather widget (https://weatherwidget.org/) and I changed the height and 
+    width form that. For the moving text I used basic css and for the JS I worked with a loop and multiple 
+    set Interval (the first after 30 sec teh nect one after 60 sec yk). And I added a little bubble effect for the background (https://scripted.neocities.org/cursor-bg the one
+    at the bottom).
 
-
-
-
-<p>
-Here are all the sites I used:
-I used the official tutorial for this project ( I do not know if I really have to say that here but I just want to do it the save way).
-I am still not so good at JS and I  code from this site:https://scripted.neocities.org/cursor-bg for the bubble effect.
-I did the graphics for the Journal app myself ( with canva ).
-The frame for the selected icon is from here https://scripted.neocities.org/images
-I normally use catbox for my images but unfortunataly it had problems so I just used a random online converter but normally I prefer Catbox:https://phototourl.com/de and https://postimages.org/
-I also used catbox when it worked again for all the other stuff.
-In my graphics there are graphics from this great site:https://www.disneyclips.com/images/peterpan.html
-I used this site for the slideshow thing in the Journal app https://www.w3schools.com/w3css/w3css_slideshow.asp
-I used pinterest as insperation and for finding quotes.
-I used a image from pinterest in my graphics(the "map" of Neverland) https://pin.it/68t2L17HO
-IMAGE LINK FOR THE TINKERBELL IMAGE ON THE MANUAL
-I used this tutorial https://www.youtube.com/watch?v=gzoifHuIsrI for the Journal app(I did not do the dark featur and customized the code.I also did not copy the code from the site ,I watched the tutorial while writing every word myself.)
-For my cursor I used this site:https://www.cursors-4u.com/cursor/tinkerbell-yellow-glitter-wings
-For the little star at the top and all the other Pixel Arts( also the one at the browser top) I used this site:https://sadthemes.tumblr.com/smolpxl
-I used this this for the background picture:https://jasminnie.weebly.com/
-I used Canva in genereal for all my graphics.
-I used Google fonts and such stuff.
-I hope that everything is in here (the links for the images in the pictures in the README are on them).
-
-I do not want to steal someone's work, so if I forgot to mention the source of something that you made and found on here,
-
-That was not my intention, and I am giving my best to be transparent.
-
-This project was fully coded by me. I did use Google a lot, and because it has an AI feature, I want to
-Mark that I did not use AI a lot and did not copy and paste finished code. I typed everything myself.
-I also understood the code that I found online (I am just not so fluent in JS like I am in HTML).
-MUSIC PLAYER https://scripted.neocities.org/musicplayer</p>
-</p>
-
+    <img src="images,audio,videos(all the graphic stuff)/sites.png">
 
  
