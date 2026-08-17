@@ -7,6 +7,11 @@
 
   There might be some grammar mistakes here.I apologize for them and hope you can understand me. <img src="https://i.imgur.com/MLAlnRO.gif">
   
+  <img src="images,audio,videos(all the graphic stuff)/site.png">
+  Neverland OS has 9 working apps that where all coded by me. The whole OS has 11 draggable windows and
+  5 mini apps (search bar,clock,timer,weather,changing quotes).It has a custom pre-loader 
+  and a custom cursor cursor. The tab name moves and has a image too. This project took me 42 days and I hope you like it. <br>
+  
   All the features that this OS has are in this vd ↴ ,it is pretty bad quality because I had to compress it :(
 
   https://github.com/user-attachments/assets/126fecce-fc1a-4e5e-af55-eb33982530a5
