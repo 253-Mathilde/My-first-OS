@@ -2,7 +2,7 @@
 
   Hi there and welcome to my README here everything is explained so if you liked a feature on this site and 
   want to rebuild it: your'e in the right place. All the vision and coding for each app is explained seperatly and 
-  ofc we also have the coding for all the other samller features (the Ecosia searchbar for example) explained.
+  ofc we also have the coding for all the other smaller features (the Ecosia searchbar for example) explained.
   At the bottom we also have all the sources for the images as well as the sites I used for help etc.
 
   There might be some grammar mistakes here.I apologize for them and hope you can understand me. <img src="https://i.imgur.com/MLAlnRO.gif">
@@ -10,14 +10,15 @@
   <img src="images,audio,videos(all the graphic stuff)/site.png">
   Neverland OS has 9 working apps that where all coded by me. The whole OS has 11 draggable windows and
   5 mini apps (search bar,clock,timer,weather,changing quotes).It has a custom pre-loader 
-  and a custom cursor cursor. The tab name moves and has a image too. This project took me 42 days and I hope you like it. <br>
+  and a custom cursor. The tab name moves and has a image too. This project took me 42 days and I hope you like it. <br>
   
   All the features that this OS has are in this vd ↴ ,it is pretty bad quality because I had to compress it :(
 
   https://github.com/user-attachments/assets/126fecce-fc1a-4e5e-af55-eb33982530a5
 
-  Neverland OS is an OS that is both attractive and extremely practical. This OS can do way more things then just looking pretty.
-  So don't form your opinion about this just with the vd and check it out yourself! 
+  Neverland OS is an OS that is both attractive and extremely practical.
+  This OS can do way more things then just looking pretty.
+  So don't form your opinion about this just with the vd and check it out yourself!
   https://253-mathilde.github.io/My-first-OS/
 
   <img src="images,audio,videos(all the graphic stuff)/whole site.png">
@@ -25,7 +26,8 @@
   To get started: The Vision behind Neverland OS. The coding for all the extra features is behind the coding progress 
   from the apps so if you were searching for that: just scroll a little bit more.
   Okay so back to the vision. My vision for Neverland OS started with the idea to build an OS 
-  that has a big whimsical factor but still fit's in the real world. So I created Neverland OS 
+  that has a big whimsical factor but still fit's in the real world. So I created Neverland OS.
+  An OS which is based on Neverland (aka Peter Pan)
   but as you might have noticed: I've focused a little more on Tinker Bell than in the original story. 
   Okay so I also wanted to keep all the apps really realistic so ,oh and I almost forgot: Ofc it was supposed 
   to be a little bit older from the style (yk what I mean). Welllll that was quite a task to put all that in a OS 
