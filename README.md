@@ -48,7 +48,7 @@ Okay so the music app was quite a struggle because you won't find one like this 
 as an old CD player or these crazy CD-clear-art-things. And I wanted the buttons to look like a real mp3 player.
 To get which one I mean I put a picture up here because I feel like the world has a million mp3 players.
 I also wanted to build something unique and not the five-hundredth one that looks exactly the same.
-So I grabbed myself some code for the buttons (https://codepen.io/DEFKON_1/pen/KwPwrPW)and completely changed the look from everything,improved
+So I grabbed myself some code for the buttons ( https://codepen.io/DEFKON_1/pen/KwPwrPW ) and completely changed the look from everything,improved
 the JS fixed some bugs in it and added more songs.
 I also added a menu that I builded completely from scratch and I also added a slideshow at the beginning.
 
