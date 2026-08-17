@@ -54,7 +54,7 @@
 
  <img src="images,audio,videos(all the graphic stuff)/camera.png">
 
- I think the galerie app is one of the easiest apps in this whole project.
+ I think the gallery app is one of the easiest apps in this whole project.
  I wanted it to look like a real digi cam and I wanted the buttons to look like real camera buttons too.
  So I used Canva to cut and edit the digi cam and then added a slideshow in the hole of the digi cam (I made that hole with Canva)
  and connected the buttons to them with a basic slideshow code.
@@ -159,7 +159,7 @@ The image sources are already on the last side of the manual but to be save....<
  <img src="images,audio,videos(all the graphic stuff)/Screenshot 2026-08-14 184116.png" >
 
    
- <br>-----------galerie app---------------<br>
+ <br>-----------gallery app---------------<br>
  1.The img 1 is from   <a href="https://de.pinterest.com/pin/426575395984070858/">here</a> <br>
  2.The img 2 is from <a href="https://www.disneyclips.com/goodies/images/tinkerbell-wallpaper.jpg">here</a> <br>
  3.The img 3 is from  <a href="https://www.blu-ray.com/movies/screenshot.php?movieid=115286&position=1">here</a>  <br>
