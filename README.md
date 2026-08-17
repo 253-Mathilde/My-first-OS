@@ -216,7 +216,7 @@ The image sources are already on the last side of the manual but to be save....<
  1.The font and the frames are in my README <br>
  2.The 2 images at the top are from <a href="https://www.disneyclips.com/images/peterpanmain.html">this site</a> <br>
  <br>-----------ecosia search bar---------------<br>
-1. I got the logo from <a href="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ecosia-wordmark-light.png">here</a><br>
+ I got the logo from <a href="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ecosia-wordmark-light.png">here</a><br>
  <br>-----------the pre-loader---------------<br>
  1.I made it with CANVA <br>
  2.I used this for the tinkerbell but for the flying tinkerbell at the start I used the AI tool from Canva(I used the graphic in Canva and then converted it to a vd with the AI)<a href="https://www.disneyclips.com/images/peterpan.html">Here is the site</a> <br>
